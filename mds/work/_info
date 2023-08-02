@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\Paper\eccrevised\eccrevised\mdsim\mdsim_6
+vbarrett_reduction
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 NgC[j[_8VIX71k6moSPdI2
+Z3 I>KTQ`<YCe2ka6Jk=P?J4n2
+Z4 VBBmS8^<2lZMG772G7mF^71
+Z5 !s105 barret_reduction_sv_unit
+S1
+Z6 dF:\Paper\eccrevised\ntt-for-hps-integration\mds
+Z7 w1690993226
+Z8 8F:/Paper/eccrevised/ntt-for-hps-integration/rtl/bu/barret_reduction.sv
+Z9 FF:/Paper/eccrevised/ntt-for-hps-integration/rtl/bu/barret_reduction.sv
+L0 1
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-work|work|-sv|F:/Paper/eccrevised/ntt-for-hps-integration/rtl/bu/barret_reduction.sv|
+Z12 o-work work -sv -O0
+!i10b 1
+!s85 0
+Z13 !s108 1690993663.327000
+Z14 !s107 F:/Paper/eccrevised/ntt-for-hps-integration/rtl/bu/barret_reduction.sv|
+!s101 -O0
+vtb_barrett_reduction
+R1
+!i10b 1
+Z15 !s100 ;nZ1JFM`6aHLV^UNGRXc41
+Z16 I_;mlEhH5lI:m6Gz^aRcmm2
+Z17 VNfFobN6MUjNJLV>4z;z1o3
+Z18 !s105 tb_barrett_reduction_sv_unit
+S1
+R6
+Z19 w1690993651
+Z20 8F:\Paper\eccrevised\ntt-for-hps-integration\rtl\bu\tb_barrett_reduction.sv
+Z21 FF:\Paper\eccrevised\ntt-for-hps-integration\rtl\bu\tb_barrett_reduction.sv
+L0 3
+R10
+r1
+!s85 0
+31
+!s108 1690993663.358000
+!s107 F:\Paper\eccrevised\ntt-for-hps-integration\rtl\bu\tb_barrett_reduction.sv|
+Z22 !s90 -reportprogress|300|-work|work|-sv|F:\Paper\eccrevised\ntt-for-hps-integration\rtl\bu\tb_barrett_reduction.sv|
+!s101 -O0
+R12
