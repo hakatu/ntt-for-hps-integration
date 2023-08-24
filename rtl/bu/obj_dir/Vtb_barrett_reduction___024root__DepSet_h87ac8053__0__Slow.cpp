@@ -43,7 +43,7 @@ VL_ATTR_COLD void Vtb_barrett_reduction___024root___eval_settle(Vtb_barrett_redu
 #ifdef VL_DEBUG
                 Vtb_barrett_reduction___024root___dump_triggers__stl(vlSelf);
 #endif
-                VL_FATAL_MT("tb_barrett_reduction.sv", 3, "", "Settle region did not converge.");
+                VL_FATAL_MT("tb_barrett_reduction.sv", 4, "", "Settle region did not converge.");
             }
             vlSelf->__VstlIterCount = ((IData)(1U) 
                                        + vlSelf->__VstlIterCount);
@@ -115,6 +115,6 @@ VL_ATTR_COLD void Vtb_barrett_reduction___024root___ctor_var_reset(Vtb_barrett_r
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_barrett_reduction___024root___ctor_var_reset\n"); );
     // Body
     vlSelf->tb_barrett_reduction__DOT__c = VL_RAND_RESET_I(32);
-    vlSelf->tb_barrett_reduction__DOT__result = VL_RAND_RESET_I(16);
     vlSelf->tb_barrett_reduction__DOT__expected_result = VL_RAND_RESET_I(32);
+    vlSelf->tb_barrett_reduction__DOT__uut__DOT__result_temp = VL_RAND_RESET_I(16);
     }

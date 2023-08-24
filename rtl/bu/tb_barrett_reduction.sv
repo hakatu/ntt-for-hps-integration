@@ -1,4 +1,5 @@
 `timescale 1ps/1ps
+`include "barrett_reduction.sv"
 
 module tb_barrett_reduction;
     reg [31:0] c; // Input
@@ -7,7 +8,7 @@ module tb_barrett_reduction;
     reg [31:0] expected_result;
 
     // Instantiate the barrett_reduction module
-    barret_reduction uut (
+    barrett_reduction uut (
         .c(c),
         .result(result)
     );
@@ -27,12 +28,11 @@ module tb_barrett_reduction;
 
             // Write the input to the input.txt file
             $fwrite(input_file, "%h\n", c);
-
+            #10;
             // Wait for the uut to process the input
-            #10
 
             // Compute the expected output
-            assign expected_result = c % 3329;
+            expected_result = c % 3329;
 
             // Write the output and the expected output to the output.txt file
             $fwrite(output_file, "%h %h\n", result, expected_result);
@@ -41,8 +41,15 @@ module tb_barrett_reduction;
         // Close the text files
         $fclose(input_file);
         $fclose(output_file);
-
+        #3000
         // Finish the simulation
         $finish;
     end
+
+    initial begin
+        // Not needed on Cloud V:
+        $dumpfile("tb_barrett_reduction.vcd"); // Name of the signal dump file
+        $dumpvars(0, tb_barrett_reduction); // Signals to dump
+    end
+
 endmodule

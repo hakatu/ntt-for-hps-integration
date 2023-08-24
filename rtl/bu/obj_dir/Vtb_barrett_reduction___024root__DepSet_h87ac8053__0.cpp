@@ -7,6 +7,7 @@
 #include "Vtb_barrett_reduction__Syms.h"
 #include "Vtb_barrett_reduction___024root.h"
 
+VL_ATTR_COLD void Vtb_barrett_reduction___024root___eval_initial__TOP(Vtb_barrett_reduction___024root* vlSelf);
 VlCoroutine Vtb_barrett_reduction___024root___eval_initial__TOP__0(Vtb_barrett_reduction___024root* vlSelf);
 
 void Vtb_barrett_reduction___024root___eval_initial(Vtb_barrett_reduction___024root* vlSelf) {
@@ -14,6 +15,7 @@ void Vtb_barrett_reduction___024root___eval_initial(Vtb_barrett_reduction___024r
     Vtb_barrett_reduction__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_barrett_reduction___024root___eval_initial\n"); );
     // Body
+    Vtb_barrett_reduction___024root___eval_initial__TOP(vlSelf);
     Vtb_barrett_reduction___024root___eval_initial__TOP__0(vlSelf);
 }
 
@@ -55,16 +57,23 @@ VL_INLINE_OPT VlCoroutine Vtb_barrett_reduction___024root___eval_initial__TOP__0
         co_await vlSelf->__VdlySched.delay(0xaULL, 
                                            nullptr, 
                                            "tb_barrett_reduction.sv", 
-                                           32);
+                                           31);
         vlSelf->tb_barrett_reduction__DOT__expected_result 
             = VL_MODDIV_III(32, vlSelf->tb_barrett_reduction__DOT__c, (IData)(0xd01U));
         VL_FWRITEF(tb_barrett_reduction__DOT__output_file,"%x %x\n",
-                   16,vlSelf->tb_barrett_reduction__DOT__result,
+                   16,(0xffffU & ((0xd01U <= (IData)(vlSelf->tb_barrett_reduction__DOT__uut__DOT__result_temp))
+                                   ? ((IData)(vlSelf->tb_barrett_reduction__DOT__uut__DOT__result_temp) 
+                                      - (IData)(0xd01U))
+                                   : (IData)(vlSelf->tb_barrett_reduction__DOT__uut__DOT__result_temp))),
                    32,vlSelf->tb_barrett_reduction__DOT__expected_result);
         tb_barrett_reduction__DOT__unnamedblk1__DOT__i 
             = ((IData)(1U) + tb_barrett_reduction__DOT__unnamedblk1__DOT__i);
     }
-    VL_FCLOSE_I(tb_barrett_reduction__DOT__input_file); VL_FCLOSE_I(tb_barrett_reduction__DOT__output_file); VL_FINISH_MT("tb_barrett_reduction.sv", 46, "");
+    VL_FCLOSE_I(tb_barrett_reduction__DOT__input_file); VL_FCLOSE_I(tb_barrett_reduction__DOT__output_file); co_await vlSelf->__VdlySched.delay(0xbb8ULL, 
+                                                                                nullptr, 
+                                                                                "tb_barrett_reduction.sv", 
+                                                                                44);
+    VL_FINISH_MT("tb_barrett_reduction.sv", 46, "");
 }
 
 VL_INLINE_OPT void Vtb_barrett_reduction___024root___act_sequent__TOP__0(Vtb_barrett_reduction___024root* vlSelf) {
@@ -72,14 +81,12 @@ VL_INLINE_OPT void Vtb_barrett_reduction___024root___act_sequent__TOP__0(Vtb_bar
     Vtb_barrett_reduction__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_barrett_reduction___024root___act_sequent__TOP__0\n"); );
     // Body
-    vlSelf->tb_barrett_reduction__DOT__result = (0xffffU 
-                                                 & (vlSelf->tb_barrett_reduction__DOT__c 
-                                                    - 
-                                                    ((IData)(0xd01U) 
-                                                     * (IData)(
-                                                               ((0x13afb7ULL 
-                                                                 * (QData)((IData)(vlSelf->tb_barrett_reduction__DOT__c))) 
-                                                                >> 0x20U)))));
+    vlSelf->tb_barrett_reduction__DOT__uut__DOT__result_temp 
+        = (0xffffU & (vlSelf->tb_barrett_reduction__DOT__c 
+                      - ((IData)(0xd01U) * (IData)(
+                                                   ((0x13afb7ULL 
+                                                     * (QData)((IData)(vlSelf->tb_barrett_reduction__DOT__c))) 
+                                                    >> 0x20U)))));
 }
 
 void Vtb_barrett_reduction___024root___eval_act(Vtb_barrett_reduction___024root* vlSelf) {
@@ -136,7 +143,7 @@ void Vtb_barrett_reduction___024root___eval(Vtb_barrett_reduction___024root* vlS
 #ifdef VL_DEBUG
                     Vtb_barrett_reduction___024root___dump_triggers__act(vlSelf);
 #endif
-                    VL_FATAL_MT("tb_barrett_reduction.sv", 3, "", "Active region did not converge.");
+                    VL_FATAL_MT("tb_barrett_reduction.sv", 4, "", "Active region did not converge.");
                 }
                 vlSelf->__VactIterCount = ((IData)(1U) 
                                            + vlSelf->__VactIterCount);
@@ -152,7 +159,7 @@ void Vtb_barrett_reduction___024root___eval(Vtb_barrett_reduction___024root* vlS
 #ifdef VL_DEBUG
                 Vtb_barrett_reduction___024root___dump_triggers__nba(vlSelf);
 #endif
-                VL_FATAL_MT("tb_barrett_reduction.sv", 3, "", "NBA region did not converge.");
+                VL_FATAL_MT("tb_barrett_reduction.sv", 4, "", "NBA region did not converge.");
             }
             __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
             Vtb_barrett_reduction___024root___eval_nba(vlSelf);

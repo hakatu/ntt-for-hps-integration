@@ -16,7 +16,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_barrett_reduction___024root final : publi
 
     // DESIGN SPECIFIC STATE
     CData/*0:0*/ __VactContinue;
-    SData/*15:0*/ tb_barrett_reduction__DOT__result;
+    SData/*15:0*/ tb_barrett_reduction__DOT__uut__DOT__result_temp;
     IData/*31:0*/ tb_barrett_reduction__DOT__c;
     IData/*31:0*/ tb_barrett_reduction__DOT__expected_result;
     IData/*31:0*/ __VstlIterCount;
