@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ps/1ps
 
 module tb_barrett_reduction;
     reg [31:0] c; // Input
@@ -7,7 +7,7 @@ module tb_barrett_reduction;
     reg [31:0] expected_result;
 
     // Instantiate the barrett_reduction module
-    barrett_reduction uut (
+    barret_reduction uut (
         .c(c),
         .result(result)
     );

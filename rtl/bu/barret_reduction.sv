@@ -1,4 +1,6 @@
-module barrett_reduction (
+`timescale 1ps/1ps
+
+module barret_reduction (
     input [31:0] c,       // 32-bit number to be reduced
     output [15:0] result  // Result of c mod q
 );
@@ -12,12 +14,18 @@ module barrett_reduction (
 
     assign c_mu = c * mu;
 
-    // Compute floor(c_mu / 2^k) * q
-    wire [31:0] floor_c_mu_q;
+    logic [31:0] c_mu_l;
 
-    assign floor_c_mu_q = (c_mu >> k) * q;
+    assign c_mu_l = c_mu[63:32];
+
+    // Compute floor(c_mu / 2^k) * q
+    logic [31:0] floor_c_mu_q;
+
+    assign floor_c_mu_q = c_mu_l * q;
 
     // Compute c - floor_c_mu_q
-
+/* verilator lint_off WIDTHTRUNC */
     assign result = c - floor_c_mu_q;
+/* verilator lint_off WIDTHTRUNC */
+
 endmodule
