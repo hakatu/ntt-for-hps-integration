@@ -6,9 +6,9 @@ module tb_barrett_reduction;
     wire [15:0] result; // Output
     
     reg [31:0] expected_result;
-
+    
     // Instantiate the barrett_reduction module
-    barrett_reduction uut (
+    barrett_reduction dut (
         .c(c),
         .result(result)
     );
