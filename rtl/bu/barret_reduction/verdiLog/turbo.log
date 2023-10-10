@@ -1,0 +1,3 @@
+Command Line: /usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/platform/LINUXAMD64/bin/Novas -dbdir simv.daidir/ -ssf tb_barrett_reduction.fsdb
+uname(Linux haka 5.15.49-linuxkit-pr #1 SMP PREEMPT Thu May 25 07:27:39 UTC 2023 x86_64)
+au time 1100.590627 37.379365 11.420993 delta 745316352 745316352 total 1279148032 1279148032

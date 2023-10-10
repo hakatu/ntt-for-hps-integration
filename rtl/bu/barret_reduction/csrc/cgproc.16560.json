@@ -1,0 +1,105 @@
+{
+    "Modules": {
+        "std": {
+            "nMops": 528,
+            "start_perf": [
+                1.1844990253448486,
+                0.0,
+                0.0012960000000000001,
+                463248,
+                463300,
+                1696844568.096581,
+                294216131946583
+            ],
+            "end_perf": [
+                1.2521810531616211,
+                0.053191000000000002,
+                0.012274,
+                463828,
+                463828,
+                294216199573416,
+                0,
+                0
+            ],
+            "child_modules": {},
+            "Compiled Times": 2,
+            "Compiled": "Yes",
+            "num_classes": 6,
+            "svclass": [
+                "$vcs_nba_dyn_obj",
+                0,
+                35,
+                2,
+                2,
+                0,
+                0,
+                "sigprop$$",
+                0,
+                35,
+                2,
+                2,
+                0,
+                0,
+                "process",
+                0,
+                200,
+                8,
+                8,
+                0,
+                0,
+                "event",
+                0,
+                34,
+                2,
+                2,
+                0,
+                0,
+                "mailbox",
+                0,
+                140,
+                9,
+                9,
+                0,
+                0,
+                "semaphore",
+                0,
+                84,
+                5,
+                5,
+                0,
+                0
+            ],
+            "nQuads": 218,
+            "nRouts": 33
+        }
+    },
+    "CompUnits": {},
+    "ObjArchives": [],
+    "reusePaths": {
+        "reYIK_d": {
+            "icPath": "csrc"
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.053969999999999997,
+            "ru_stime_sec": 0.012274,
+            "ru_maxrss_kb": 106696,
+            "ru_minflt": 5487,
+            "ru_majflt": 0,
+            "ru_nvcsw": 61,
+            "ru_nivcsw": 0
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "cpu_cycles_end": 294216200322875,
+        "peak_mem_kb": 463832
+    }
+}

@@ -1,0 +1,17 @@
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/AdderTree.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/ChipInterface.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/MyTop.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/RamController.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/SevenSegmentControl.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/TB.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/accum_8x32.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/matrix_multiply.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/multiplier_8816.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/ramC_fsm.sv
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/romA_128x128.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/romB_128x1.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/romC_128x1.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/simlib/220model.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/simlib/altera_mf.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/simlib/altera_primitives.v
+/media/share/GitHub/ntt-for-hps-integration/VerilatorSample/simlib/sgate.v

@@ -1,0 +1,6 @@
+simSetSimulator "-vcssv" -exec "simv" -args
+debImport "-dbdir" "simv.daidir/"
+wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/*.fsdb}
+debExit

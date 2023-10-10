@@ -1,0 +1,63 @@
+{
+    "Modules": {
+        "altsyncram_0000": {
+            "start_perf": [
+                2.8466908931732178,
+                0.00071699999999999997,
+                0.00071699999999999997,
+                478168,
+                478220,
+                1696843239.2055099,
+                292887241482000
+            ],
+            "child_modules": {
+                "ALTERA_DEVICE_FAMILIES": 1,
+                "ALTERA_MF_MEMORY_INITIALIZATION": 1
+            },
+            "Compiled": "Yes",
+            "nRouts": 293,
+            "nMops": 8990,
+            "end_perf": [
+                3.0625910758972168,
+                0.119904,
+                0.025552999999999999,
+                479224,
+                479224,
+                292887457315250,
+                1296066830738359,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 3314
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 83,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.11997099999999999,
+            "ru_stime_sec": 0.026550000000000001,
+            "ru_nivcsw": 118,
+            "ru_minflt": 8511,
+            "ru_maxrss_kb": 137884
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 479228,
+        "cpu_cycles_end": 292887458361208
+    },
+    "reusePaths": {
+        "Q0s3L_d": {
+            "icPath": "csrc"
+        }
+    }
+}

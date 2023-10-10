@@ -1,0 +1,60 @@
+{
+    "Modules": {
+        "AdderTree_0000": {
+            "start_perf": [
+                2.8441529273986816,
+                0.0,
+                0.0013799999999999999,
+                478168,
+                478220,
+                1696843239.2029719,
+                292887238955000
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "nRouts": 1356,
+            "nMops": 35711,
+            "end_perf": [
+                3.0288739204406738,
+                0.127274,
+                0.031042,
+                478940,
+                478940,
+                292887423610541,
+                124654893131,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 13502
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 84,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.12734500000000001,
+            "ru_stime_sec": 0.032094999999999999,
+            "ru_nivcsw": 371,
+            "ru_minflt": 9071,
+            "ru_maxrss_kb": 137912
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 478944,
+        "cpu_cycles_end": 292887424703291
+    },
+    "reusePaths": {
+        "ySKSB_d": {
+            "icPath": "csrc"
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nMops": 0,
+            "end_perf": [
+                1.1789281368255615,
+                0.84799100000000005,
+                0.19420399999999999,
+                463268,
+                528028,
+                294216126325333,
+                0,
+                0
+            ],
+            "start_perf": [
+                1.096992015838623,
+                0.80812600000000001,
+                0.18746199999999999,
+                462848,
+                528028,
+                1696844568.009074,
+                294216044368291
+            ],
+            "child_modules": {
+                "std": 1,
+                "tb_barrett_reduction": 1
+            },
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "tb_barrett_reduction": {
+            "start_perf": [
+                1.1833550930023193,
+                0.85075000000000001,
+                0.19515399999999999,
+                463300,
+                528028,
+                1696844568.095437,
+                294216130787791
+            ],
+            "end_perf": [
+                1.3228881359100342,
+                0.97917200000000004,
+                0.20111599999999999,
+                464512,
+                528028,
+                294216270279541,
+                334703075741391652,
+                0
+            ],
+            "nMops": 680,
+            "child_modules": {},
+            "Compiled Times": 2,
+            "Compiled": "Yes",
+            "nQuads": 220,
+            "significant_routs": [
+                [
+                    1,
+                    "F_VCSgd_xHz6B_1_0",
+                    26340000,
+                    150,
+                    30
+                ],
+                [
+                    5,
+                    "U_VCSgd_xHz6B_5",
+                    5407541,
+                    365,
+                    33
+                ]
+            ],
+            "nRouts": 30
+        }
+    },
+    "CompUnits": {
+        "xHz6B_d": {
+            "checksum": 0,
+            "mod": "tb_barrett_reduction",
+            "archive": "archive.1/_16540_archive_1.a",
+            "out": "xHz6B_d.o",
+            "bytes": 24668,
+            "text": 6247,
+            "mode": 4
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_16540_archive_1.a",
+            "objects": [
+                [
+                    "xHz6B_d.o",
+                    24668
+                ],
+                [
+                    "amcQwB.o",
+                    114830
+                ]
+            ],
+            "size": 139498
+        }
+    ],
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.99914800000000004,
+            "ru_stime_sec": 0.206649,
+            "ru_maxrss_kb": 188388,
+            "ru_minflt": 41979,
+            "ru_majflt": 132,
+            "ru_nvcsw": 1523,
+            "ru_nivcsw": 77
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.29235100000000003,
+            "ru_stime_sec": 0.086816000000000004,
+            "ru_maxrss_kb": 136668,
+            "ru_minflt": 20078,
+            "ru_majflt": 96,
+            "ru_nvcsw": 279,
+            "ru_nivcsw": 11
+        },
+        "cpu_cycles_end": 294216307746208,
+        "peak_mem_kb": 528028
+    }
+}

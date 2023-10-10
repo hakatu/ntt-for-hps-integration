@@ -1,0 +1,21 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+SIMDIR=/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb_libs
+TOP=tb_barrett_reduction 
+OPTION=-ssz -ssz -ssv -ssy 
+ELAB_OPTION=-ssz -ssz -ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/elabcomLog ;/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx//linux64/bin/elabcom -logdir /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/elabcomLog  -simvdaidir /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir  -lib /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/work  -saveLevel  -elab /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb -simflow -simdir /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb_libs -top 'tb_barrett_reduction' -ssz -ssz -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/.elabcomReport || echo Fail >& /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/.elabcomReport; \rm -rf /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/work.lib++ /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

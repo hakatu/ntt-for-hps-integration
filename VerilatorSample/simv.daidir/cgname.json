@@ -1,0 +1,92 @@
+{
+    "TB": [
+        "TB",
+        "sH4Fc",
+        "module",
+        2
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "ramC_fsm": [
+        "ramC_fsm",
+        "Uips6",
+        "module",
+        3
+    ],
+    "romC_128x1": [
+        "romC_128x1",
+        "H2CiI",
+        "module",
+        7
+    ],
+    "multiplier_8816": [
+        "multiplier_8816",
+        "wEdrf",
+        "module",
+        8
+    ],
+    "romA_128x128": [
+        "romA_128x128",
+        "C82Vj",
+        "module",
+        10
+    ],
+    "accum_8x32": [
+        "accum_8x32",
+        "MpVxd",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        15
+    ],
+    "AdderTree_0000": [
+        "AdderTree_0000",
+        "ySKSB",
+        "module",
+        5
+    ],
+    "SevenSegmentControl": [
+        "SevenSegmentControl",
+        "pjySW",
+        "module",
+        6
+    ],
+    "altsyncram_0000_0000": [
+        "altsyncram_0000_0000",
+        "ySarD",
+        "module",
+        12
+    ],
+    "romB_128x1": [
+        "romB_128x1",
+        "nAUbE",
+        "module",
+        9
+    ],
+    "altsyncram_0000": [
+        "altsyncram_0000",
+        "Q0s3L",
+        "module",
+        11
+    ],
+    "ALTERA_MF_MEMORY_INITIALIZATION": [
+        "ALTERA_MF_MEMORY_INITIALIZATION",
+        "er73t",
+        "module",
+        13
+    ],
+    "ALTERA_DEVICE_FAMILIES": [
+        "ALTERA_DEVICE_FAMILIES",
+        "uFC8u",
+        "module",
+        14
+    ]
+}

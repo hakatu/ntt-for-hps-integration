@@ -1,0 +1,10 @@
+Command Line: /usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/platform/LINUXAMD64/bin/Novas -dbdir simv.daidir/ -ssf top.fsdb
+uname(Linux haka 5.15.49-linuxkit-pr #1 SMP PREEMPT Thu May 25 07:27:39 UTC 2023 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG TB
+VERILOG dut
+VERILOG dut
+-----
+second field= DebussyLib
+third field= MyTop
+au time 57.874095 4.471380 1.052180 delta 489357312 489357312 total 1023188992 1023188992

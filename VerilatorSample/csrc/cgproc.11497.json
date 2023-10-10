@@ -1,0 +1,60 @@
+{
+    "Modules": {
+        "ALTERA_MF_MEMORY_INITIALIZATION": {
+            "start_perf": [
+                2.8452150821685791,
+                0.0,
+                0.001637,
+                478168,
+                478220,
+                1696843239.2040341,
+                292887240026416
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "nRouts": 129,
+            "nMops": 11145,
+            "end_perf": [
+                3.1322128772735596,
+                0.10020900000000001,
+                0.044537,
+                478960,
+                478960,
+                292887526942458,
+                1164812630172599,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 3991
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 65,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.10115399999999999,
+            "ru_stime_sec": 0.044537,
+            "ru_nivcsw": 129,
+            "ru_minflt": 8177,
+            "ru_maxrss_kb": 133656
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 478964,
+        "cpu_cycles_end": 292887527876708
+    },
+    "reusePaths": {
+        "er73t_d": {
+            "icPath": "csrc"
+        }
+    }
+}

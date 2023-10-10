@@ -1,0 +1,63 @@
+{
+    "Modules": {
+        "romA_128x128": {
+            "start_perf": [
+                2.8457980155944824,
+                0.00071000000000000002,
+                0.00071000000000000002,
+                478168,
+                478220,
+                1696843239.204617,
+                292887240587166
+            ],
+            "child_modules": {
+                "ALTERA_DEVICE_FAMILIES": 1,
+                "ALTERA_MF_MEMORY_INITIALIZATION": 1
+            },
+            "Compiled": "Yes",
+            "nRouts": 394,
+            "nMops": 10317,
+            "end_perf": [
+                3.0429420471191406,
+                0.127946,
+                0.031986000000000001,
+                479220,
+                479220,
+                292887437675750,
+                447304586192,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 4247
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 80,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.12800600000000001,
+            "ru_stime_sec": 0.033001000000000003,
+            "ru_nivcsw": 273,
+            "ru_minflt": 8518,
+            "ru_maxrss_kb": 137864
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 479224,
+        "cpu_cycles_end": 292887438773416
+    },
+    "reusePaths": {
+        "C82Vj_d": {
+            "icPath": "csrc"
+        }
+    }
+}

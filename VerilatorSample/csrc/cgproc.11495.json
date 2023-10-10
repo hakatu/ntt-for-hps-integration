@@ -1,0 +1,68 @@
+{
+    "Modules": {
+        "TB": {
+            "start_perf": [
+                2.8433809280395508,
+                0.0,
+                0.0014189999999999999,
+                478168,
+                478220,
+                1696843239.2021999,
+                292887238208416
+            ],
+            "child_modules": {
+                "accum_8x32": 4,
+                "romA_128x128": 32,
+                "AdderTree_0000": 1,
+                "SevenSegmentControl": 1,
+                "multiplier_8816": 64,
+                "ramC_fsm": 1,
+                "romB_128x1": 1
+            },
+            "Compiled": "Yes",
+            "nRouts": 621,
+            "nMops": 34456,
+            "end_perf": [
+                3.1152639389038086,
+                0.13792199999999999,
+                0.045636000000000003,
+                479276,
+                479276,
+                292887509995250,
+                12884964481,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 6706
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 91,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.13792199999999999,
+            "ru_stime_sec": 0.046593999999999997,
+            "ru_nivcsw": 128,
+            "ru_minflt": 9337,
+            "ru_maxrss_kb": 138292
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 479280,
+        "cpu_cycles_end": 292887510936125
+    },
+    "reusePaths": {
+        "sH4Fc_d": {
+            "icPath": "csrc"
+        }
+    }
+}

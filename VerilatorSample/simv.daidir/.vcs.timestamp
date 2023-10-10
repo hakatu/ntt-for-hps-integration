@@ -1,0 +1,154 @@
+0 
+61
++itf+/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/vcsdp.tab
++lint=all,noVCDE
++memcbk
++v2k
++vcsd
++vpi
++warn=all
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libvirsim.so /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/liberrorinf.so /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libsnpsmalloc.so /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/include
+-P
+-Xufe=2steps
+-debug_acc+pp+fsdb
+-debug_access+all+bc
+-debug_region+cell
+-fsdb
+-full64
+-gen_obj
+-kdb
+-o simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-v
+-v
+-v
+-v
+-v
+./simlib/220model.v
+./simlib/altera_mf.v
+./simlib/altera_primitives.v
+./simlib/cyclonev_atoms.v
+./simlib/sgate.v
+/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/bin/vcs1
+/usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/share/PLI/VCS/LINUX64/verdi.tab
+AdderTree.sv
+ChipInterface.sv
+MyTop.sv
+RamController.sv
+SevenSegmentControl.sv
+TB.sv
+accum_8x32.sv
+matrix_multiply.sv
+multiplier_8816.v
+ramC_fsm.sv
+romA_128x128.v
+romB_128x1.v
+romC_128x1.v
+60
+_LXSESSION_PID=38
+_LMFILES__modshare=/usr/share/modules/modulefiles/synopsys:1:/usr/share/modules/modulefiles/oss-cad-suite:1
+_LMFILES_=/usr/share/modules/modulefiles/oss-cad-suite:/usr/share/modules/modulefiles/synopsys
+XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+XRDP_SESSION=1
+XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_10
+XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_10
+XDG_MENU_PREFIX=lxde-
+XDG_DATA_HOME=/root/.local/share
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+XDG_CURRENT_DESKTOP=LXDE
+XDG_CONFIG_HOME=/root/.config
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5402
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/synopsys/vc_static-O-2018.09-SP2-2/verdi
+VC_STATIC_HOME=/usr/synopsys/vc_static-O-2018.09-SP2-2
+VCS_TARGET_ARCH=amd64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64
+SYNOPSYS_HOME=/usr/synopsys
+SYNOPSYS=/usr/synopsys/fm-O-2018.06-SP1/
+SSH_AUTH_SOCK=/tmp/ssh-GkP6cA9PQHVi/agent.38
+SSH_AGENT_PID=87
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie 
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SAL_USE_VCLPLUGIN=gtk
+QT_ACCESSIBILITY=1
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+PATH_modshare=/usr/synopsys/hspice-L-2016.06/hspice/bin/:1:/usr/bin:1:/usr/synopsys/lc-M-2016.12/linux64/syn/bin:1:/usr/synopsys/cx-K-2015.06/bin/:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/bin:1:/usr/synopsys/dc-L-2016.03-SP1/amd64/syn/bin:1:/usr/local/bin:1:/usr/synopsys/fm-O-2018.06-SP1/linux64/fm/bin:1:/bin:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/bin:1:/tools/oss-cad-suite/bin:1:/usr/synopsys/pt-M-2016.12-SP1/amd64/syn/bin:1:/usr/synopsys/icc-L-2016.03-SP1/amd64/syn/bin:1:/sbin:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/bin:1:/usr/sbin:1:/usr/local/sbin:1
+OVA_UUM=0
+MODULES_CMD=/usr/lib/x86_64-linux-gnu/modulecmd.tcl
+MODULESHOME=/usr/share/modules
+MODULEPATH_modshare=/etc/environment-modules/modules:1:/usr/share/modules/$MODULE_VERSION/modulefiles:1:/usr/share/modules/modulefiles:1:/usr/share/modules/versions:1
+MODULEPATH=/etc/environment-modules/modules:/usr/share/modules/versions:/usr/share/modules/$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/1
+MAKE_TERMERR=/dev/pts/1
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES_modshare=synopsys:1:oss-cad-suite:1
+LOADEDMODULES=oss-cad-suite:synopsys
+LC_ALL=C
+GPG_AGENT_INFO=/root/.gnupg/S.gpg-agent:0:1
+ENV=/usr/share/modules/init/profile.sh
+DESKTOP_SESSION=LXDE
+COLORTERM=truecolor
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/lib/x86_64-linux-gnu/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/lib/x86_64-linux-gnu/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre}/usr/bin/tclsh /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+BASH_ENV=/usr/share/modules/init/bash
+0
+21
+1634800018 ./simlib/altera_primitives.v
+1695993731 romA_128x128.v
+1693778832 romB_128x1.v
+1694690470 multiplier_8816.v
+1693778832 romC_128x1.v
+1694535960 SevenSegmentControl.sv
+1696262274 ChipInterface.sv
+1695885513 AdderTree.sv
+1696143144 RamController.sv
+1696237613 MyTop.sv
+1696236462 accum_8x32.sv
+1696089115 ramC_fsm.sv
+1696067684 matrix_multiply.sv
+1696740700 TB.sv
+1634823406 ./simlib/cyclonev_atoms.v
+1634800098 ./simlib/altera_mf.v
+1634822664 ./simlib/sgate.v
+1634800030 ./simlib/220model.v
+1634800018 ./simlib/altera_primitives.v
+1557367075 /usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/share/PLI/VCS/LINUX64/verdi.tab
+1557371742 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/vcsdp.tab
+4
+1557372957 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libvirsim.so
+1557372327 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/liberrorinf.so
+1557372290 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libsnpsmalloc.so
+1557372324 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libvfs.so
+1696843243 simv.daidir
+-1 partitionlib

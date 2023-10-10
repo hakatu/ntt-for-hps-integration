@@ -1,0 +1,6 @@
+@elabcom rc file Version 1.0
+[oh]
+invokeDir = /media/share/GitHub/ntt-for-hps-integration/Verilator Sample
+hostCommand = Sample/simv.daidir/elabcomLog Sample/simv.daidir -lib /media/share/GitHub/ntt-for-hps-integration/Verilator Sample/simv.daidir/work -saveLevel -elab /media/share/GitHub/ntt-for-hps-integration/Verilator Sample/simv.daidir/kdb -simflow -simdir /media/share/\
+GitHub/ntt-for-hps-integration/Verilator Sample/simv.daidir/kdb_libs -top TB -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389 -SNPS_ELABCOM -saveElab
+simType = VCS

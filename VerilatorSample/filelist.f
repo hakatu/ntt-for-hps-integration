@@ -1,0 +1,13 @@
+./romC_128x1.v
+./multiplier_8816.v
+./romB_128x1.v
+./romA_128x128.v
+./RamController.sv
+./TB.sv
+./ramC_fsm.sv
+./AdderTree.sv
+./ChipInterface.sv
+./accum_8x32.sv
+./matrix_multiply.sv
+./SevenSegmentControl.sv
+./MyTop.sv

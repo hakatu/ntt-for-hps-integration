@@ -1,0 +1,60 @@
+{
+    "Modules": {
+        "ALTERA_DEVICE_FAMILIES": {
+            "start_perf": [
+                2.8491089344024658,
+                0.0,
+                0.001387,
+                478168,
+                478220,
+                1696843239.2079279,
+                292887243893708
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "nRouts": 270,
+            "nMops": 25365,
+            "end_perf": [
+                3.1328098773956299,
+                0.108746,
+                0.042900000000000001,
+                478736,
+                478736,
+                292887527538333,
+                1168459057406903,
+                0
+            ],
+            "Compiled Times": 3,
+            "nQuads": 5861
+        }
+    },
+    "ObjArchives": [],
+    "CompUnits": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 65,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.109574,
+            "ru_stime_sec": 0.042900000000000001,
+            "ru_nivcsw": 34,
+            "ru_minflt": 8782,
+            "ru_maxrss_kb": 132780
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0
+        },
+        "peak_mem_kb": 478740,
+        "cpu_cycles_end": 292887528337791
+    },
+    "reusePaths": {
+        "uFC8u_d": {
+            "icPath": "csrc"
+        }
+    }
+}
