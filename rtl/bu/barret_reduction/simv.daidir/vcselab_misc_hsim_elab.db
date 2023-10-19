@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir
+pDaiDir                            	/media/share/Github/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

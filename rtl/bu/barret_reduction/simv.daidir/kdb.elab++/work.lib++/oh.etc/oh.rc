@@ -1,6 +1,6 @@
 @elabcom rc file Version 1.0
 [oh]
 invokeDir = /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction
-hostCommand = -lib /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/work -saveLevel -elab /media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb -simflow -simdir /media/share/GitHub/ntt-for-hps-integration/rtl/\
+hostCommand = -lib /media/share/Github/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/work -saveLevel -elab /media/share/Github/ntt-for-hps-integration/rtl/bu/barret_reduction/simv.daidir/kdb -simflow -simdir /media/share/Github/ntt-for-hps-integration/rtl/\
 bu/barret_reduction/simv.daidir/kdb_libs -top tb_barrett_reduction -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389 -SNPS_ELABCOM -saveElab
 simType = VCS

@@ -219,6 +219,8 @@ Selection-LineColor = ID_BLUE2
 Selection-LineWidth = 1
 [FSM_Dlg-Print]
 Orientation = Landscape
+[FileBrowser]
+nWaveOpenFsdbDirHistory = "\"/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/tb_barrett_reduction.fsdb\""
 [Form]
 version = Verdi_O-2018.09-SP2-2
 [General]
@@ -360,6 +362,7 @@ ShowVoltage = TRUE
 MatchTreeNodesCaseInsensitive = FALSE
 SearchHBNodeDynamically = FALSE
 ContinueTracingSupplyOrLogicNet = FALSE
+pdmlShowTclAnnot = FALSE
 [Print]
 PrinterName = lp
 FileName = test.ps
@@ -371,8 +374,10 @@ savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
 openFileDlg = 377,169,602,483
-QwWarnMsgDlg = 370,293,600,250
-QwUserAskDlg = 522,447,324,130
+QwWarnMsgDlg = 376,368,600,250
+ChangeColorDialog = 566,268,223,307
+qWaveSignalDialog = 278,171,800,479
+QwUserAskDlg = 526,497,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -474,11 +479,13 @@ expandMacroInstancesThreshold = 10000
 annotateOnStructInstDecl = FALSE
 [SourceVHDL]
 vhSimType = ModelSim
-ohSimType = VerilogXL
+ohSimType = VCS
 [TclShell]
 nLineSize = 1024
 [Test]
 verbose_progress = FALSE
+[TestBenchBrowser]
+-showUVMDynamicHierTreeWin = FALSE
 [Text]
 hdlTypeName = blue4
 hdlLibrary = blue4
@@ -562,7 +569,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = Helvetica_M_R_10
 [Text.1]
-viewport = 226 36 900 700 45
+viewport = 0 0 1352 793 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -652,9 +659,9 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Time
+name = Severity
 width = 60
-visualIndex = 0
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
@@ -676,15 +683,30 @@ visualIndex = 4
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
-name = Severity
+name = Time
 width = 60
-visualIndex = 1
+visualIndex = 0
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"
 ViBG = white
 ViFG = black
+[ViewOption]
+ShowTip = TRUE
+ShowShutOffCondition = FALSE
+ShowFullDomainName = FALSE
+ShowExtent = TRUE
+ShowIsolation = TRUE
+ShowRetention = TRUE
+ShowRepeater = TRUE
+ShowLevelShifter = FALSE
+ShowSwitch = TRUE
+ShowPowerNet = TRUE
+ShowGroundNet = TRUE
+PowerStateTable = FALSE
+PortStateTable = FALSE
+NetRelation = FALSE
 [Wave]
 ovaEventSuccessColor = -c ID_CYAN5
 ovaEventFailureColor = -c ID_RED5
@@ -699,8 +721,8 @@ waveform_vertical_scroll_bar = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 27 900 254 100 65
+getSignalForm = 276 146 800 479 245 381 505 183
+viewPort = 0 27 1352 210 166 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -767,6 +789,7 @@ analogVoltageStyle = pwl
 analogCurrentStyle = pwl
 analogOthersStyle = pwl
 busSignalLayer = -c ID_ORANGE8
+busXLayer = -c ID_RED5
 busZLayer = -c ID_ORANGE6
 busMixedLayer = -c ID_GREEN5
 busNotComputedLayer = -c ID_GRAY1
@@ -970,6 +993,7 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
+RecentFile1 = "\"/media/share/GitHub/ntt-for-hps-integration/rtl/bu/barret_reduction/tb_barrett_reduction.fsdb\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto
@@ -1160,7 +1184,6 @@ plan_fillColor_error = red
 plan_fillColor_invalid = #F0DCDB
 plan_fillColor_subplan = lightGray
 [schematics]
-viewport = 178 262 638 516
 schBackgroundColor = black lineSolid
 schBackgroundColor_qt = #000000 qt_solidLine 1
 schBodyColor = orange6 lineSolid
@@ -1220,6 +1243,7 @@ schAsmTriColor_qt = #01ffff qt_solidLine
 pre_select = True
 ShowPassThroughNet = False
 ComputedAnnotColor = ID_PURPLE5
+viewport = 0 27 901 393
 [schematics_print]
 Signature = FALSE
 DesignName = PCU
@@ -1295,7 +1319,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 27 900 254 100 65
+viewPort = 0 27 1352 210 166 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

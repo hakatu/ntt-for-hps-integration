@@ -40,8 +40,8 @@
 /usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/share/PLI/VCS/LINUX64/verdi.tab
 barrett_reduction.sv
 tb_barrett_reduction.sv
-60
-_LXSESSION_PID=38
+58
+_LXSESSION_PID=68
 _LMFILES__modshare=/usr/share/modules/modulefiles/synopsys:1:/usr/share/modules/modulefiles/oss-cad-suite:1
 _LMFILES_=/usr/share/modules/modulefiles/synopsys:/usr/share/modules/modulefiles/oss-cad-suite
 XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
@@ -70,14 +70,13 @@ UNAME=/bin/uname
 TOOL_HOME=/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64
 SYNOPSYS_HOME=/usr/synopsys
 SYNOPSYS=/usr/synopsys/fm-O-2018.06-SP1/
-SSH_AUTH_SOCK=/tmp/ssh-GkP6cA9PQHVi/agent.38
-SSH_AGENT_PID=87
+SSH_AUTH_SOCK=/tmp/ssh-WKYSfexd5msM/agent.68
+SSH_AGENT_PID=110
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
 SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie 
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 SAL_USE_VCLPLUGIN=gtk
-QT_ACCESSIBILITY=1
 PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
 PATH_modshare=/usr/synopsys/hspice-L-2016.06/hspice/bin/:1:/usr/bin:1:/usr/synopsys/lc-M-2016.12/linux64/syn/bin:1:/usr/synopsys/cx-K-2015.06/bin/:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/bin:1:/usr/synopsys/dc-L-2016.03-SP1/amd64/syn/bin:1:/usr/local/bin:1:/usr/synopsys/fm-O-2018.06-SP1/linux64/fm/bin:1:/tools/oss-cad-suite/bin:1:/bin:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/bin:1:/usr/synopsys/pt-M-2016.12-SP1/amd64/syn/bin:1:/usr/synopsys/icc-L-2016.03-SP1/amd64/syn/bin:1:/sbin:1:/usr/synopsys/vc_static-O-2018.09-SP2-2/verdi/bin:1:/usr/sbin:1:/usr/local/sbin:1
 OVA_UUM=0
@@ -93,7 +92,6 @@ MAKEFLAGS=
 LOADEDMODULES_modshare=synopsys:1:oss-cad-suite:1
 LOADEDMODULES=synopsys:oss-cad-suite
 LC_ALL=C
-GPG_AGENT_INFO=/root/.gnupg/S.gpg-agent:0:1
 ENV=/usr/share/modules/init/profile.sh
 DESKTOP_SESSION=LXDE
 COLORTERM=truecolor
@@ -112,5 +110,5 @@ BASH_ENV=/usr/share/modules/init/bash
 1557372327 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/liberrorinf.so
 1557372290 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libsnpsmalloc.so
 1557372324 /usr/synopsys/vc_static-O-2018.09-SP2-2/vcs-mx/linux64/lib/libvfs.so
-1696844571 simv.daidir
+1697005562 simv.daidir
 -1 partitionlib
