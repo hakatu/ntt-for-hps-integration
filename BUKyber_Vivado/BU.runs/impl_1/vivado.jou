@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 20 19:44:21 2023
+# Process ID: 23232
+# Current directory: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.runs/impl_1
+# Command line: vivado.exe -log butterfly.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source butterfly.tcl -notrace
+# Log file: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.runs/impl_1/butterfly.vdi
+# Journal file: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.runs/impl_1\vivado.jou
+# Running On: DESKTOP-21L0LE9, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 8468 MB
+#-----------------------------------------------------------
+source butterfly.tcl -notrace

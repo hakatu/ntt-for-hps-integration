@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.gen/sources_1/ip/MULT3/sim/MULT3.vhd,1700474621,vhdl,,,,mult3,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.gen/sources_1/ip/MULT6/sim/MULT6.vhd,1700474676,vhdl,,,,mult6,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sim_1/imports/BUKYBER/butb.v,1700449140,verilog,,,,butb,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BKmodADD.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BKmodSUB.v,,BKmodADD;pg16SUM;xor16SUM,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BKmodSUB.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BlackCell.v,,BKmodSUB;pg16SUB;xor16SUB,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BlackCell.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/GrayCell.v,,BlackCell,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/GrayCell.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/barrett.v,,GrayCell,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/barrett.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/new/butterfly.v,,barrett,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/mux_xx2.v,1700449140,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sim_1/imports/BUKYBER/butb.v,,mux_xx2,,,,,,,,
+D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/new/butterfly.v,1700474512,verilog,,D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/mux_xx2.v,,butterfly,,,,,,,,

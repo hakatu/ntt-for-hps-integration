@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/BKmodADD.v" \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/BKmodSUB.v" \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/BlackCell.v" \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/GrayCell.v" \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/barrett.v" \
+"../../../../BU.srcs/sources_1/new/butterfly.v" \
+"../../../../BU.srcs/sources_1/imports/BUKYBER/mux_xx2.v" \
+"../../../../BU.srcs/sim_1/imports/BUKYBER/butb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

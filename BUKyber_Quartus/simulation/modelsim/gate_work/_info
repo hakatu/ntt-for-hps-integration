@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/doe/Downloads/BUKYBER/simulation/modelsim
+vbutb
+Z1 !s110 1700469784
+!i10b 1
+!s100 aT^2f`3kEC4E82BC7XaWj1
+ILSP@g:d[zY11ZkoMfFb1W3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1700441400
+8/home/doe/Downloads/BUKYBER/butb.v
+F/home/doe/Downloads/BUKYBER/butb.v
+L0 23
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1700469784.000000
+!s107 /home/doe/Downloads/BUKYBER/butb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/doe/Downloads/BUKYBER|/home/doe/Downloads/BUKYBER/butb.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/doe/Downloads/BUKYBER
+Z6 tCvgOpt 0
+vbutterfly
+R1
+!i10b 1
+!s100 bg9QjQBWI`2CYklB>4]Qo1
+I?bgczWhgWa=8W43mG2aVD0
+R2
+R0
+w1700469779
+8butterfly.vo
+Fbutterfly.vo
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+!s107 butterfly.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|butterfly.vo|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+.
+R6

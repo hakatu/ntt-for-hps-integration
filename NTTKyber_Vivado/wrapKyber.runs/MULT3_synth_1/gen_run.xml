@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="MULT3_synth_1" LaunchPart="xcau25p-sfvb784-2-e" LaunchTime="1700613320">
+  <File Type="PA-TCL" Name="MULT3.tcl"/>
+  <File Type="REPORTS-TCL" Name="MULT3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="MULT3.vds"/>
+  <File Type="RDS-UTIL" Name="MULT3_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="MULT3_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="MULT3.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MULT3">
+    <File Path="$PSRCDIR/sources_1/ip/MULT3/MULT3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="MULT3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/MULT3">
+    <File Path="$PSRCDIR/sources_1/ip/MULT3/MULT3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="MULT3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

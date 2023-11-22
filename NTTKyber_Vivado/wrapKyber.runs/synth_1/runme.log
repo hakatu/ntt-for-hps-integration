@@ -1,0 +1,368 @@
+
+*** Running vivado
+    with args -log wrap.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrap.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source wrap.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 395.688 ; gain = 63.453
+Command: read_checkpoint -auto_incremental -incremental {D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/utils_1/imports/synth_1/wrap.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/utils_1/imports/synth_1/wrap.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrap -part xcau25p-sfvb784-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcau25p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcau25p'
+INFO: [Device 21-403] Loading part xcau25p-sfvb784-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7736
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1865.160 ; gain = 370.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrap' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ROMIN1' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ROMIN1' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Address_Gen' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'Address_Gen' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v:79]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v:22]
+INFO: [Synth 8-6157] synthesizing module 'butterfly' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v:97]
+INFO: [Synth 8-6157] synthesizing module 'MULT3' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.runs/synth_1/.Xil/Vivado-18188-DESKTOP-21L0LE9/realtime/MULT3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MULT3' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.runs/synth_1/.Xil/Vivado-18188-DESKTOP-21L0LE9/realtime/MULT3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'barrett' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v:57]
+INFO: [Synth 8-6157] synthesizing module 'MULT6' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.runs/synth_1/.Xil/Vivado-18188-DESKTOP-21L0LE9/realtime/MULT6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MULT6' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.runs/synth_1/.Xil/Vivado-18188-DESKTOP-21L0LE9/realtime/MULT6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'barrett' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v:57]
+INFO: [Synth 8-6157] synthesizing module 'BKmodADD' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:21]
+INFO: [Synth 8-6157] synthesizing module 'pg16SUM' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'pg16SUM' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:126]
+INFO: [Synth 8-6157] synthesizing module 'GrayCell' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GrayCell' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlackCell' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BlackCell' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xor16SUM' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'xor16SUM' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'BKmodADD' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v:21]
+INFO: [Synth 8-6157] synthesizing module 'BKmodSUB' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'pg16SUB' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'pg16SUB' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:126]
+INFO: [Synth 8-6157] synthesizing module 'xor16SUB' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'xor16SUB' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'BKmodSUB' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux_xx2' [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mux_xx2' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'wrap' (0#1) [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v:22]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port rst in module butterfly is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2032.883 ; gain = 538.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2032.883 ; gain = 538.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2032.883 ; gain = 538.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 2032.883 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT3/MULT3/MULT3_in_context.xdc] for cell 'ibutterfly1/iMULT31'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT3/MULT3/MULT3_in_context.xdc] for cell 'ibutterfly1/iMULT31'
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT3/MULT3/MULT3_in_context.xdc] for cell 'ibutterfly2/iMULT31'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT3/MULT3/MULT3_in_context.xdc] for cell 'ibutterfly2/iMULT31'
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly1/ibarrett/iMULT62'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly1/ibarrett/iMULT62'
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly1/ibarrett/iMULT63'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly1/ibarrett/iMULT63'
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly2/ibarrett/iMULT62'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly2/ibarrett/iMULT62'
+Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly2/ibarrett/iMULT63'
+Finished Parsing XDC File [d:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.gen/sources_1/ip/MULT6/MULT6/MULT6_in_context.xdc] for cell 'ibutterfly2/ibarrett/iMULT63'
+Parsing XDC File [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/constrs_1/new/260.xdc]
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2131.535 ; gain = 18.008
+Finished Parsing XDC File [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.srcs/constrs_1/new/260.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2131.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 2131.535 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly1/iMULT31' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly1/ibarrett/iMULT62' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly1/ibarrett/iMULT63' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly2/iMULT31' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly2/ibarrett/iMULT62' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ibutterfly2/ibarrett/iMULT63' at clock pin 'CLK' is different from the actual clock period '3.846', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2131.535 ; gain = 636.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcau25p-sfvb784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2131.535 ; gain = 636.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly1/iMULT31. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly2/iMULT31. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly1/ibarrett/iMULT62. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly2/ibarrett/iMULT62. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly1/ibarrett/iMULT63. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ibutterfly2/ibarrett/iMULT63. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2131.535 ; gain = 636.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2131.535 ; gain = 636.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 25    
+	   3 Input    8 Bit       Adders := 14    
++---XORs : 
+	   2 Input      1 Bit         XORs := 128   
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 260   
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 16    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                    ROMs := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 784   
+	   4 Input   16 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 127   
+	   7 Input    8 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 257   
+	   2 Input    1 Bit        Muxes := 95    
+	   3 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1200 (col length:96)
+BRAMs: 600 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 2508.977 ; gain = 1014.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|wrap        | iROMIN11/a_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN11/b_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN12/a_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN12/b_reg | 256x9         | Block RAM      | 
+|wrap        | iROM/tw1_reg   | 128x12        | Block RAM      | 
+|wrap        | iROM/tw2_reg   | 128x12        | Block RAM      | 
+|wrap        | iROMIN11/a_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN11/b_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN12/a_reg | 256x9         | Block RAM      | 
+|wrap        | iROMIN12/b_reg | 256x9         | Block RAM      | 
+|wrap        | iROM/tw1_reg   | 128x12        | Block RAM      | 
+|wrap        | iROM/tw2_reg   | 128x12        | Block RAM      | 
++------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:17 ; elapsed = 00:02:21 . Memory (MB): peak = 2508.977 ; gain = 1014.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:59 ; elapsed = 00:06:06 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance iROMIN11/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iROMIN11/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iROMIN12/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iROMIN12/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iROM/tw1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iROM/tw1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:14 ; elapsed = 00:06:22 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:26 ; elapsed = 00:06:33 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:26 ; elapsed = 00:06:33 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:28 ; elapsed = 00:06:35 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:28 ; elapsed = 00:06:35 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:29 ; elapsed = 00:06:36 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:29 ; elapsed = 00:06:36 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |MULT3         |         2|
+|2     |MULT6         |         4|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |MULT3    |     2|
+|3     |MULT6    |     4|
+|7     |BUFG     |     1|
+|8     |CARRY8   |    26|
+|9     |LUT1     |     6|
+|10    |LUT2     |   755|
+|11    |LUT3     |  3968|
+|12    |LUT4     |   319|
+|13    |LUT5     |  3916|
+|14    |LUT6     |  6836|
+|15    |MUXF7    |  2176|
+|16    |MUXF8    |  1088|
+|17    |RAMB18E2 |     3|
+|19    |FDCE     |   206|
+|20    |FDRE     |  4317|
+|21    |FDSE     |     1|
+|22    |IBUF     |     4|
+|23    |OBUF     |    67|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:29 ; elapsed = 00:06:36 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:03 ; elapsed = 00:06:22 . Memory (MB): peak = 3738.688 ; gain = 2145.168
+Synthesis Optimization Complete : Time (s): cpu = 00:06:29 ; elapsed = 00:06:36 . Memory (MB): peak = 3738.688 ; gain = 2243.820
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 3738.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3295 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell iROM/tw1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell iROMIN11/a_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell iROMIN12/a_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3738.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+
+Synth Design complete, checksum: 75f5c17c
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:43 ; elapsed = 00:06:52 . Memory (MB): peak = 3738.688 ; gain = 3273.527
+INFO: [Common 17-1381] The checkpoint 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyber/wrapKyber.runs/synth_1/wrap.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrap_utilization_synth.rpt -pb wrap_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 22 11:18:54 2023...

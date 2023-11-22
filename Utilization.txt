@@ -1,0 +1,75 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Nov 22 13:26:21 2023
+| Host         : DESKTOP-21L0LE9 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : wrap
+| Device       : xcau25p-sfvb784-2-e
+| Speed File   : -2
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                                    Instance                                   |                  Module                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| wrap                                                                          |                                   (top) |      15281 |      15281 |       0 |    0 | 4687 |      0 |      3 |    0 |         10 |
+|   (wrap)                                                                      |                                   (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   iAddress_Gen1                                                               |                             Address_Gen |       4116 |       4116 |       0 |    0 |  225 |      0 |      0 |    0 |          0 |
+|   iRAM1                                                                       |                                     RAM |       5616 |       5616 |       0 |    0 | 4160 |      0 |      0 |    0 |          0 |
+|   iROM                                                                        |                                     ROM |         26 |         26 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iROMIN11                                                                    |                                  ROMIN1 |          2 |          2 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iROMIN12                                                                    |                                ROMIN1_0 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   ibutterfly1                                                                 |                    butterfly__xdcDup__1 |         17 |         17 |       0 |    0 |   56 |      0 |      0 |    0 |          5 |
+|     iBKmodSUB                                                                 |                              BKmodSUB_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     iMULT31                                                                   |                               MULT3_HD2 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|       U0                                                                      |             MULT3_mult_gen_v12_0_18_HD3 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|         i_mult                                                                |         MULT3_mult_gen_v12_0_18_viv_HD4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|           gDSP.gDSP_only.iDSP                                                 |                           MULT3_dsp_HD5 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|     ibarrett                                                                  |                      barrett__xdcDup__1 |         17 |         17 |       0 |    0 |   56 |      0 |      0 |    0 |          4 |
+|       (ibarrett)                                                              |                      barrett__xdcDup__1 |         17 |         17 |       0 |    0 |   32 |      0 |      0 |    0 |          0 |
+|       iMULT62                                                                 |                              MULT6_HD15 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD16 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD17 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD18 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD18 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          3 |
+|               use_prim.appDSP48[1].bppDSP48[0].need_output_delay.output_delay | MULT6_delay_line__parameterized2_0_HD20 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|       iMULT63                                                                 |                              MULT6_HD21 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD22 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD23 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD24 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD24 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|               use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |   MULT6_delay_line__parameterized2_HD25 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          0 |
+|   ibutterfly2                                                                 |                               butterfly |         17 |         17 |       0 |    0 |   56 |      0 |      0 |    0 |          5 |
+|     iBKmodSUB                                                                 |                                BKmodSUB |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     iMULT31                                                                   |                                   MULT3 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|       U0                                                                      |                 MULT3_mult_gen_v12_0_18 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|         i_mult                                                                |             MULT3_mult_gen_v12_0_18_viv |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|           gDSP.gDSP_only.iDSP                                                 |                               MULT3_dsp |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|     ibarrett                                                                  |                                 barrett |         17 |         17 |       0 |    0 |   56 |      0 |      0 |    0 |          4 |
+|       (ibarrett)                                                              |                                 barrett |         17 |         17 |       0 |    0 |   32 |      0 |      0 |    0 |          0 |
+|       iMULT62                                                                 |                                   MULT6 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|         U0                                                                    |                 MULT6_mult_gen_v12_0_18 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|           i_mult                                                              |             MULT6_mult_gen_v12_0_18_viv |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|             gDSP.gDSP_only.iDSP                                               |                               MULT6_dsp |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|               (gDSP.gDSP_only.iDSP)                                           |                               MULT6_dsp |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          3 |
+|               use_prim.appDSP48[1].bppDSP48[0].need_output_delay.output_delay |      MULT6_delay_line__parameterized2_0 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|       iMULT63                                                                 |                               MULT6_HD9 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD10 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD11 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD12 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD12 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|               use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |   MULT6_delay_line__parameterized2_HD13 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          0 |
+|   icontrol                                                                    |                                 control |       5515 |       5515 |       0 |    0 |  190 |      0 |      0 |    0 |          0 |
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+

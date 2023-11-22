@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/new/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sources_1/imports/BUKYBER/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.srcs/sim_1/imports/BUKYBER/butb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/BU/BU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

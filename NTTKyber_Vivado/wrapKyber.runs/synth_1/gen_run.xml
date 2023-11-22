@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcau25p-sfvb784-2-e" LaunchTime="1700626303" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/wrap.dcp">
+  <File Type="PA-TCL" Name="wrap.tcl"/>
+  <File Type="REPORTS-TCL" Name="wrap_reports.tcl"/>
+  <File Type="RDS-RDS" Name="wrap.vds"/>
+  <File Type="RDS-UTIL" Name="wrap_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="wrap_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="wrap.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/Address_Gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/Address_Gen.v"/>
+        <Attr Name="ImportTime" Val="1700587680"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/BKmodADD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/BKmodADD.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/BKmodSUB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/BKmodSUB.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/BlackCell.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/BlackCell.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/GrayCell.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/GrayCell.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/RAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/RAM.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/ROM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/ROM.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/ROMIN1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/ROMIN1.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/barrett.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/barrett.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/butterfly.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/butterfly.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/control.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/mux_xx2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/mux_xx2.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/WrapKyber/wrap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../WrapKyber/wrap.v"/>
+        <Attr Name="ImportTime" Val="1700587800"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wrap"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/260.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/260.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/wrap.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="MULT3"/>
+  <BlockFileSet Type="BlockSrcs" Name="MULT6"/>
+</GenRun>

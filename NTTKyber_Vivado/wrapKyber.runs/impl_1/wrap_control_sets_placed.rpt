@@ -1,0 +1,354 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Nov 22 12:21:30 2023
+| Host         : DESKTOP-21L0LE9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file wrap_control_sets_placed.rpt
+| Design       : wrap
+| Device       : xcau25p
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   276 |
+|    Minimum number of control sets                        |   276 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   276 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |   263 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             144 |           47 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |            4169 |         2115 |
+| Yes          | No                    | Yes                    |             224 |          103 |
+| Yes          | Yes                   | No                     |             145 |           26 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | icontrol/done1_out                        | rst_IBUF_inst/O  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | icontrol/newloop_reg_1[0]                 | rst_IBUF_inst/O  |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG |                                           | rst_IBUF_inst/O  |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | icontrol/newloop_reg_3[0]                 | rst_IBUF_inst/O  |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | icontrol/newloop_w                        | rst_IBUF_inst/O  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | icontrol/counter2[7]_i_1__0_n_0           | rst_IBUF_inst/O  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/count[7]_i_1_n_0            | rst_IBUF_inst/O  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | iAddress_Gen1/counter[7]_i_1_n_0          | rst_IBUF_inst/O  |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | icontrol/counter5[7]_i_1_n_0              | rst_IBUF_inst/O  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/k[7]_i_1_n_0                | rst_IBUF_inst/O  |                7 |              8 |         1.14 |
+|  clk_IBUF_BUFG | icontrol/mode_out[1]_i_1_n_0              |                  |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG | iAddress_Gen1/TFadd1[6]_i_1_n_0           | rst_IBUF_inst/O  |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/TFadd1r[6]_i_1_n_0          | rst_IBUF_inst/O  |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_82[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_88[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_65[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_94[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_96[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__30_10[0] |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__30_8[0]  |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__31_1[0]  |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/E[0]                        |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__30_1[0]  |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[7]_3[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__31_3[0]  |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[7]_4[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__31_6[0]  |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_4[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep__0_0[0]   |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep__0_1[0]   |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[1]_2[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_6[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_1[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_122[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[6]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[7]_1[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[5]_rep_2[0]      |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[1]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[3]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_4[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_2[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep_1[0]      |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_7[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep__0_2[0]   |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_1[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[7]_2[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_3[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_8[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__31_5[0]  |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep__0_3[0]   |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[5]_rep_0[0]      |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_2[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[1]_1[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[2]_5[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[5]_rep_1[0]      |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_3[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[5]_0[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[0]_rep__31_2[0]  |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda1_reg[4]_rep_0[0]      |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_66[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_134[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_135[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_138[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_10[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_106[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_108[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_98[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_131[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_133[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_125[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_139[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_105[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_123[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_101[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_100[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_109[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_117[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_110[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_120[0]          |                  |               13 |             16 |         1.23 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv[0]              |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_121[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_128[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_129[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_137[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_114[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_113[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_12[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_103[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_130[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_107[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_116[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_1[0]            |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_102[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_115[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_119[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_112[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_11[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_111[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_124[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_118[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_127[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_13[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_132[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_104[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_136[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_0[0]            |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_126[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_162[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_14[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_168[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_174[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_179[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_180[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_187[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_146[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_142[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_148[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_156[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_144[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_153[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_163[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_169[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_178[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_181[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_183[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_164[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_17[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_185[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_193[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_194[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_195[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_196[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_197[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_176[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_188[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_143[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_159[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_165[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_155[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_166[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_167[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_151[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_152[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_157[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_160[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_161[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_15[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_145[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_16[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_150[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_170[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_171[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_172[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_177[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_154[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_158[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_182[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_149[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_184[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_186[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_189[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_19[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_173[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_175[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_190[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_140[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_18[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_191[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_192[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_141[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_147[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_212[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_51[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_55[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_205[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_2[0]            |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_211[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_203[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_21[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_42[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_22[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_206[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_28[0]           |                  |               13 |             16 |         1.23 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_30[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_38[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_4[0]            |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_204[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_45[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_50[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_54[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_200[0]          |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_56[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_20[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_53[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_57[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_58[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_59[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_6[0]            |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_60[0]           |                  |               13 |             16 |         1.23 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_33[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_61[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_62[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_3[0]            |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_63[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_43[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_26[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_27[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_208[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_209[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_202[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_24[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_31[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_34[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_25[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_199[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_201[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_35[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_210[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_29[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_32[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_36[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_23[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_40[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_44[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_207[0]          |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_46[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_47[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_49[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_52[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_41[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_198[0]          |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_48[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_5[0]            |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_37[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_39[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_68[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_89[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_91[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_71[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_74[0]           |                  |               13 |             16 |         1.23 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_81[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_83[0]           |                  |               13 |             16 |         1.23 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_78[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_97[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_87[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_64[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_76[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_67[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_84[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_70[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_7[0]            |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_73[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_75[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_72[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_9[0]            |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_86[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_93[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_80[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_90[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_99[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_79[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_8[0]            |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_95[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_69[0]           |                  |               16 |             16 |         1.00 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_92[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_77[0]           |                  |               14 |             16 |         1.14 |
+|  clk_IBUF_BUFG | iAddress_Gen1/wen_reg_inv_85[0]           |                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | icontrol/counter1[0]_i_1_n_0              | rst_IBUF_inst/O  |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | icontrol/counter3                         | rst_IBUF_inst/O  |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | icontrol/counter4[0]_i_1_n_0              | rst_IBUF_inst/O  |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | icontrol/counter6[31]_i_1_n_0             | rst_IBUF_inst/O  |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | icontrol/wen_reg_inv_0[0]                 |                  |               58 |             64 |         1.10 |
+|  clk_IBUF_BUFG |                                           |                  |               47 |            144 |         3.06 |
+|  clk_IBUF_BUFG | iAddress_Gen1/Radda2[0]_i_1_n_0           | rst_IBUF_inst/O  |               79 |            152 |         1.92 |
++----------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+
+
