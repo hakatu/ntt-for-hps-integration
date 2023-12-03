@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" \
+"../../../../wrapKyber.srcs/sources_1/new/mode.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" \
+"../../../../wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" \
+"../../../../wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,925 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Nov 26 16:32:54 2023
+# Process ID: 20848
+# Current directory: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20620 D:\STUDY\Hardware implementation of CRYSTALS-Dlithium\Kyber\code\Vivado\wrapKyberV9\wrapKyber.xpr
+# Log file: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/vivado.log
+# Journal file: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9\vivado.jou
+# Running On: DESKTOP-21L0LE9, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 8468 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV8' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.297 ; gain = 305.883
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Wrap_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Wrap_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Wrap_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenINTTBU2/Address_GenINTTBU2.srcs/sources_1/new/INTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU2/Address_GenNTTBU2.srcs/sources_1/new/NTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj Wrap_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.gen/sources_1/ip/MULT6/sim/MULT6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MULT6'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.gen/sources_1/ip/MULT3/sim/MULT3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MULT3'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1186.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'temp5' on this module [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v:98]
+ERROR: [VRFC 10-3180] cannot find port 'temp4' on this module [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v:97]
+ERROR: [VRFC 10-3180] cannot find port 'temp3' on this module [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v:96]
+ERROR: [VRFC 10-3180] cannot find port 'temp2' on this module [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v:95]
+ERROR: [VRFC 10-3180] cannot find port 'temp1' on this module [D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v:94]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1186.449 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Wrap_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Wrap_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Wrap_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenINTTBU2/Address_GenINTTBU2.srcs/sources_1/new/INTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU2/Address_GenNTTBU2.srcs/sources_1/new/NTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+"xvhdl --incr --relax -prj Wrap_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_18.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.INOUT_GEN1
+Compiling module xil_defaultlib.INOUT_GEN2
+Compiling module xil_defaultlib.INTT_GEN1
+Compiling module xil_defaultlib.INTT_GEN2
+Compiling module xil_defaultlib.NTT_GEN1
+Compiling module xil_defaultlib.NTT_GEN2
+Compiling module xil_defaultlib.ROMIN1
+Compiling module xil_defaultlib.Address_Gen
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ROM
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ao_width=27)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult3_arch of entity xil_defaultlib.MULT3 [mult3_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,areg=0,a_inp...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult6_arch of entity xil_defaultlib.MULT6 [mult6_default]
+Compiling module xil_defaultlib.barrett
+Compiling module xil_defaultlib.pg16SUM
+Compiling module xil_defaultlib.GrayCell
+Compiling module xil_defaultlib.BlackCell
+Compiling module xil_defaultlib.xor16SUM
+Compiling module xil_defaultlib.BKmodADD
+Compiling module xil_defaultlib.pg16SUB
+Compiling module xil_defaultlib.xor16SUB
+Compiling module xil_defaultlib.BKmodSUB
+Compiling module xil_defaultlib.mux_xx2
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.wrap
+Compiling module xil_defaultlib.Wrap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Wrap_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1186.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Wrap_tb_behav -key {Behavioral:sim_1:Functional:Wrap_tb} -tclbatch {Wrap_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Wrap_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+$finish called at time : 113165 ns : File "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" Line 771
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1258.699 ; gain = 72.250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Wrap_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1258.699 ; gain = 72.250
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Wrap_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Wrap_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Wrap_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenINTTBU2/Address_GenINTTBU2.srcs/sources_1/new/INTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU2/Address_GenNTTBU2.srcs/sources_1/new/NTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+"xvhdl --incr --relax -prj Wrap_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_18.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.INOUT_GEN1
+Compiling module xil_defaultlib.INOUT_GEN2
+Compiling module xil_defaultlib.INTT_GEN1
+Compiling module xil_defaultlib.INTT_GEN2
+Compiling module xil_defaultlib.NTT_GEN1
+Compiling module xil_defaultlib.NTT_GEN2
+Compiling module xil_defaultlib.ROMIN1
+Compiling module xil_defaultlib.Address_Gen
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ROM
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ao_width=27)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult3_arch of entity xil_defaultlib.MULT3 [mult3_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,areg=0,a_inp...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult6_arch of entity xil_defaultlib.MULT6 [mult6_default]
+Compiling module xil_defaultlib.barrett
+Compiling module xil_defaultlib.pg16SUM
+Compiling module xil_defaultlib.GrayCell
+Compiling module xil_defaultlib.BlackCell
+Compiling module xil_defaultlib.xor16SUM
+Compiling module xil_defaultlib.BKmodADD
+Compiling module xil_defaultlib.pg16SUB
+Compiling module xil_defaultlib.xor16SUB
+Compiling module xil_defaultlib.BKmodSUB
+Compiling module xil_defaultlib.mux_xx2
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.wrap
+Compiling module xil_defaultlib.Wrap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Wrap_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1258.699 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Wrap_tb_behav -key {Behavioral:sim_1:Functional:Wrap_tb} -tclbatch {Wrap_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Wrap_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+$finish called at time : 113165 ns : File "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" Line 771
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Wrap_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1258.699 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Wrap_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Wrap_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Wrap_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenINTTBU2/Address_GenINTTBU2.srcs/sources_1/new/INTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU2/Address_GenNTTBU2.srcs/sources_1/new/NTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+"xvhdl --incr --relax -prj Wrap_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_18.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.INOUT_GEN1
+Compiling module xil_defaultlib.INOUT_GEN2
+Compiling module xil_defaultlib.INTT_GEN1
+Compiling module xil_defaultlib.INTT_GEN2
+Compiling module xil_defaultlib.NTT_GEN1
+Compiling module xil_defaultlib.NTT_GEN2
+Compiling module xil_defaultlib.ROMIN1
+Compiling module xil_defaultlib.Address_Gen
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ROM
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ao_width=27)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult3_arch of entity xil_defaultlib.MULT3 [mult3_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,areg=0,a_inp...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult6_arch of entity xil_defaultlib.MULT6 [mult6_default]
+Compiling module xil_defaultlib.barrett
+Compiling module xil_defaultlib.pg16SUM
+Compiling module xil_defaultlib.GrayCell
+Compiling module xil_defaultlib.BlackCell
+Compiling module xil_defaultlib.xor16SUM
+Compiling module xil_defaultlib.BKmodADD
+Compiling module xil_defaultlib.pg16SUB
+Compiling module xil_defaultlib.xor16SUB
+Compiling module xil_defaultlib.BKmodSUB
+Compiling module xil_defaultlib.mux_xx2
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.wrap
+Compiling module xil_defaultlib.Wrap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Wrap_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1258.699 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Wrap_tb_behav -key {Behavioral:sim_1:Functional:Wrap_tb} -tclbatch {Wrap_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Wrap_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+$finish called at time : 113165 ns : File "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" Line 771
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Wrap_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1258.699 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/utils_1/imports/synth_1/wrap.dcp with file D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.runs/synth_1/wrap.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Sun Nov 26 16:40:39 2023] Launched synth_1...
+Run output will be captured here: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Nov 26 16:43:28 2023] Launched impl_1...
+Run output will be captured here: D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xcau25p-sfvb784-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2240.426 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3300 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2390.742 ; gain = 50.805
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2390.742 ; gain = 50.805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2758.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 10 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+
+open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 3108.766 ; gain = 1850.066
+open_report: Time (s): cpu = 00:00:55 ; elapsed = 00:00:20 . Memory (MB): peak = 3878.242 ; gain = 688.941
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -hierarchical
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Nov 26 16:52:59 2023
+| Host         : DESKTOP-21L0LE9 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : wrap
+| Device       : xcau25p-sfvb784-2-e
+| Speed File   : -2
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                                    Instance                                   |                  Module                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| wrap                                                                          |                                   (top) |      12680 |      12680 |       0 |    0 | 4361 |      0 |      7 |    0 |         10 |
+|   (wrap)                                                                      |                                   (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|   iAddress_Gen                                                                |                             Address_Gen |         33 |         33 |       0 |    0 |   32 |      0 |      0 |    0 |          0 |
+|   iINOUT_GEN1                                                                 |                              INOUT_GEN1 |          0 |          0 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|   iINTT_GEN1                                                                  |                               INTT_GEN1 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iINTT_GEN2                                                                  |                               INTT_GEN2 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iNTT_GEN1                                                                   |                                NTT_GEN1 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iNTT_GEN2                                                                   |                                NTT_GEN2 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iRAM1                                                                       |                                     RAM |       4619 |       4619 |       0 |    0 | 4160 |      0 |      0 |    0 |          0 |
+|   iROM                                                                        |                                     ROM |         22 |         22 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iROMIN11                                                                    |                                  ROMIN1 |          1 |          1 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   iROMIN12                                                                    |                                ROMIN1_0 |          0 |          0 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|   ibutterfly1                                                                 |                    butterfly__xdcDup__1 |         17 |         17 |       0 |    0 |   24 |      0 |      0 |    0 |          5 |
+|     iBKmodSUB                                                                 |                              BKmodSUB_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     iMULT31                                                                   |                               MULT3_HD2 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|       U0                                                                      |             MULT3_mult_gen_v12_0_18_HD3 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|         i_mult                                                                |         MULT3_mult_gen_v12_0_18_viv_HD4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|           gDSP.gDSP_only.iDSP                                                 |                           MULT3_dsp_HD5 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|     ibarrett                                                                  |                      barrett__xdcDup__1 |         17 |         17 |       0 |    0 |   24 |      0 |      0 |    0 |          4 |
+|       (ibarrett)                                                              |                      barrett__xdcDup__1 |         17 |         17 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|       iMULT62                                                                 |                              MULT6_HD15 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD16 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD17 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD18 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD18 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          3 |
+|               use_prim.appDSP48[1].bppDSP48[0].need_output_delay.output_delay | MULT6_delay_line__parameterized2_0_HD20 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|       iMULT63                                                                 |                              MULT6_HD21 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD22 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD23 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD24 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD24 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|               use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |   MULT6_delay_line__parameterized2_HD25 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          0 |
+|   ibutterfly2                                                                 |                               butterfly |         17 |         17 |       0 |    0 |   24 |      0 |      0 |    0 |          5 |
+|     iBKmodSUB                                                                 |                                BKmodSUB |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     iMULT31                                                                   |                                   MULT3 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|       U0                                                                      |                 MULT3_mult_gen_v12_0_18 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|         i_mult                                                                |             MULT3_mult_gen_v12_0_18_viv |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|           gDSP.gDSP_only.iDSP                                                 |                               MULT3_dsp |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|     ibarrett                                                                  |                                 barrett |         17 |         17 |       0 |    0 |   24 |      0 |      0 |    0 |          4 |
+|       (ibarrett)                                                              |                                 barrett |         17 |         17 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|       iMULT62                                                                 |                                   MULT6 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|         U0                                                                    |                 MULT6_mult_gen_v12_0_18 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|           i_mult                                                              |             MULT6_mult_gen_v12_0_18_viv |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|             gDSP.gDSP_only.iDSP                                               |                               MULT6_dsp |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          3 |
+|               (gDSP.gDSP_only.iDSP)                                           |                               MULT6_dsp |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          3 |
+|               use_prim.appDSP48[1].bppDSP48[0].need_output_delay.output_delay |      MULT6_delay_line__parameterized2_0 |          0 |          0 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|       iMULT63                                                                 |                               MULT6_HD9 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|         U0                                                                    |            MULT6_mult_gen_v12_0_18_HD10 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|           i_mult                                                              |        MULT6_mult_gen_v12_0_18_viv_HD11 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|             gDSP.gDSP_only.iDSP                                               |                          MULT6_dsp_HD12 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          1 |
+|               (gDSP.gDSP_only.iDSP)                                           |                          MULT6_dsp_HD12 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|               use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |   MULT6_delay_line__parameterized2_HD13 |          0 |          0 |       0 |    0 |   16 |      0 |      0 |    0 |          0 |
+|   icontrol                                                                    |                                 control |       7971 |       7971 |       0 |    0 |  115 |      0 |      0 |    0 |          0 |
++-------------------------------------------------------------------------------+-----------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Wrap_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Wrap_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Wrap_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenINTTBU2/Address_GenINTTBU2.srcs/sources_1/new/INTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU2/Address_GenNTTBU2.srcs/sources_1/new/NTT_GEN2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+"xvhdl --incr --relax -prj Wrap_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_18.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.INOUT_GEN1
+Compiling module xil_defaultlib.INOUT_GEN2
+Compiling module xil_defaultlib.INTT_GEN1
+Compiling module xil_defaultlib.INTT_GEN2
+Compiling module xil_defaultlib.NTT_GEN1
+Compiling module xil_defaultlib.NTT_GEN2
+Compiling module xil_defaultlib.ROMIN1
+Compiling module xil_defaultlib.Address_Gen
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ROM
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ao_width=27)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult3_arch of entity xil_defaultlib.MULT3 [mult3_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,areg=0,a_inp...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=0,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="artixuplus...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture mult6_arch of entity xil_defaultlib.MULT6 [mult6_default]
+Compiling module xil_defaultlib.barrett
+Compiling module xil_defaultlib.pg16SUM
+Compiling module xil_defaultlib.GrayCell
+Compiling module xil_defaultlib.BlackCell
+Compiling module xil_defaultlib.xor16SUM
+Compiling module xil_defaultlib.BKmodADD
+Compiling module xil_defaultlib.pg16SUB
+Compiling module xil_defaultlib.xor16SUB
+Compiling module xil_defaultlib.BKmodSUB
+Compiling module xil_defaultlib.mux_xx2
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.wrap
+Compiling module xil_defaultlib.Wrap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Wrap_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 4617.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Wrap_tb_behav -key {Behavioral:sim_1:Functional:Wrap_tb} -tclbatch {Wrap_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Wrap_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+$finish called at time : 113165 ns : File "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV9/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" Line 771
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Wrap_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 4617.512 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 16:58:46 2023...

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="MULT3_synth_1" LaunchDir="D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV10/wrapKyber.runs/MULT3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MULT6_synth_1" LaunchDir="D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV10/wrapKyber.runs/MULT6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1_copy_1" LaunchDir="D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV10/wrapKyber.runs/synth_1_copy_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="MULT3_synth_1"/>
+		<Parent Id="MULT6_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

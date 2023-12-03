@@ -1,0 +1,42 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/Address_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodADD
+INFO: [VRFC 10-311] analyzing module xor16SUM
+INFO: [VRFC 10-311] analyzing module pg16SUM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/BKmodSUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BKmodSUB
+INFO: [VRFC 10-311] analyzing module xor16SUB
+INFO: [VRFC 10-311] analyzing module pg16SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/BlackCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlackCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/GrayCell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GrayCell
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/new/INOUT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INOUT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/new/INTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/code/Address_GenNTTBU1/Address_Gen.srcs/sources_1/new/NTT_GEN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NTT_GEN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/ROMIN1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROMIN1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/barrett.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/new/mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/mux_xx2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_xx2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sources_1/imports/WrapKyber/wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.srcs/sim_1/imports/WrapKyber/Wrap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrap_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

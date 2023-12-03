@@ -1,0 +1,43 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Wrap_tb_behav xil_defaultlib.Wrap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INOUT_GEN1
+Compiling module xil_defaultlib.INTT_GEN1
+Compiling module xil_defaultlib.NTT_GEN1
+Compiling module xil_defaultlib.ROMIN1
+Compiling module xil_defaultlib.mode
+Compiling module xil_defaultlib.Address_Gen
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ROM
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module xil_defaultlib.MULT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,AREG=0,A_INPU...
+Compiling module unisims_ver.DSP48E1(ACASCREG=2,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.MULT6
+Compiling module xil_defaultlib.barrett
+Compiling module xil_defaultlib.pg16SUM
+Compiling module xil_defaultlib.GrayCell
+Compiling module xil_defaultlib.BlackCell
+Compiling module xil_defaultlib.xor16SUM
+Compiling module xil_defaultlib.BKmodADD
+Compiling module xil_defaultlib.pg16SUB
+Compiling module xil_defaultlib.xor16SUB
+Compiling module xil_defaultlib.BKmodSUB
+Compiling module xil_defaultlib.mux_xx2
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.wrap
+Compiling module xil_defaultlib.Wrap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Wrap_tb_behav

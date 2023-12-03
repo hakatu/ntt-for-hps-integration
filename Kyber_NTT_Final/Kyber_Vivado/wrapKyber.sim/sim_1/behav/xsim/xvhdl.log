@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.gen/sources_1/ip/MULT6/sim/MULT6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MULT6'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/STUDY/Hardware implementation of CRYSTALS-Dlithium/Kyber/code/Vivado/wrapKyberV13/wrapKyber.gen/sources_1/ip/MULT3/sim/MULT3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MULT3'
