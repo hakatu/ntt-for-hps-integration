@@ -1,5 +1,5 @@
 Flow report for wrap
-Mon Dec  4 00:17:09 2023
+Mon Dec  4 09:53:34 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Flow Status                     ; Successful - Mon Dec  4 00:17:00 2023              ;
+; Flow Status                     ; Successful - Mon Dec  4 09:53:26 2023              ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                   ; wrap                                               ;
 ; Top-level Entity Name           ; wrap                                               ;
 ; Family                          ; Cyclone V                                          ;
 ; Device                          ; 5CSXFC6D6F31C6                                     ;
 ; Timing Models                   ; Final                                              ;
-; Logic utilization (in ALMs)     ; 434 / 41,910 ( 1 % )                               ;
-; Total registers                 ; 230                                                ;
-; Total pins                      ; 72 / 499 ( 14 % )                                  ;
+; Logic utilization (in ALMs)     ; 442 / 41,910 ( 1 % )                               ;
+; Total registers                 ; 234                                                ;
+; Total pins                      ; 88 / 499 ( 18 % )                                  ;
 ; Total virtual pins              ; 0                                                  ;
 ; Total block memory bits         ; 49,408 / 5,662,720 ( < 1 % )                       ;
 ; Total DSP Blocks                ; 4 / 112 ( 4 % )                                    ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/04/2023 00:12:48 ;
+; Start date & time ; 12/04/2023 09:50:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; wrap                ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                                   ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +---------------------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP               ; On                                     ; Off           ; --          ; --         ;
-; COMPILER_SIGNATURE_ID                             ; 2485377892354.170162356805508          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                             ; 2485377892354.170165820310798          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                            ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                            ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                                         ; MULT3.bsf                              ; --            ; --          ; --         ;
@@ -116,11 +116,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 678 MB              ; 00:00:24                           ;
-; Fitter               ; 00:03:46     ; 1.0                     ; 2245 MB             ; 00:07:48                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 692 MB              ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.8                     ; 1057 MB             ; 00:00:09                           ;
-; Total                ; 00:04:14     ; --                      ; --                  ; 00:08:27                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 672 MB              ; 00:00:25                           ;
+; Fitter               ; 00:02:56     ; 1.0                     ; 2241 MB             ; 00:05:54                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 702 MB              ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.9                     ; 1070 MB             ; 00:00:08                           ;
+; Total                ; 00:03:24     ; --                      ; --                  ; 00:06:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

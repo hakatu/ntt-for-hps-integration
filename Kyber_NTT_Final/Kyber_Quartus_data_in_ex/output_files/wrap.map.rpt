@@ -1,5 +1,5 @@
 Analysis & Synthesis report for wrap
-Mon Dec  4 00:13:03 2023
+Mon Dec  4 09:50:19 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -76,14 +76,14 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Dec  4 00:13:03 2023              ;
+; Analysis & Synthesis Status     ; Successful - Mon Dec  4 09:50:19 2023              ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                   ; wrap                                               ;
 ; Top-level Entity Name           ; wrap                                               ;
 ; Family                          ; Cyclone V                                          ;
 ; Logic utilization (in ALMs)     ; N/A                                                ;
 ; Total registers                 ; 341                                                ;
-; Total pins                      ; 72                                                 ;
+; Total pins                      ; 88                                                 ;
 ; Total virtual pins              ; 0                                                  ;
 ; Total block memory bits         ; 49,408                                             ;
 ; Total DSP Blocks                ; 4                                                  ;
@@ -199,8 +199,8 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -257,18 +257,18 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 433       ;
+; Estimate of Logic utilization (ALMs needed) ; 442       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 668       ;
+; Combinational ALUT usage for logic          ; 684       ;
 ;     -- 7 input functions                    ; 4         ;
-;     -- 6 input functions                    ; 178       ;
+;     -- 6 input functions                    ; 180       ;
 ;     -- 5 input functions                    ; 99        ;
 ;     -- 4 input functions                    ; 65        ;
-;     -- <=3 input functions                  ; 322       ;
+;     -- <=3 input functions                  ; 336       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 341       ;
 ;                                             ;           ;
-; I/O pins                                    ; 72        ;
+; I/O pins                                    ; 88        ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 49408     ;
 ;                                             ;           ;
@@ -276,8 +276,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 419       ;
-; Total fan-out                               ; 4845      ;
-; Average fan-out                             ; 3.92      ;
+; Total fan-out                               ; 4915      ;
+; Average fan-out                             ; 3.83      ;
 +---------------------------------------------+-----------+
 
 
@@ -286,7 +286,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |wrap                                     ; 668 (125)           ; 341 (0)                   ; 49408             ; 4          ; 72   ; 0            ; |wrap                                                                                                          ; wrap            ; work         ;
+; |wrap                                     ; 684 (141)           ; 341 (0)                   ; 49408             ; 4          ; 88   ; 0            ; |wrap                                                                                                          ; wrap            ; work         ;
 ;    |Address_Gen:iAddress_Gen|             ; 56 (56)             ; 34 (34)                   ; 0                 ; 0          ; 0    ; 0            ; |wrap|Address_Gen:iAddress_Gen                                                                                 ; Address_Gen     ; work         ;
 ;    |INOUT_GEN1:iINOUT_GEN1|               ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |wrap|INOUT_GEN1:iINOUT_GEN1                                                                                   ; INOUT_GEN1      ; work         ;
 ;    |INTT_GEN1:iINTT_GEN1|                 ; 0 (0)               ; 0 (0)                     ; 20608             ; 0          ; 0    ; 0            ; |wrap|INTT_GEN1:iINTT_GEN1                                                                                     ; INTT_GEN1       ; work         ;
@@ -1075,10 +1075,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |wrap|Address_Gen:iAddress_Gen|counter_clk[0] ;
 ; 6:1                ; 32 bits   ; 128 LEs       ; 0 LEs                ; 128 LEs                ; Yes        ; |wrap|control:icontrol|counter6[9]            ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 12 LEs               ; 16 LEs                 ; Yes        ; |wrap|control:icontrol|counter5[1]            ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |wrap|TFadd1_w[0]                             ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |wrap|Radda1_w[6]                             ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |wrap|DB1in_w[6]                              ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; No         ; |wrap|DA1in_w[13]                             ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |wrap|TFadd1_w[6]                             ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |wrap|Radda1_w[1]                             ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |wrap|DB1in_w[7]                              ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 45 LEs               ; 0 LEs                  ; No         ; |wrap|DA1in_w[14]                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
@@ -1718,7 +1718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 68                          ;
 ;     SCLR              ; 38                          ;
 ;     plain             ; 198                         ;
-; arriav_lcell_comb     ; 668                         ;
+; arriav_lcell_comb     ; 684                         ;
 ;     arith             ; 193                         ;
 ;         1 data inputs ; 143                         ;
 ;         2 data inputs ; 18                          ;
@@ -1726,21 +1726,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 16                          ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 455                         ;
+;     normal            ; 471                         ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 97                          ;
-;         3 data inputs ; 31                          ;
+;         3 data inputs ; 45                          ;
 ;         4 data inputs ; 49                          ;
 ;         5 data inputs ; 99                          ;
-;         6 data inputs ; 178                         ;
+;         6 data inputs ; 180                         ;
 ;     shared            ; 16                          ;
 ;         2 data inputs ; 16                          ;
 ; arriav_mac            ; 4                           ;
-; boundary_port         ; 72                          ;
+; boundary_port         ; 88                          ;
 ; stratixv_ram_block    ; 78                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.20                        ;
-; Average LUT depth     ; 3.59                        ;
+; Average LUT depth     ; 3.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1759,7 +1759,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
-    Info: Processing started: Mon Dec  4 00:12:48 2023
+    Info: Processing started: Mon Dec  4 09:50:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wrap -c wrap
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1806,38 +1806,38 @@ Info (12021): Found 1 design units, including 1 entities, in source file MULT3.v
 Info (12021): Found 1 design units, including 1 entities, in source file MULT6.v
     Info (12023): Found entity 1: MULT6 File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/MULT6.v Line: 39
 Info (12127): Elaborating entity "wrap" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at wrap.v(217): truncated value with size 32 to match size of target (16) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 217
-Warning (10230): Verilog HDL assignment warning at wrap.v(218): truncated value with size 32 to match size of target (16) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 218
-Info (12128): Elaborating entity "INOUT_GEN1" for hierarchy "INOUT_GEN1:iINOUT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 71
+Warning (10230): Verilog HDL assignment warning at wrap.v(224): truncated value with size 32 to match size of target (16) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 224
+Warning (10230): Verilog HDL assignment warning at wrap.v(225): truncated value with size 32 to match size of target (16) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 225
+Info (12128): Elaborating entity "INOUT_GEN1" for hierarchy "INOUT_GEN1:iINOUT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 72
 Warning (10030): Net "mem_ROMWRAP.data_a" at INOUT_GEN1.v(29) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INOUT_GEN1.v Line: 29
 Warning (10030): Net "mem_ROMWRAP.waddr_a" at INOUT_GEN1.v(29) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INOUT_GEN1.v Line: 29
 Warning (10030): Net "mem_ROMWRAP.we_a" at INOUT_GEN1.v(29) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INOUT_GEN1.v Line: 29
-Info (12128): Elaborating entity "INTT_GEN1" for hierarchy "INTT_GEN1:iINTT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 83
+Info (12128): Elaborating entity "INTT_GEN1" for hierarchy "INTT_GEN1:iINTT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 84
 Warning (10030): Net "mem_ROMWRAP.data_a" at INTT_GEN1.v(51) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INTT_GEN1.v Line: 51
 Warning (10030): Net "mem_ROMWRAP.waddr_a" at INTT_GEN1.v(51) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INTT_GEN1.v Line: 51
 Warning (10030): Net "mem_ROMWRAP.we_a" at INTT_GEN1.v(51) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/INTT_GEN1.v Line: 51
-Info (12128): Elaborating entity "NTT_GEN1" for hierarchy "NTT_GEN1:iNTT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 95
+Info (12128): Elaborating entity "NTT_GEN1" for hierarchy "NTT_GEN1:iNTT_GEN1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 96
 Warning (10030): Net "mem_ROMWRAP.data_a" at NTT_GEN1.v(30) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/NTT_GEN1.v Line: 30
 Warning (10030): Net "mem_ROMWRAP.waddr_a" at NTT_GEN1.v(30) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/NTT_GEN1.v Line: 30
 Warning (10030): Net "mem_ROMWRAP.we_a" at NTT_GEN1.v(30) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/NTT_GEN1.v Line: 30
-Info (12128): Elaborating entity "RAMIN1" for hierarchy "RAMIN1:iRAMIN11" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 128
-Info (12128): Elaborating entity "mode" for hierarchy "mode:imode1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 145
-Info (12128): Elaborating entity "Address_Gen" for hierarchy "Address_Gen:iAddress_Gen" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 155
+Info (12128): Elaborating entity "RAMIN1" for hierarchy "RAMIN1:iRAMIN11" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 135
+Info (12128): Elaborating entity "mode" for hierarchy "mode:imode1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 152
+Info (12128): Elaborating entity "Address_Gen" for hierarchy "Address_Gen:iAddress_Gen" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 162
 Warning (10230): Verilog HDL assignment warning at Address_Gen.v(92): truncated value with size 32 to match size of target (8) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/Address_Gen.v Line: 92
 Warning (10230): Verilog HDL assignment warning at Address_Gen.v(96): truncated value with size 32 to match size of target (8) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/Address_Gen.v Line: 96
 Warning (10230): Verilog HDL assignment warning at Address_Gen.v(97): truncated value with size 32 to match size of target (10) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/Address_Gen.v Line: 97
 Warning (10230): Verilog HDL assignment warning at Address_Gen.v(106): truncated value with size 32 to match size of target (8) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/Address_Gen.v Line: 106
 Warning (10230): Verilog HDL assignment warning at Address_Gen.v(107): truncated value with size 32 to match size of target (9) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/Address_Gen.v Line: 107
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:iRAM1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 172
-Info (12128): Elaborating entity "control" for hierarchy "control:icontrol" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 185
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:iRAM1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 179
+Info (12128): Elaborating entity "control" for hierarchy "control:icontrol" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 192
 Warning (10230): Verilog HDL assignment warning at control.v(90): truncated value with size 32 to match size of target (4) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/control.v Line: 90
 Warning (10230): Verilog HDL assignment warning at control.v(100): truncated value with size 32 to match size of target (4) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/control.v Line: 100
 Warning (10230): Verilog HDL assignment warning at control.v(146): truncated value with size 32 to match size of target (4) File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/control.v Line: 146
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:iROM" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 191
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:iROM" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 198
 Warning (10030): Net "mem_ROM.data_a" at ROM.v(28) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/ROM.v Line: 28
 Warning (10030): Net "mem_ROM.waddr_a" at ROM.v(28) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/ROM.v Line: 28
 Warning (10030): Net "mem_ROM.we_a" at ROM.v(28) has no driver or initial value, using a default initial value '0' File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/ROM.v Line: 28
-Info (12128): Elaborating entity "butterfly" for hierarchy "butterfly:ibutterfly1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 201
+Info (12128): Elaborating entity "butterfly" for hierarchy "butterfly:ibutterfly1" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/wrap.v Line: 208
 Info (12128): Elaborating entity "MULT3" for hierarchy "butterfly:ibutterfly1|MULT3:iMULT31" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/butterfly.v Line: 137
 Info (12128): Elaborating entity "lpm_mult" for hierarchy "butterfly:ibutterfly1|MULT3:iMULT31|lpm_mult:lpm_mult_component" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/MULT3.v Line: 61
 Info (12130): Elaborated megafunction instantiation "butterfly:ibutterfly1|MULT3:iMULT31|lpm_mult:lpm_mult_component" File: /media/share/GitHub/ntt-for-hps-integration/Kyber_NTT_Final/Kyber_Quartus_data_in_ex/MULT3.v Line: 61
@@ -2010,16 +2010,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 446 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 964 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 37 input pins
+Info (21057): Implemented 996 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 53 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 810 logic cells
+    Info (21061): Implemented 826 logic cells
     Info (21064): Implemented 78 RAM segments
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 678 megabytes
-    Info: Processing ended: Mon Dec  4 00:13:03 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 672 megabytes
+    Info: Processing ended: Mon Dec  4 09:50:19 2023
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:26
 
 

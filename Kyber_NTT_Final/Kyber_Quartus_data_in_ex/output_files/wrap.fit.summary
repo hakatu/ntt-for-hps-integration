@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Dec  4 00:16:51 2023
+Fitter Status : Successful - Mon Dec  4 09:53:16 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 Revision Name : wrap
 Top-level Entity Name : wrap
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 434 / 41,910 ( 1 % )
-Total registers : 230
-Total pins : 72 / 499 ( 14 % )
+Logic utilization (in ALMs) : 442 / 41,910 ( 1 % )
+Total registers : 234
+Total pins : 88 / 499 ( 18 % )
 Total virtual pins : 0
 Total block memory bits : 49,408 / 5,662,720 ( < 1 % )
 Total RAM Blocks : 7 / 553 ( 1 % )
