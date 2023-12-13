@@ -1,0 +1,69 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/haka/Desktop/Kyber_QuartusV7/simulation/questa
+T_opt
+!s110 1702485718
+VBzg<jJYZ>:ljPP<TGHg@o1
+04 7 4 work Wrap_tb fast 0
+=1-0242ac110002-6579ded5-f3fc4-177b0
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vwrap
+Z2 !s110 1702485717
+!i10b 1
+!s100 F0@:R]BHjg:IRanZ^8e[K0
+I6kE^k7NQkD[M`e4hi0DJ_1
+R0
+w1702485710
+8wrap.vo
+Fwrap.vo
+!i122 0
+L0 32 31784
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1702485717.000000
+!s107 wrap.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|wrap.vo|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vWrap_tb
+R2
+!i10b 1
+!s100 BLa]ki4O01_[AZX8@hz921
+I[YQRHW==`=L4Xm]k8dY6l1
+R0
+w1702485537
+8/home/haka/Desktop/Kyber_QuartusV7/Wrap_tb.v
+F/home/haka/Desktop/Kyber_QuartusV7/Wrap_tb.v
+!i122 1
+L0 43 797
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/haka/Desktop/Kyber_QuartusV7/Wrap_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/haka/Desktop/Kyber_QuartusV7|/home/haka/Desktop/Kyber_QuartusV7/Wrap_tb.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+/home/haka/Desktop/Kyber_QuartusV7 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@wrap_tb

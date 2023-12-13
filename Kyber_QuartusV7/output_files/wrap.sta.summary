@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -7.517
+TNS   : -1379.401
+
+Type  : Slow 1100mV 85C Model Setup 'rd_clk'
+Slack : -2.474
+TNS   : -146.235
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'rd_clk'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.636
+TNS   : -1192.974
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'rd_clk'
+Slack : -2.174
+TNS   : -208.779
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -7.457
+TNS   : -1360.055
+
+Type  : Slow 1100mV 0C Model Setup 'rd_clk'
+Slack : -2.370
+TNS   : -144.377
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'rd_clk'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.636
+TNS   : -1205.236
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'rd_clk'
+Slack : -2.174
+TNS   : -211.492
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -4.101
+TNS   : -658.852
+
+Type  : Fast 1100mV 85C Model Setup 'rd_clk'
+Slack : -1.062
+TNS   : -47.123
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'rd_clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.636
+TNS   : -984.318
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'rd_clk'
+Slack : -2.174
+TNS   : -183.730
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -3.721
+TNS   : -581.495
+
+Type  : Fast 1100mV 0C Model Setup 'rd_clk'
+Slack : -0.873
+TNS   : -37.192
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.101
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'rd_clk'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.636
+TNS   : -985.034
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'rd_clk'
+Slack : -2.174
+TNS   : -183.800
+
+------------------------------------------------------------
