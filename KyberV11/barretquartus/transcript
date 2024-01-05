@@ -468,3 +468,6 @@ run -all
 #    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
 # 1
 # Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+quit -sim
+# End time: 23:51:13 on Jan 05,2024, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 2

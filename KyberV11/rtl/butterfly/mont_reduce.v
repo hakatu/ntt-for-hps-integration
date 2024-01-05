@@ -12,12 +12,13 @@ input signed [31:0] a;      // 32-bit input integer
 output reg signed [WIDTH-1:0] result; // 16-bit output integer
 
 // Local variable for intermediate calculation
-reg signed [31:0] t;
+reg signed [31:0] t2;
+reg signed [15:0] t;
 
 always @ (a) begin
     t = a * QINV;  // Multiply with QINV
-    t = a - t*KYBER_Q;    // Subtract (t * KYBER_Q) from a
-    result = t >> 16;        // Right shift by 16 to get the final result
+    t2 = a - t*KYBER_Q;    // Subtract (t * KYBER_Q) from a
+    result = t2[31:16];        // Right shift by 16 to get the final result
 end
 
 endmodule
