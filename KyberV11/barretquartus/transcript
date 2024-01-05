@@ -1,0 +1,470 @@
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_barret_reduce -voptargs=+acc
+# vsim work.tb_barret_reduce -voptargs="+acc" 
+# Start time: 19:14:51 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint  \
+sim:/tb_barret_reduce/a \
+sim:/tb_barret_reduce/result
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Break key hit
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run
+# Time =                    0, Input =      0, Result =      0
+run
+run
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v failed with 1 errors.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(18): Register is illegal in left-hand side of continuous assignment
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(19): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 19:14:51 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(18): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=0.
+# Error loading design
+# End time: 20:53:50 on Jan 05,2024, Elapsed time: 1:38:59
+# Errors: 3, Warnings: 2
+# Compile of barret_reduce.v was successful.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 20:55:01 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(18): Register is illegal in left-hand side of continuous assignment
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(19): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 20:55:01 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(18): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=0.
+# Error loading design
+# End time: 22:07:26 on Jan 05,2024, Elapsed time: 1:12:25
+# Errors: 3, Warnings: 2
+# Compile of barret_reduce.v was successful.
+restart -f
+# No Design Loaded!
+# Optimization canceled
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 22:08:04 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_barret_reduce
+# End time: 22:12:00 on Jan 05,2024, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 22:12:00 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v(18): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 22:12:00 on Jan 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 22:12:24 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 23:11:21 on Jan 05,2024, Elapsed time: 0:58:57
+# Errors: 0, Warnings: 2
+vsim -voptargs=+acc work.tb_barret_reduce
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 23:11:26 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      x
+# Time =                10000, Input =   1000, Result =      x
+# Time =                20000, Input =  -1000, Result =      x
+# Time =                30000, Input =   2000, Result =      x
+# Time =                40000, Input =  -2000, Result =      x
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+add wave -position insertpoint  \
+sim:/tb_barret_reduce/a \
+sim:/tb_barret_reduce/result
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      x
+# Time =                10000, Input =   1000, Result =      x
+# Time =                20000, Input =  -1000, Result =      x
+# Time =                30000, Input =   2000, Result =      x
+# Time =                40000, Input =  -2000, Result =      x
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_barret_reduce
+# End time: 23:12:29 on Jan 05,2024, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 23:12:29 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =   -512
+# Time =                10000, Input =   1000, Result =  27061
+# Time =                20000, Input =  -1000, Result = -24756
+# Time =                30000, Input =   2000, Result = -14231
+# Time =                40000, Input =  -2000, Result =  16536
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+# Load canceled
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+vsim -voptargs=+acc work.tb_barret_reduce
+# End time: 23:24:26 on Jan 05,2024, Elapsed time: 0:11:57
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 23:24:26 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =  -3329
+# Time =                10000, Input =   1000, Result =  -2329
+# Time =                20000, Input =  -1000, Result =  -4329
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result =   1329
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+vsim -voptargs=+acc work.tb_barret_reduce
+# End time: 23:34:47 on Jan 05,2024, Elapsed time: 0:10:21
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 23:34:47 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -15119
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v failed with 1 errors.
+# Compile of barret_reduce.v failed with 1 errors.
+# Compile of barret_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -31567
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result = -16448
+# Time =                10000, Input =   1000, Result = -15448
+# Time =                20000, Input =  -1000, Result = -17448
+# Time =                30000, Input =   2000, Result = -17777
+# Time =                40000, Input =  -2000, Result = -31567
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+# Compile of tb_barret_reduce.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_barret_reduce
+# End time: 23:46:27 on Jan 05,2024, Elapsed time: 0:11:40
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_barret_reduce 
+# Start time: 23:46:27 on Jan 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+add wave -position insertpoint sim:/tb_barret_reduce/uut/*
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -31567
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result = -31567
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of barret_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   2000, Result =  -1329
+# Time =                40000, Input =  -2000, Result =   1329
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
+# Compile of tb_barret_reduce.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_barret_reduce(fast)
+# Loading work.barret_reduce(fast)
+run -all
+# Time =                    0, Input =      0, Result =      0
+# Time =                10000, Input =   1000, Result =   1000
+# Time =                20000, Input =  -1000, Result =  -1000
+# Time =                30000, Input =   5423, Result =  -1235
+# Time =                40000, Input =  -2000, Result =   1329
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_barret_reduce
+# 1
+# Break in Module tb_barret_reduce at /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv line 32
