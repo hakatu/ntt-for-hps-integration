@@ -131,11 +131,11 @@ module butterfly(clk,mode,a,b,w,c,d);
 	assign add_a = a;
 	assign add_b = (mode==2'b00)? ba : b;
 
-	assign mult_a = (mode==2'b00)? w : -w;
+	assign mult_a = w;
 	assign mult_b = (mode==2'b00)? b : sub;
 //	MULT iMULT(clk,rst,mult_a,mult_b,mult);
 	MULT3 iMULT31(clk,mult_a,mult_b,mult);
-	barrett ibarrett (clk,mult,ba);
+	barrett ibarrett (mult,ba);
 	BKmodADD  iBKmodADD (add_a,add_b,sum);
 	BKmodSUB  iBKmodSUB (sub_a,sub_b,sub);
 //	always @(*) begin
@@ -153,8 +153,8 @@ module butterfly(clk,mode,a,b,w,c,d);
 	assign d_ntt = sub;
 	//////////
 	//mode INTT
-	assign c_intt  = sum;
-	assign d_intt = ba;
+	assign c_intt  = {1'b0,sum[15:1]};
+	assign d_intt = {1'b0,ba[15:1]};
 	//mode bypass
 	assign c_bp = a;
 	assign d_bp = b;
