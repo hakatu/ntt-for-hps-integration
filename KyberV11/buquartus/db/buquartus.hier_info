@@ -1,0 +1,1350 @@
+|butterfly
+clk => clk.IN1
+mode[0] => mode[0].IN2
+mode[1] => mode[1].IN2
+a[0] => c_bp[0].IN2
+a[1] => c_bp[1].IN2
+a[2] => c_bp[2].IN2
+a[3] => c_bp[3].IN2
+a[4] => c_bp[4].IN2
+a[5] => c_bp[5].IN2
+a[6] => c_bp[6].IN2
+a[7] => c_bp[7].IN2
+a[8] => c_bp[8].IN2
+a[9] => c_bp[9].IN2
+a[10] => c_bp[10].IN2
+a[11] => c_bp[11].IN2
+a[12] => c_bp[12].IN2
+a[13] => c_bp[13].IN2
+a[14] => c_bp[14].IN2
+a[15] => c_bp[15].IN2
+b[0] => d_bp[0].IN1
+b[1] => d_bp[1].IN1
+b[2] => d_bp[2].IN1
+b[3] => d_bp[3].IN1
+b[4] => d_bp[4].IN1
+b[5] => d_bp[5].IN1
+b[6] => d_bp[6].IN1
+b[7] => d_bp[7].IN1
+b[8] => d_bp[8].IN1
+b[9] => d_bp[9].IN1
+b[10] => d_bp[10].IN1
+b[11] => d_bp[11].IN1
+b[12] => d_bp[12].IN1
+b[13] => d_bp[13].IN1
+b[14] => d_bp[14].IN1
+b[15] => d_bp[15].IN1
+w[0] => mult_a[0].IN1
+w[1] => mult_a[1].IN1
+w[2] => mult_a[2].IN1
+w[3] => mult_a[3].IN1
+w[4] => mult_a[4].IN1
+w[5] => mult_a[5].IN1
+w[6] => mult_a[6].IN1
+w[7] => mult_a[7].IN1
+w[8] => mult_a[8].IN1
+w[9] => mult_a[9].IN1
+w[10] => mult_a[10].IN1
+w[11] => mult_a[11].IN1
+w[12] => mult_a[12].IN1
+w[13] => mult_a[13].IN1
+w[14] => mult_a[14].IN1
+w[15] => mult_a[15].IN1
+c[0] <= mux_xx2:imux_xx21.port5
+c[1] <= mux_xx2:imux_xx21.port5
+c[2] <= mux_xx2:imux_xx21.port5
+c[3] <= mux_xx2:imux_xx21.port5
+c[4] <= mux_xx2:imux_xx21.port5
+c[5] <= mux_xx2:imux_xx21.port5
+c[6] <= mux_xx2:imux_xx21.port5
+c[7] <= mux_xx2:imux_xx21.port5
+c[8] <= mux_xx2:imux_xx21.port5
+c[9] <= mux_xx2:imux_xx21.port5
+c[10] <= mux_xx2:imux_xx21.port5
+c[11] <= mux_xx2:imux_xx21.port5
+c[12] <= mux_xx2:imux_xx21.port5
+c[13] <= mux_xx2:imux_xx21.port5
+c[14] <= mux_xx2:imux_xx21.port5
+c[15] <= mux_xx2:imux_xx21.port5
+d[0] <= mux_xx2:imux_xx22.port5
+d[1] <= mux_xx2:imux_xx22.port5
+d[2] <= mux_xx2:imux_xx22.port5
+d[3] <= mux_xx2:imux_xx22.port5
+d[4] <= mux_xx2:imux_xx22.port5
+d[5] <= mux_xx2:imux_xx22.port5
+d[6] <= mux_xx2:imux_xx22.port5
+d[7] <= mux_xx2:imux_xx22.port5
+d[8] <= mux_xx2:imux_xx22.port5
+d[9] <= mux_xx2:imux_xx22.port5
+d[10] <= mux_xx2:imux_xx22.port5
+d[11] <= mux_xx2:imux_xx22.port5
+d[12] <= mux_xx2:imux_xx22.port5
+d[13] <= mux_xx2:imux_xx22.port5
+d[14] <= mux_xx2:imux_xx22.port5
+d[15] <= mux_xx2:imux_xx22.port5
+
+
+|butterfly|MULT3:iMULT31
+clock => ~NO_FANOUT~
+dataa[0] => Mult0.IN15
+dataa[1] => Mult0.IN14
+dataa[2] => Mult0.IN13
+dataa[3] => Mult0.IN12
+dataa[4] => Mult0.IN11
+dataa[5] => Mult0.IN10
+dataa[6] => Mult0.IN9
+dataa[7] => Mult0.IN8
+dataa[8] => Mult0.IN7
+dataa[9] => Mult0.IN6
+dataa[10] => Mult0.IN5
+dataa[11] => Mult0.IN4
+dataa[12] => Mult0.IN3
+dataa[13] => Mult0.IN2
+dataa[14] => Mult0.IN1
+dataa[15] => Mult0.IN0
+datab[0] => Mult0.IN31
+datab[1] => Mult0.IN30
+datab[2] => Mult0.IN29
+datab[3] => Mult0.IN28
+datab[4] => Mult0.IN27
+datab[5] => Mult0.IN26
+datab[6] => Mult0.IN25
+datab[7] => Mult0.IN24
+datab[8] => Mult0.IN23
+datab[9] => Mult0.IN22
+datab[10] => Mult0.IN21
+datab[11] => Mult0.IN20
+datab[12] => Mult0.IN19
+datab[13] => Mult0.IN18
+datab[14] => Mult0.IN17
+datab[15] => Mult0.IN16
+result[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|mont_reduce:imont_reduce
+a[0] => Mult0.IN44
+a[0] => Add0.IN64
+a[1] => Mult0.IN43
+a[1] => Add0.IN63
+a[2] => Mult0.IN42
+a[2] => Add0.IN62
+a[3] => Mult0.IN41
+a[3] => Add0.IN61
+a[4] => Mult0.IN40
+a[4] => Add0.IN60
+a[5] => Mult0.IN39
+a[5] => Add0.IN59
+a[6] => Mult0.IN38
+a[6] => Add0.IN58
+a[7] => Mult0.IN37
+a[7] => Add0.IN57
+a[8] => Mult0.IN36
+a[8] => Add0.IN56
+a[9] => Mult0.IN35
+a[9] => Add0.IN55
+a[10] => Mult0.IN34
+a[10] => Add0.IN54
+a[11] => Mult0.IN33
+a[11] => Add0.IN53
+a[12] => Mult0.IN32
+a[12] => Add0.IN52
+a[13] => Mult0.IN31
+a[13] => Add0.IN51
+a[14] => Mult0.IN30
+a[14] => Add0.IN50
+a[15] => Mult0.IN29
+a[15] => Add0.IN49
+a[16] => Mult0.IN28
+a[16] => Add0.IN48
+a[17] => Mult0.IN27
+a[17] => Add0.IN47
+a[18] => Mult0.IN26
+a[18] => Add0.IN46
+a[19] => Mult0.IN25
+a[19] => Add0.IN45
+a[20] => Mult0.IN24
+a[20] => Add0.IN44
+a[21] => Mult0.IN23
+a[21] => Add0.IN43
+a[22] => Mult0.IN22
+a[22] => Add0.IN42
+a[23] => Mult0.IN21
+a[23] => Add0.IN41
+a[24] => Mult0.IN20
+a[24] => Add0.IN40
+a[25] => Mult0.IN19
+a[25] => Add0.IN39
+a[26] => Mult0.IN18
+a[26] => Add0.IN38
+a[27] => Mult0.IN17
+a[27] => Add0.IN37
+a[28] => Mult0.IN16
+a[28] => Add0.IN36
+a[29] => Mult0.IN15
+a[29] => Add0.IN35
+a[30] => Mult0.IN14
+a[30] => Add0.IN34
+a[31] => Mult0.IN13
+a[31] => Add0.IN33
+result[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+S[0] <= xor16SUM:ixor16SUM_1.S[0]
+S[1] <= xor16SUM:ixor16SUM_1.S[1]
+S[2] <= xor16SUM:ixor16SUM_1.S[2]
+S[3] <= xor16SUM:ixor16SUM_1.S[3]
+S[4] <= xor16SUM:ixor16SUM_1.S[4]
+S[5] <= xor16SUM:ixor16SUM_1.S[5]
+S[6] <= xor16SUM:ixor16SUM_1.S[6]
+S[7] <= xor16SUM:ixor16SUM_1.S[7]
+S[8] <= xor16SUM:ixor16SUM_1.S[8]
+S[9] <= xor16SUM:ixor16SUM_1.S[9]
+S[10] <= xor16SUM:ixor16SUM_1.S[10]
+S[11] <= xor16SUM:ixor16SUM_1.S[11]
+S[12] <= xor16SUM:ixor16SUM_1.S[12]
+S[13] <= xor16SUM:ixor16SUM_1.S[13]
+S[14] <= xor16SUM:ixor16SUM_1.S[14]
+S[15] <= xor16SUM:ixor16SUM_1.S[15]
+
+
+|butterfly|BKmodADD:iBKmodADD|pg16SUM:ipg16SUM1
+A[0] => and0.IN0
+A[0] => xor0.IN0
+A[1] => and1.IN0
+A[1] => xor1.IN0
+A[2] => and2.IN0
+A[2] => xor2.IN0
+A[3] => and3.IN0
+A[3] => xor3.IN0
+A[4] => and4.IN0
+A[4] => xor4.IN0
+A[5] => and5.IN0
+A[5] => xor5.IN0
+A[6] => and6.IN0
+A[6] => xor6.IN0
+A[7] => and7.IN0
+A[7] => xor7.IN0
+A[8] => and8.IN0
+A[8] => xor8.IN0
+A[9] => and9.IN0
+A[9] => xor9.IN0
+A[10] => and10.IN0
+A[10] => xor10.IN0
+A[11] => and11.IN0
+A[11] => xor11.IN0
+A[12] => and12.IN0
+A[12] => xor12.IN0
+A[13] => and13.IN0
+A[13] => xor13.IN0
+A[14] => and14.IN0
+A[14] => xor14.IN0
+A[15] => and15.IN0
+A[15] => xor15.IN0
+B[0] => and0.IN1
+B[0] => xor0.IN1
+B[1] => and1.IN1
+B[1] => xor1.IN1
+B[2] => and2.IN1
+B[2] => xor2.IN1
+B[3] => and3.IN1
+B[3] => xor3.IN1
+B[4] => and4.IN1
+B[4] => xor4.IN1
+B[5] => and5.IN1
+B[5] => xor5.IN1
+B[6] => and6.IN1
+B[6] => xor6.IN1
+B[7] => and7.IN1
+B[7] => xor7.IN1
+B[8] => and8.IN1
+B[8] => xor8.IN1
+B[9] => and9.IN1
+B[9] => xor9.IN1
+B[10] => and10.IN1
+B[10] => xor10.IN1
+B[11] => and11.IN1
+B[11] => xor11.IN1
+B[12] => and12.IN1
+B[12] => xor12.IN1
+B[13] => and13.IN1
+B[13] => xor13.IN1
+B[14] => and14.IN1
+B[14] => xor14.IN1
+B[15] => and15.IN1
+B[15] => xor15.IN1
+pg15[0] <= and15.DB_MAX_OUTPUT_PORT_TYPE
+pg15[1] <= xor15.DB_MAX_OUTPUT_PORT_TYPE
+pg14[0] <= and14.DB_MAX_OUTPUT_PORT_TYPE
+pg14[1] <= xor14.DB_MAX_OUTPUT_PORT_TYPE
+pg13[0] <= and13.DB_MAX_OUTPUT_PORT_TYPE
+pg13[1] <= xor13.DB_MAX_OUTPUT_PORT_TYPE
+pg12[0] <= and12.DB_MAX_OUTPUT_PORT_TYPE
+pg12[1] <= xor12.DB_MAX_OUTPUT_PORT_TYPE
+pg11[0] <= and11.DB_MAX_OUTPUT_PORT_TYPE
+pg11[1] <= xor11.DB_MAX_OUTPUT_PORT_TYPE
+pg10[0] <= and10.DB_MAX_OUTPUT_PORT_TYPE
+pg10[1] <= xor10.DB_MAX_OUTPUT_PORT_TYPE
+pg9[0] <= and9.DB_MAX_OUTPUT_PORT_TYPE
+pg9[1] <= xor9.DB_MAX_OUTPUT_PORT_TYPE
+pg8[0] <= and8.DB_MAX_OUTPUT_PORT_TYPE
+pg8[1] <= xor8.DB_MAX_OUTPUT_PORT_TYPE
+pg7[0] <= and7.DB_MAX_OUTPUT_PORT_TYPE
+pg7[1] <= xor7.DB_MAX_OUTPUT_PORT_TYPE
+pg6[0] <= and6.DB_MAX_OUTPUT_PORT_TYPE
+pg6[1] <= xor6.DB_MAX_OUTPUT_PORT_TYPE
+pg5[0] <= and5.DB_MAX_OUTPUT_PORT_TYPE
+pg5[1] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
+pg4[0] <= and4.DB_MAX_OUTPUT_PORT_TYPE
+pg4[1] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
+pg3[0] <= and3.DB_MAX_OUTPUT_PORT_TYPE
+pg3[1] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
+pg2[0] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+pg2[1] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+pg1[0] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+pg1[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+pg0[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+pg0[1] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr1c1
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c3
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c5
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c9
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c13
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr1c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr2c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr2c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr2c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr2c3
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr3c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|BlackCell:blockr3c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr4c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr5c5
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr5c9
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr5c13
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c2
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c4
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c6
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c8
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c10
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c12
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|GrayCell:blockr6c14
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodADD:iBKmodADD|xor16SUM:ixor16SUM_1
+A[0] => xor0.IN0
+A[1] => xor1.IN0
+A[2] => xor2.IN0
+A[3] => xor3.IN0
+A[4] => xor4.IN0
+A[5] => xor5.IN0
+A[6] => xor6.IN0
+A[7] => xor7.IN0
+A[8] => xor8.IN0
+A[9] => xor9.IN0
+A[10] => xor10.IN0
+A[11] => xor11.IN0
+A[12] => xor12.IN0
+A[13] => xor13.IN0
+A[14] => xor14.IN0
+A[15] => xor15.IN0
+B[0] => xor0.IN1
+B[1] => xor1.IN1
+B[2] => xor2.IN1
+B[3] => xor3.IN1
+B[4] => xor4.IN1
+B[5] => xor5.IN1
+B[6] => xor6.IN1
+B[7] => xor7.IN1
+B[8] => xor8.IN1
+B[9] => xor9.IN1
+B[10] => xor10.IN1
+B[11] => xor11.IN1
+B[12] => xor12.IN1
+B[13] => xor13.IN1
+B[14] => xor14.IN1
+B[15] => xor15.IN1
+S[0] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= xor6.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= xor7.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= xor8.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= xor9.DB_MAX_OUTPUT_PORT_TYPE
+S[10] <= xor10.DB_MAX_OUTPUT_PORT_TYPE
+S[11] <= xor11.DB_MAX_OUTPUT_PORT_TYPE
+S[12] <= xor12.DB_MAX_OUTPUT_PORT_TYPE
+S[13] <= xor13.DB_MAX_OUTPUT_PORT_TYPE
+S[14] <= xor14.DB_MAX_OUTPUT_PORT_TYPE
+S[15] <= xor15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|barret_reduce:ibarret_reduce
+a[0] => Mult0.IN31
+a[0] => Add1.IN32
+a[1] => Mult0.IN30
+a[1] => Add1.IN31
+a[2] => Mult0.IN29
+a[2] => Add1.IN30
+a[3] => Mult0.IN28
+a[3] => Add1.IN29
+a[4] => Mult0.IN27
+a[4] => Add1.IN28
+a[5] => Mult0.IN26
+a[5] => Add1.IN27
+a[6] => Mult0.IN25
+a[6] => Add1.IN26
+a[7] => Mult0.IN24
+a[7] => Add1.IN25
+a[8] => Mult0.IN23
+a[8] => Add1.IN24
+a[9] => Mult0.IN22
+a[9] => Add1.IN23
+a[10] => Mult0.IN21
+a[10] => Add1.IN22
+a[11] => Mult0.IN20
+a[11] => Add1.IN21
+a[12] => Mult0.IN19
+a[12] => Add1.IN20
+a[13] => Mult0.IN18
+a[13] => Add1.IN19
+a[14] => Mult0.IN17
+a[14] => Add1.IN18
+a[15] => Mult0.IN16
+a[15] => Add1.IN17
+result[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+S[0] <= xor16SUB:ixor16SUB_1.S[0]
+S[1] <= xor16SUB:ixor16SUB_1.S[1]
+S[2] <= xor16SUB:ixor16SUB_1.S[2]
+S[3] <= xor16SUB:ixor16SUB_1.S[3]
+S[4] <= xor16SUB:ixor16SUB_1.S[4]
+S[5] <= xor16SUB:ixor16SUB_1.S[5]
+S[6] <= xor16SUB:ixor16SUB_1.S[6]
+S[7] <= xor16SUB:ixor16SUB_1.S[7]
+S[8] <= xor16SUB:ixor16SUB_1.S[8]
+S[9] <= xor16SUB:ixor16SUB_1.S[9]
+S[10] <= xor16SUB:ixor16SUB_1.S[10]
+S[11] <= xor16SUB:ixor16SUB_1.S[11]
+S[12] <= xor16SUB:ixor16SUB_1.S[12]
+S[13] <= xor16SUB:ixor16SUB_1.S[13]
+S[14] <= xor16SUB:ixor16SUB_1.S[14]
+S[15] <= xor16SUB:ixor16SUB_1.S[15]
+
+
+|butterfly|BKmodSUB:iBKmodSUB|pg16SUB:ipg16SUB1
+A[0] => xor0.IN0
+A[0] => and0.IN0
+A[1] => xor1.IN0
+A[1] => and1.IN0
+A[2] => xor2.IN0
+A[2] => and2.IN0
+A[3] => xor3.IN0
+A[3] => and3.IN0
+A[4] => xor4.IN0
+A[4] => and4.IN0
+A[5] => xor5.IN0
+A[5] => and5.IN0
+A[6] => xor6.IN0
+A[6] => and6.IN0
+A[7] => xor7.IN0
+A[7] => and7.IN0
+A[8] => xor8.IN0
+A[8] => and8.IN0
+A[9] => xor9.IN0
+A[9] => and9.IN0
+A[10] => xor10.IN0
+A[10] => and10.IN0
+A[11] => xor11.IN0
+A[11] => and11.IN0
+A[12] => xor12.IN0
+A[12] => and12.IN0
+A[13] => xor13.IN0
+A[13] => and13.IN0
+A[14] => xor14.IN0
+A[14] => and14.IN0
+A[15] => xor15.IN0
+A[15] => and15.IN0
+B[0] => and0.IN1
+B[0] => xor0.IN1
+B[1] => and1.IN1
+B[1] => xor1.IN1
+B[2] => and2.IN1
+B[2] => xor2.IN1
+B[3] => and3.IN1
+B[3] => xor3.IN1
+B[4] => and4.IN1
+B[4] => xor4.IN1
+B[5] => and5.IN1
+B[5] => xor5.IN1
+B[6] => and6.IN1
+B[6] => xor6.IN1
+B[7] => and7.IN1
+B[7] => xor7.IN1
+B[8] => and8.IN1
+B[8] => xor8.IN1
+B[9] => and9.IN1
+B[9] => xor9.IN1
+B[10] => and10.IN1
+B[10] => xor10.IN1
+B[11] => and11.IN1
+B[11] => xor11.IN1
+B[12] => and12.IN1
+B[12] => xor12.IN1
+B[13] => and13.IN1
+B[13] => xor13.IN1
+B[14] => and14.IN1
+B[14] => xor14.IN1
+B[15] => and15.IN1
+B[15] => xor15.IN1
+pg15[0] <= and15.DB_MAX_OUTPUT_PORT_TYPE
+pg15[1] <= xor15.DB_MAX_OUTPUT_PORT_TYPE
+pg14[0] <= and14.DB_MAX_OUTPUT_PORT_TYPE
+pg14[1] <= xor14.DB_MAX_OUTPUT_PORT_TYPE
+pg13[0] <= and13.DB_MAX_OUTPUT_PORT_TYPE
+pg13[1] <= xor13.DB_MAX_OUTPUT_PORT_TYPE
+pg12[0] <= and12.DB_MAX_OUTPUT_PORT_TYPE
+pg12[1] <= xor12.DB_MAX_OUTPUT_PORT_TYPE
+pg11[0] <= and11.DB_MAX_OUTPUT_PORT_TYPE
+pg11[1] <= xor11.DB_MAX_OUTPUT_PORT_TYPE
+pg10[0] <= and10.DB_MAX_OUTPUT_PORT_TYPE
+pg10[1] <= xor10.DB_MAX_OUTPUT_PORT_TYPE
+pg9[0] <= and9.DB_MAX_OUTPUT_PORT_TYPE
+pg9[1] <= xor9.DB_MAX_OUTPUT_PORT_TYPE
+pg8[0] <= and8.DB_MAX_OUTPUT_PORT_TYPE
+pg8[1] <= xor8.DB_MAX_OUTPUT_PORT_TYPE
+pg7[0] <= and7.DB_MAX_OUTPUT_PORT_TYPE
+pg7[1] <= xor7.DB_MAX_OUTPUT_PORT_TYPE
+pg6[0] <= and6.DB_MAX_OUTPUT_PORT_TYPE
+pg6[1] <= xor6.DB_MAX_OUTPUT_PORT_TYPE
+pg5[0] <= and5.DB_MAX_OUTPUT_PORT_TYPE
+pg5[1] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
+pg4[0] <= and4.DB_MAX_OUTPUT_PORT_TYPE
+pg4[1] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
+pg3[0] <= and3.DB_MAX_OUTPUT_PORT_TYPE
+pg3[1] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
+pg2[0] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+pg2[1] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+pg1[0] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+pg1[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+pg0[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+pg0[1] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr1c1
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c3
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c5
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c9
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c13
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr1c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr2c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr2c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr2c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr2c3
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr3c7
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|BlackCell:blockr3c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg[1] => and2.IN0
+pg0[0] => and1.IN1
+pg0[1] => and2.IN1
+pgo[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+pgo[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c11
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr4c15
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr5c5
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr5c9
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr5c13
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c2
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c4
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c6
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c8
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c10
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c12
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|GrayCell:blockr6c14
+pg[0] => or1.IN1
+pg[1] => and1.IN0
+pg0 => and1.IN1
+pgo <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|BKmodSUB:iBKmodSUB|xor16SUB:ixor16SUB_1
+A[0] => xor0.IN0
+A[1] => xor1.IN0
+A[2] => xor2.IN0
+A[3] => xor3.IN0
+A[4] => xor4.IN0
+A[5] => xor5.IN0
+A[6] => xor6.IN0
+A[7] => xor7.IN0
+A[8] => xor8.IN0
+A[9] => xor9.IN0
+A[10] => xor10.IN0
+A[11] => xor11.IN0
+A[12] => xor12.IN0
+A[13] => xor13.IN0
+A[14] => xor14.IN0
+A[15] => xor15.IN0
+B[0] => xor0.IN1
+B[1] => xor1.IN1
+B[2] => xor2.IN1
+B[3] => xor3.IN1
+B[4] => xor4.IN1
+B[5] => xor5.IN1
+B[6] => xor6.IN1
+B[7] => xor7.IN1
+B[8] => xor8.IN1
+B[9] => xor9.IN1
+B[10] => xor10.IN1
+B[11] => xor11.IN1
+B[12] => xor12.IN1
+B[13] => xor13.IN1
+B[14] => xor14.IN1
+B[15] => xor15.IN1
+S[0] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= xor6.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= xor7.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= xor8.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= xor9.DB_MAX_OUTPUT_PORT_TYPE
+S[10] <= xor10.DB_MAX_OUTPUT_PORT_TYPE
+S[11] <= xor11.DB_MAX_OUTPUT_PORT_TYPE
+S[12] <= xor12.DB_MAX_OUTPUT_PORT_TYPE
+S[13] <= xor13.DB_MAX_OUTPUT_PORT_TYPE
+S[14] <= xor14.DB_MAX_OUTPUT_PORT_TYPE
+S[15] <= xor15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|mux_xx2:imux_xx21
+a[0] => Mux15.IN2
+a[1] => Mux14.IN2
+a[2] => Mux13.IN2
+a[3] => Mux12.IN2
+a[4] => Mux11.IN2
+a[5] => Mux10.IN2
+a[6] => Mux9.IN2
+a[7] => Mux8.IN2
+a[8] => Mux7.IN2
+a[9] => Mux6.IN2
+a[10] => Mux5.IN2
+a[11] => Mux4.IN2
+a[12] => Mux3.IN2
+a[13] => Mux2.IN2
+a[14] => Mux1.IN2
+a[15] => Mux0.IN2
+b[0] => Mux15.IN3
+b[1] => Mux14.IN3
+b[2] => Mux13.IN3
+b[3] => Mux12.IN3
+b[4] => Mux11.IN3
+b[5] => Mux10.IN3
+b[6] => Mux9.IN3
+b[7] => Mux8.IN3
+b[8] => Mux7.IN3
+b[9] => Mux6.IN3
+b[10] => Mux5.IN3
+b[11] => Mux4.IN3
+b[12] => Mux3.IN3
+b[13] => Mux2.IN3
+b[14] => Mux1.IN3
+b[15] => Mux0.IN3
+c[0] => Mux15.IN4
+c[1] => Mux14.IN4
+c[2] => Mux13.IN4
+c[3] => Mux12.IN4
+c[4] => Mux11.IN4
+c[5] => Mux10.IN4
+c[6] => Mux9.IN4
+c[7] => Mux8.IN4
+c[8] => Mux7.IN4
+c[9] => Mux6.IN4
+c[10] => Mux5.IN4
+c[11] => Mux4.IN4
+c[12] => Mux3.IN4
+c[13] => Mux2.IN4
+c[14] => Mux1.IN4
+c[15] => Mux0.IN4
+d[0] => Mux15.IN5
+d[1] => Mux14.IN5
+d[2] => Mux13.IN5
+d[3] => Mux12.IN5
+d[4] => Mux11.IN5
+d[5] => Mux10.IN5
+d[6] => Mux9.IN5
+d[7] => Mux8.IN5
+d[8] => Mux7.IN5
+d[9] => Mux6.IN5
+d[10] => Mux5.IN5
+d[11] => Mux4.IN5
+d[12] => Mux3.IN5
+d[13] => Mux2.IN5
+d[14] => Mux1.IN5
+d[15] => Mux0.IN5
+s[0] => Mux0.IN1
+s[0] => Mux1.IN1
+s[0] => Mux2.IN1
+s[0] => Mux3.IN1
+s[0] => Mux4.IN1
+s[0] => Mux5.IN1
+s[0] => Mux6.IN1
+s[0] => Mux7.IN1
+s[0] => Mux8.IN1
+s[0] => Mux9.IN1
+s[0] => Mux10.IN1
+s[0] => Mux11.IN1
+s[0] => Mux12.IN1
+s[0] => Mux13.IN1
+s[0] => Mux14.IN1
+s[0] => Mux15.IN1
+s[1] => Mux0.IN0
+s[1] => Mux1.IN0
+s[1] => Mux2.IN0
+s[1] => Mux3.IN0
+s[1] => Mux4.IN0
+s[1] => Mux5.IN0
+s[1] => Mux6.IN0
+s[1] => Mux7.IN0
+s[1] => Mux8.IN0
+s[1] => Mux9.IN0
+s[1] => Mux10.IN0
+s[1] => Mux11.IN0
+s[1] => Mux12.IN0
+s[1] => Mux13.IN0
+s[1] => Mux14.IN0
+s[1] => Mux15.IN0
+o[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+o[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+o[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|mux_xx2:imux_xx22
+a[0] => Mux15.IN2
+a[1] => Mux14.IN2
+a[2] => Mux13.IN2
+a[3] => Mux12.IN2
+a[4] => Mux11.IN2
+a[5] => Mux10.IN2
+a[6] => Mux9.IN2
+a[7] => Mux8.IN2
+a[8] => Mux7.IN2
+a[9] => Mux6.IN2
+a[10] => Mux5.IN2
+a[11] => Mux4.IN2
+a[12] => Mux3.IN2
+a[13] => Mux2.IN2
+a[14] => Mux1.IN2
+a[15] => Mux0.IN2
+b[0] => Mux15.IN3
+b[1] => Mux14.IN3
+b[2] => Mux13.IN3
+b[3] => Mux12.IN3
+b[4] => Mux11.IN3
+b[5] => Mux10.IN3
+b[6] => Mux9.IN3
+b[7] => Mux8.IN3
+b[8] => Mux7.IN3
+b[9] => Mux6.IN3
+b[10] => Mux5.IN3
+b[11] => Mux4.IN3
+b[12] => Mux3.IN3
+b[13] => Mux2.IN3
+b[14] => Mux1.IN3
+b[15] => Mux0.IN3
+c[0] => Mux15.IN4
+c[1] => Mux14.IN4
+c[2] => Mux13.IN4
+c[3] => Mux12.IN4
+c[4] => Mux11.IN4
+c[5] => Mux10.IN4
+c[6] => Mux9.IN4
+c[7] => Mux8.IN4
+c[8] => Mux7.IN4
+c[9] => Mux6.IN4
+c[10] => Mux5.IN4
+c[11] => Mux4.IN4
+c[12] => Mux3.IN4
+c[13] => Mux2.IN4
+c[14] => Mux1.IN4
+c[15] => Mux0.IN4
+d[0] => Mux15.IN5
+d[1] => Mux14.IN5
+d[2] => Mux13.IN5
+d[3] => Mux12.IN5
+d[4] => Mux11.IN5
+d[5] => Mux10.IN5
+d[6] => Mux9.IN5
+d[7] => Mux8.IN5
+d[8] => Mux7.IN5
+d[9] => Mux6.IN5
+d[10] => Mux5.IN5
+d[11] => Mux4.IN5
+d[12] => Mux3.IN5
+d[13] => Mux2.IN5
+d[14] => Mux1.IN5
+d[15] => Mux0.IN5
+s[0] => Mux0.IN1
+s[0] => Mux1.IN1
+s[0] => Mux2.IN1
+s[0] => Mux3.IN1
+s[0] => Mux4.IN1
+s[0] => Mux5.IN1
+s[0] => Mux6.IN1
+s[0] => Mux7.IN1
+s[0] => Mux8.IN1
+s[0] => Mux9.IN1
+s[0] => Mux10.IN1
+s[0] => Mux11.IN1
+s[0] => Mux12.IN1
+s[0] => Mux13.IN1
+s[0] => Mux14.IN1
+s[0] => Mux15.IN1
+s[1] => Mux0.IN0
+s[1] => Mux1.IN0
+s[1] => Mux2.IN0
+s[1] => Mux3.IN0
+s[1] => Mux4.IN0
+s[1] => Mux5.IN0
+s[1] => Mux6.IN0
+s[1] => Mux7.IN0
+s[1] => Mux8.IN0
+s[1] => Mux9.IN0
+s[1] => Mux10.IN0
+s[1] => Mux11.IN0
+s[1] => Mux12.IN0
+s[1] => Mux13.IN0
+s[1] => Mux14.IN0
+s[1] => Mux15.IN0
+o[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+o[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+o[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

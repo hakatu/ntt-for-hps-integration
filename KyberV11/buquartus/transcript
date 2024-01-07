@@ -1,0 +1,318 @@
+vsim work.tb_butterfly -voptargs=+acc
+# vsim work.tb_butterfly -voptargs="+acc" 
+# Start time: 00:17:41 on Jan 06,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV11/rtl/butterfly/butterfly.v(138): Module 'reduce' is not defined.
+#  For instance 'mont_reduce' at path 'tb_butterfly.uut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 00:17:41 on Jan 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of butterfly.v was successful.
+vsim -voptargs=+acc work.tb_butterfly
+# vsim -voptargs="+acc" work.tb_butterfly 
+# Start time: 00:18:17 on Jan 06,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+add wave -position insertpoint sim:/tb_butterfly/uut/*
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(62)
+#    Time: 620 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 62
+# Compile of barret_reduce.v was successful.
+# Compile of BKmodADD.v was successful.
+# Compile of BKmodSUB.v was successful.
+# Compile of BlackCell.v was successful.
+# Compile of butterfly.v was successful.
+# Compile of GrayCell.v was successful.
+# Compile of mont_reduce.v was successful.
+# Compile of MULT3_bb.v was successful.
+# Compile of MULT6_bb.v was successful.
+# Compile of mux_xx2.v was successful.
+# Compile of tb_butterfly.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_butterfly
+# End time: 11:52:20 on Jan 06,2024, Elapsed time: 11:34:03
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.tb_butterfly 
+# Start time: 11:52:20 on Jan 06,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+vsim -voptargs=+acc work.tb_butterfly
+# End time: 11:53:03 on Jan 06,2024, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.tb_butterfly 
+# Start time: 11:53:03 on Jan 06,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+# Compile of barret_reduce.v was successful.
+# Compile of BKmodADD.v was successful.
+# Compile of BKmodSUB.v was successful.
+# Compile of BlackCell.v was successful.
+# Compile of butterfly.v was successful.
+# Compile of GrayCell.v was successful.
+# Compile of mont_reduce.v was successful.
+# Compile of MULT3_bb.v was successful.
+# Compile of MULT6_bb.v was successful.
+# Compile of mux_xx2.v was successful.
+# Compile of tb_butterfly.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_butterfly
+# End time: 12:01:14 on Jan 06,2024, Elapsed time: 0:08:11
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_butterfly 
+# Start time: 12:01:14 on Jan 06,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(66)
+#    Time: 820 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 66
+add wave -position insertpoint  \
+sim:/tb_butterfly/clk \
+sim:/tb_butterfly/a \
+sim:/tb_butterfly/b \
+sim:/tb_butterfly/w \
+sim:/tb_butterfly/mode \
+sim:/tb_butterfly/c \
+sim:/tb_butterfly/d
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(66)
+#    Time: 820 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 66
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of tb_butterfly.v was successful.
+vsim -voptargs=+acc work.tb_butterfly
+# End time: 12:03:56 on Jan 06,2024, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_butterfly 
+# Start time: 12:03:56 on Jan 06,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(70)
+#    Time: 840 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 70
+add wave -position insertpoint  \
+sim:/tb_butterfly/clk \
+sim:/tb_butterfly/a \
+sim:/tb_butterfly/b \
+sim:/tb_butterfly/w \
+sim:/tb_butterfly/mode \
+sim:/tb_butterfly/c \
+sim:/tb_butterfly/d
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(70)
+#    Time: 840 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 70
+add wave -position insertpoint sim:/tb_butterfly/uut/iMULT31/*
+add wave -position insertpoint sim:/tb_butterfly/uut/imont_reduce/*
+add wave -position insertpoint sim:/tb_butterfly/uut/iBKmodADD/*
+add wave -position insertpoint sim:/tb_butterfly/uut/iBKmodSUB/*
+add wave -position insertpoint sim:/tb_butterfly/uut/imux_xx21/*
+add wave -position insertpoint sim:/tb_butterfly/uut/imux_xx22/*
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(70)
+#    Time: 840 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 70
+# Compile of MULT3_bb.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(70)
+#    Time: 840 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 70
+# Compile of barret_reduce.v was successful.
+# Compile of BKmodADD.v was successful.
+# Compile of BKmodSUB.v was successful.
+# Compile of BlackCell.v was successful.
+# Compile of butterfly.v failed with 1 errors.
+# Compile of GrayCell.v was successful.
+# Compile of mont_reduce.v was successful.
+# Compile of MULT3_bb.v was successful.
+# Compile of mux_xx2.v was successful.
+# Compile of tb_butterfly.v was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of butterfly.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(87)
+#    Time: 1240 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 87
+# Compile of butterfly.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_butterfly(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.mux_xx2(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v(87)
+#    Time: 1240 ns  Iteration: 0  Instance: /tb_butterfly
+# 1
+# Break in Module tb_butterfly at /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v line 87
+# End time: 00:45:07 on Jan 07,2024, Elapsed time: 12:41:11
+# Errors: 0, Warnings: 1

@@ -38,9 +38,11 @@ module MULT3 (
 	result);
 
 	input	  clock;
-	input	[15:0]  dataa;
-	input	[15:0]  datab;
-	output	[31:0]  result;
+	input signed	[15:0]  dataa;
+	input signed	[15:0]  datab;
+	output signed	[31:0]  result;
+
+assign result = dataa * datab;
 
 endmodule
 

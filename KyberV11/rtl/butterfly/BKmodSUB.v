@@ -97,9 +97,10 @@ module BKmodSUB(input [15:0] A, input [15:0] B, output[15:0] S);
         r6c5,r7c4,r3c3,r7c2,r2c1,Cin}), .B({r1c16[1],r1c15[1],r1c14[1],
         r1c13[1],r1c12[1],r1c11[1],r1c10[1],r1c9[1],r1c8[1],r1c7[1],r1c6[1],
         r1c5[1],r1c4[1],r1c3[1],r1c2[1],r1c1[1]}), .S(SUB_TEMP));
-    assign SUB_TEMP_2 = SUB_TEMP + q ;
-    assign S = (SUB_TEMP[15] == 1'd1) ? SUB_TEMP_2 : SUB_TEMP;
-    GrayCell genCout(.pg(r1c16), .pg0(r5c15), .pgo(Cout));
+    //assign SUB_TEMP_2 = SUB_TEMP + q ;
+    //assign S = (SUB_TEMP[15] == 1'd1) ? SUB_TEMP_2 : SUB_TEMP;
+    //GrayCell genCout(.pg(r1c16), .pg0(r5c15), .pgo(Cout));
+    assign S = SUB_TEMP;
 
 endmodule
 

@@ -96,9 +96,10 @@ module BKmodADD(input [15:0] A, input [15:0] B, output[15:0] S);
         r6c5,r7c4,r3c3,r7c2,r2c1,Cin}), .B({r1c16[1],r1c15[1],r1c14[1],
         r1c13[1],r1c12[1],r1c11[1],r1c10[1],r1c9[1],r1c8[1],r1c7[1],r1c6[1],
         r1c5[1],r1c4[1],r1c3[1],r1c2[1],r1c1[1]}), .S(SUM_TEMP));
-    assign SUM_TEMP_2 = SUM_TEMP - q ;
-    assign S = (SUM_TEMP_2[15] == 1'b1) ? SUM_TEMP : SUM_TEMP_2;
-    GrayCell genCout(.pg(r1c16), .pg0(r5c15), .pgo(Cout));
+    //assign SUM_TEMP_2 = SUM_TEMP - q ;
+    //assign S = (SUM_TEMP_2[15] == 1'b1) ? SUM_TEMP : SUM_TEMP_2;
+    //GrayCell genCout(.pg(r1c16), .pg0(r5c15), .pgo(Cout));
+    assign S = SUM_TEMP;
 
 endmodule
 

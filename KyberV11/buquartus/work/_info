@@ -1,0 +1,368 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/haka/Desktop/KyberV11/montquartus
+T_opt
+!s110 1704561566
+V2Q=nVC_P[Xc0zFd?@:h[50
+04 12 4 work tb_butterfly fast 0
+=6-0242ac110002-65998b9d-f3182-250567
+!s124 OEM10U65 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vbarret_reduce
+Z2 !s110 1704560625
+!i10b 1
+!s100 FBd`WZHVcUglIDgQMKAah2
+Ic6[;<KiK70W[hWRZSH>W63
+Z3 d/home/haka/Desktop/KyberV11/buquartus
+Z4 w1704560609
+8/home/haka/Desktop/KyberV11/rtl/butterfly/barret_reduce.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/barret_reduce.v
+!i122 46
+L0 1 28
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z7 !s108 1704560625.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/barret_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/barret_reduce.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vBKmodADD
+R2
+!i10b 1
+!s100 k2ADTiAUcOVVnPWSa@<g81
+IeYXE;E7Z_3<h23;6V?1e:2
+R3
+R4
+Z9 8/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodADD.v
+Z10 F/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodADD.v
+!i122 47
+L0 21 84
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z11 !s107 /home/haka/Desktop/KyberV11/rtl/butterfly/BKmodADD.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodADD.v|
+!i113 0
+R8
+R1
+n@b@kmod@a@d@d
+vBKmodSUB
+R2
+!i10b 1
+!s100 7]i[T=fdP;V7<V6Q>U8=H3
+IQOXk>XWKN0zT<aYo6hIBB2
+R3
+R4
+Z13 8/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodSUB.v
+Z14 F/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodSUB.v
+!i122 48
+L0 22 84
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 /home/haka/Desktop/KyberV11/rtl/butterfly/BKmodSUB.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/BKmodSUB.v|
+!i113 0
+R8
+R1
+n@b@kmod@s@u@b
+vBlackCell
+R2
+!i10b 1
+!s100 66zQKGhGzWS@hYO_LZMAT3
+IMZ1cig9JaimogLBj5aezY3
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/BlackCell.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/BlackCell.v
+!i122 49
+L0 1 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/BlackCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/BlackCell.v|
+!i113 0
+R8
+R1
+n@black@cell
+vbutterfly
+!s110 1704561562
+!i10b 1
+!s100 9;C]e_[[n3RCEo[nn`2Hd3
+IEe5daI^PHU?JjATX22k^L3
+R3
+w1704561557
+8/home/haka/Desktop/KyberV11/rtl/butterfly/butterfly.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/butterfly.v
+!i122 56
+L0 22 78
+R5
+R6
+r1
+!s85 0
+31
+!s108 1704561562.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/butterfly.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/butterfly.v|
+!i113 0
+R8
+R1
+vGrayCell
+R2
+!i10b 1
+!s100 ]kMng3GN1UiIMh3fl45^]1
+I408iDZ8@iX3F7:3AE95CJ0
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/GrayCell.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/GrayCell.v
+!i122 50
+L0 1 6
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/GrayCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/GrayCell.v|
+!i113 0
+R8
+R1
+n@gray@cell
+vmont_reduce
+R2
+!i10b 1
+!s100 k70E8_bfI7g1dWW9QJKj71
+II[BVM]J6h<lPh1kg9L7<e1
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/mont_reduce.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/mont_reduce.v
+!i122 51
+L0 1 24
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/mont_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/mont_reduce.v|
+!i113 0
+R8
+R1
+vMULT3
+Z17 !s110 1704560626
+!i10b 1
+!s100 UTHCnh3[l@kF@E2_3zSmD2
+IgL@F?Bbdg[mbVglmHT8Kj3
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v
+!i122 52
+Z18 L0 34 14
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v|
+!i113 0
+R8
+R1
+n@m@u@l@t3
+vMULT6
+!s110 1704517244
+!i10b 1
+!s100 :MlG9Z`H0jFUKXJQZNSn91
+Io@U9M1_H=6D`d57?WiVQI2
+R3
+w1704516986
+8/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v
+!i122 41
+R18
+R5
+R6
+r1
+!s85 0
+31
+!s108 1704517244.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v|
+!i113 0
+R8
+R1
+n@m@u@l@t6
+vmux_xx2
+R17
+!i10b 1
+!s100 3EVYbl3MY[:GQ5[JS42=>1
+IkKkIaKejdQ^ojo:7485YZ0
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/mux_xx2.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/mux_xx2.v
+!i122 53
+L0 22 13
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1704560626.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/mux_xx2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/mux_xx2.v|
+!i113 0
+R8
+R1
+vpg16SUB
+R2
+!i10b 1
+!s100 2XSUzP]PDIE8mWZ?6bUe81
+I]8X>37HI:;17ei==eST6`0
+R3
+R4
+R13
+R14
+!i122 48
+Z20 L0 127 72
+R5
+R6
+r1
+!s85 0
+31
+R7
+R15
+R16
+!i113 0
+R8
+R1
+npg16@s@u@b
+vpg16SUM
+R2
+!i10b 1
+!s100 JIDl=a;5:]g??WgJzf^Q<3
+I`U82Jl>4ccJz<M?<cm6le0
+R3
+R4
+R9
+R10
+!i122 47
+R20
+R5
+R6
+r1
+!s85 0
+31
+R7
+R11
+R12
+!i113 0
+R8
+R1
+npg16@s@u@m
+vtb_butterfly
+R17
+!i10b 1
+!s100 61=[??ISk@D^ok@8UZ7T41
+I5TjoZ0e7l]nAdSPLGZJ7W2
+R3
+R4
+8/home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v
+!i122 54
+L0 3 88
+R5
+R6
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/tb_butterfly.v|
+!i113 0
+R8
+R1
+vxor16SUB
+R2
+!i10b 1
+!s100 H37UCPS0U1]D8:K>8fA`]0
+IjYI<6kQObKCZ[T4K6b[an0
+R3
+R4
+R13
+R14
+!i122 48
+L0 107 18
+R5
+R6
+r1
+!s85 0
+31
+R7
+R15
+R16
+!i113 0
+R8
+R1
+nxor16@s@u@b
+vxor16SUM
+R2
+!i10b 1
+!s100 fR=JiEI^6oCog19RKejcn2
+I1V^i7e04RM[T<QKjDUgKP1
+R3
+R4
+R9
+R10
+!i122 47
+L0 106 18
+R5
+R6
+r1
+!s85 0
+31
+R7
+R11
+R12
+!i113 0
+R8
+R1
+nxor16@s@u@m
