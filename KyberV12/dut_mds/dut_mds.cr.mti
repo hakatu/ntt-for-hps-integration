@@ -1,0 +1,173 @@
+/home/haka/Desktop/KyberV12/dut_quartus/mux_xx2.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mux_xx2.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mux_xx2
+
+Top level modules:
+	mux_xx2
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/fifo.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/fifo.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module fifo
+
+Top level modules:
+	fifo
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/RAMFIFO.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/RAMFIFO.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module RAMFIFO
+
+Top level modules:
+	RAMFIFO
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/barrett.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/barrett.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module barrett
+
+Top level modules:
+	barrett
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/mult3.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mult3.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module MULT3
+
+Top level modules:
+	MULT3
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/BlackCell.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/BlackCell.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BlackCell
+
+Top level modules:
+	BlackCell
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module Wrap_tb
+
+Top level modules:
+	Wrap_tb
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/BKmodSUB.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/BKmodSUB.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BKmodSUB
+-- Compiling module xor16SUB
+-- Compiling module pg16SUB
+
+Top level modules:
+	BKmodSUB
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/NTT_GEN1.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/NTT_GEN1.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module NTT_GEN1
+
+Top level modules:
+	NTT_GEN1
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/INTT_GEN1.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/INTT_GEN1.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module INTT_GEN1
+
+Top level modules:
+	INTT_GEN1
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/control.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/control.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/mux_xx2_p.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mux_xx2_p.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mux_xx2_p
+
+Top level modules:
+	mux_xx2_p
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/GrayCell.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/GrayCell.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module GrayCell
+
+Top level modules:
+	GrayCell
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/mode.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mode.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mode
+
+Top level modules:
+	mode
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/mont_reduce.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mont_reduce.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mont_reduce
+
+Top level modules:
+	mont_reduce
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/BKmodADD.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/BKmodADD.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BKmodADD
+-- Compiling module xor16SUM
+-- Compiling module pg16SUM
+
+Top level modules:
+	BKmodADD
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/ROMIN1.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/ROMIN1.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module ROMIN1
+
+Top level modules:
+	ROMIN1
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/barret_reduce.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/barret_reduce.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module barret_reduce
+
+Top level modules:
+	barret_reduce
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/Address_Gen.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/Address_Gen.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module Address_Gen
+
+Top level modules:
+	Address_Gen
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/RAMFIFO_bb.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/RAMFIFO_bb.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module RAMFIFO
+
+Top level modules:
+	RAMFIFO
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/RAM.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/RAM.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/INOUT_GEN1.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/INOUT_GEN1.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module INOUT_GEN1
+
+Top level modules:
+	INOUT_GEN1
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/fifoctrl.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/fifoctrl.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module fifoctrl
+
+Top level modules:
+	fifoctrl
+
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/butterfly.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/butterfly.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module butterfly
+
+Top level modules:
+	butterfly
+
+} {} {}}

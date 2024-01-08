@@ -35,46 +35,50 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 	wire [15:0] c_ntt,c_intt,c_bp;
 	wire [15:0] d_ntt,d_intt,d_bp;
 	wire [15:0] sum,sub; 
-	wire [31:0] mult_vw, mult_uw;
-	wire [15:0] ba_vw, ba_uw;
+	wire [31:0] mult_vw, mult_out;
+	wire [15:0] ba_vw, ba_out;
 	wire [15:0] add_a,add_b,sub_a,sub_b;
 	wire [15:0] cmux,dmux;
 	wire [15:0] sum_reduce;
-		reg [15:0] add_a_temp,add_b_temp,sub_a_temp,sub_b_temp,sum_temp;
-      reg [31:0] mult_vw_temp, mult_uw_temp;
-		
+	reg [15:0] add_a_temp,add_b_temp,sub_a_temp,sub_b_temp,sum_temp,sub_temp;
+   reg [31:0] mult_vw_temp, mult_uw_temp;
+	reg [15:0] a1,b1,w1,w2,w3;
 
  
 
-	MULTP iMULT_0(clk,a,w,mult_vw);
-	MULTP iMULT_1(clk,b,w,mult_uw);
+	MULT3 iMULT_0(clk,b,w,mult_vw);
 	
 		always @(posedge clk,negedge rst_n) begin
 		   if(!rst_n) begin
+			   w1 <= 'd0;
 	         mult_vw_temp <= 'd0;
-		      mult_uw_temp <= 'd0;
+			   a1 <= 'd0;
+			   b1 <= 'd0;
 		   end else begin
+			   w1 <= w;
 	         mult_vw_temp <= mult_vw;
-		      mult_uw_temp <= mult_uw;
+			   a1 <= a;
+			   b1 <= b;
 		   end
 		end
 		
 	mont_reduce imont_reduce_0 (mult_vw_temp,ba_vw);
-	mont_reduce imont_reduce_1 (mult_uw_temp,ba_uw);
 	
-	assign add_a = a;
-	assign add_b = (mode==2'b00)? ba_vw : b;
+	assign add_a = a1;
+	assign add_b = (mode==2'b00)? ba_vw : b1;
 	
-	assign sub_a = (mode==2'b00)? a : ba_uw;
-	assign sub_b = ba_vw;
+	assign sub_a = (mode==2'b00)? a1 : b1;
+	assign sub_b = (mode==2'b00)? ba_vw : a1;
 		
 	   always @(posedge clk,negedge rst_n) begin
 		   if(!rst_n) begin
+			   w2 <= 'd0;
 	         add_a_temp <= 'd0;
 		      add_b_temp <= 'd0;
 				sub_a_temp <= 'd0;
 				sub_b_temp <= 'd0;
 		   end else begin
+			   w2 <= w1;
 	         add_a_temp <= add_a;
 		      add_b_temp <= add_b;
 				sub_a_temp <= sub_a;
@@ -83,27 +87,32 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 		end
 		
 	BKmodADD  iBKmodADD (add_a_temp,add_b_temp,sum);
-	
-		always @(posedge clk,negedge rst_n) begin
-		   if(!rst_n) begin
-	         sum_temp <= 'd0;
-		   end else begin
-	         sum_temp <= sum;
-		   end
-		end
-		
-	barret_reduce ibarret_reduce(sum_temp,sum_reduce);
 	BKmodSUB iBKmodSUB (sub_a_temp,sub_b_temp,sub);
+
+	always @(posedge clk,negedge rst_n) begin
+		if(!rst_n) begin
+		   w3 <= 'd0;
+	      sum_temp <= 'd0;
+			sub_temp <= 'd0;
+		end else begin
+		   w3 <= w2;
+	      sum_temp <= sum;
+		   sub_temp <= sub;
+		end
+	end
 	
+	MULT3 iMULT_1(clk,sub_temp,w3,mult_out);		
+	mont_reduce imont_reduce_1 (mult_out,ba_out);
+	barret_reduce ibarret_reduce(sum_temp,sum_reduce);
 	
 	//////////OUTPUT-mux///////////
 	//mode NTT
-	assign c_ntt = sum;
-	assign d_ntt = sub;
+	assign c_ntt = sum_temp;
+	assign d_ntt = sub_temp;
 	//////////
 	//mode INTT
 	assign c_intt  = sum_reduce;
-	assign d_intt = sub;
+	assign d_intt = ba_out;
 	//mode bypass
 	assign c_bp = a;
 	assign d_bp = b;

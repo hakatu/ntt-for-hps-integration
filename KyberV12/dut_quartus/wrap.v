@@ -49,16 +49,16 @@ module wrap(aclr,rd_req,clk,rd_clk,rst,start,mode,we,address_ina,address_inb,dat
     wire wen_w;
     wire [7:0] Radda1_w;
     wire [7:0] Raddb1_w;
-    wire [7:0] TFadd1_w;
-    wire [15:0] tw1_w;
+    //wire [7:0] TFadd1_w;
+    //wire [15:0] tw1_w;
     wire [15:0] DA1in_w;
     wire [15:0] DA1in_bu;
     wire [15:0] DB1in_w;
     wire [15:0] DB1in_bu;
     wire [15:0] DA1out_w;
-    wire [15:0] DA1out_bu;
+    //wire [15:0] DA1out_bu;
     wire [15:0] DB1out_w;
-    wire [15:0] DB1out_bu;
+    //wire [15:0] DB1out_bu;
     wire [15:0] data_in1;
     wire [15:0] data_in2;
 
@@ -72,7 +72,7 @@ module wrap(aclr,rd_req,clk,rd_clk,rst,start,mode,we,address_ina,address_inb,dat
     
     wire [9:0] counterx1_w;
 	wire [8:0] counterx2_w; 
-	wire [8:0] counterx3_w; 
+	//wire [8:0] counterx3_w; 
     
     INOUT_GEN1 iINOUT_GEN1(
         .clk(clk),
@@ -176,6 +176,7 @@ module wrap(aclr,rd_req,clk,rd_clk,rst,start,mode,we,address_ina,address_inb,dat
 
     butterfly ibutterfly1 (
         .clk(clk),
+        .rst_n(!rst),
         .mode(mode_w),
         .a(DA1out_w),
         .b(DB1out_w),

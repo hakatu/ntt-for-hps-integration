@@ -21,6 +21,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 // baeckler - 04-15-2007
+`define SIMULATION
 
 module fifo (
 	aclr,
@@ -169,71 +170,6 @@ end
 wire wr_ena = 1'b1;
 wire rd_ena = (rd_req & rd_ok) | rd_sclr;
 generate
-	if (!SIMULATION) begin
-		wire [DAT_WIDTH-1:0] unreg_rd_dat;
-		altsyncram	altsyncram_component (
-			.wren_a (wr_req & wr_ok),
-			.clock0 (wr_clk),
-			.clock1 (rd_clk),
-			.address_a (wr_ptr[ADDR_WIDTH-1:0]),
-			.address_b (rd_ptr[ADDR_WIDTH-1:0] + (rd_sclr ? 1'b0 : 1'b1)),
-			.data_a (wr_dat),
-			.q_b (unreg_rd_dat),
-			.aclr0 (1'b0),
-			.aclr1 (1'b0),
-			.addressstall_a (1'b0),
-			.addressstall_b (!rd_ena),
-			.byteena_a (1'b1),
-			.byteena_b (1'b1),
-			.clocken0 (wr_ena),
-			.clocken1 (1'b1),
-			.clocken2 (1'b1),
-			.clocken3 (1'b1),
-			.data_b ({DAT_WIDTH{1'b1}}),
-			.eccstatus (),
-			.q_a (),
-			.rden_a (1'b1),
-			.rden_b (1'b1),
-			.wren_b (1'b0));
-		defparam
-			altsyncram_component.address_reg_b = "CLOCK1",
-			altsyncram_component.clock_enable_input_a = "NORMAL",
-			altsyncram_component.clock_enable_input_b = "NORMAL",
-			altsyncram_component.clock_enable_output_a = "BYPASS",
-			altsyncram_component.clock_enable_output_b = "BYPASS",
-			altsyncram_component.intended_device_family = "Stratix II",
-			altsyncram_component.lpm_type = "altsyncram",
-			altsyncram_component.numwords_a = 1'b1 << ADDR_WIDTH,
-			altsyncram_component.numwords_b = 1'b1 << ADDR_WIDTH,
-			altsyncram_component.operation_mode = "DUAL_PORT",
-			altsyncram_component.outdata_aclr_b = "NONE",
-			altsyncram_component.outdata_reg_b = "UNREGISTERED",
-			altsyncram_component.power_up_uninitialized = "FALSE",
-			altsyncram_component.read_during_write_mode_mixed_ports = "OLD_DATA",
-			altsyncram_component.widthad_a = ADDR_WIDTH,
-			altsyncram_component.widthad_b = ADDR_WIDTH,
-			altsyncram_component.width_a = DAT_WIDTH,
-			altsyncram_component.width_b = DAT_WIDTH,
-			altsyncram_component.width_byteena_a = 1;
-		
-		// Note : The actual memory read occurs shortly
-		// after the read address registers are loaded.  It
-		// is latched internally and NOT refreshed.
-		// Therefore read from X, wait, write to X, wait, finish read
-		// yields the OLD value of X.   This is using external
-		// output registers and address stall to get at the refreshed 
-		// data.   
-
-		reg [DAT_WIDTH-1:0] q;
-		always @(posedge rd_clk) begin
-			if (rd_ena) begin
-				q <= unreg_rd_dat;
-			end
-		end
-		assign rd_dat = q;	
-
-	end
-	else begin
 		// simulation RAM model
 		reg  [DAT_WIDTH-1:0] store [0:(1<<ADDR_WIDTH)-1];
 		reg [ADDR_WIDTH-1:0] rdaddr,wraddr;
@@ -270,7 +206,6 @@ generate
 		end				
 
 		assign rd_dat = q;
-	end
 endgenerate
 
 endmodule

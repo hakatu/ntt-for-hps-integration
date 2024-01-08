@@ -28,116 +28,55 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {wrap.vo}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:50:01 on Jan 07,2024
+# Start time: 16:03:12 on Jan 08,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." wrap.vo 
 # -- Compiling module wrap
 # 
 # Top level modules:
 # 	wrap
-# End time: 15:50:01 on Jan 07,2024, Elapsed time: 0:00:00
+# End time: 16:03:13 on Jan 08,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/haka/Desktop/KyberV12/dut_quartus {/home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 15:50:01 on Jan 07,2024
+# Start time: 16:03:13 on Jan 08,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/haka/Desktop/KyberV12/dut_quartus" /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v 
 # -- Compiling module Wrap_tb
 # 
 # Top level modules:
 # 	Wrap_tb
-# End time: 15:50:01 on Jan 07,2024, Elapsed time: 0:00:00
+# End time: 16:03:13 on Jan 08,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  Wrap_tb
 # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" Wrap_tb 
-# Start time: 15:50:01 on Jan 07,2024
+# Start time: 16:03:13 on Jan 08,2024
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=16.
 # Loading work.Wrap_tb(fast)
 # Loading work.wrap(fast)
 # Loading cyclonev_ver.cyclonev_io_obuf(fast)
 # Loading cyclonev_ver.cyclonev_io_ibuf(fast)
 # Loading cyclonev_ver.cyclonev_clkena(fast)
 # Loading cyclonev_ver.cyclonev_io_ibuf(fast__1)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__1)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__2)
 # Loading altera_ver.dffeas(fast)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__3)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__4)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__5)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__6)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__7)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__8)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__9)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__10)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__11)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__12)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__13)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__14)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__15)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__16)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__17)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__18)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__19)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__20)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__21)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__22)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__23)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__24)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__25)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__26)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__27)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__28)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__29)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__30)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__31)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__32)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__33)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__34)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__35)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__36)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__37)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__38)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__39)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__40)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__41)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__42)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__43)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__44)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__45)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__46)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__47)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__48)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__49)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__50)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__51)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__52)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__53)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__54)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__55)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__56)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__57)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__58)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__59)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__60)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__61)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__62)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__63)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__64)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__65)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__66)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__67)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__68)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__69)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__70)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__71)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__72)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__73)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__74)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__75)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__76)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__77)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__78)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast)
 # Loading cyclonev_ver.cyclonev_ram_block(fast)
 # Loading sv_std.std
 # Loading altera_lnsim_ver.generic_m10k(fast)
@@ -146,124 +85,216 @@
 # Loading altera_lnsim_ver.common_28nm_ram_register(fast)
 # Loading altera_lnsim_ver.common_28nm_ram_register(fast__1)
 # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator(fast)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__79)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__80)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__81)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__82)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__83)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__84)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__85)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__86)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__87)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__88)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__89)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__1)
 # Loading altera_lnsim_ver.generic_m10k(fast__1)
 # Loading altera_lnsim_ver.common_28nm_ram_block(fast__1)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__90)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__91)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__92)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__93)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__94)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__95)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__96)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__2)
 # Loading altera_lnsim_ver.generic_m10k(fast__2)
 # Loading altera_lnsim_ver.common_28nm_ram_block(fast__2)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__97)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__98)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__99)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__100)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__101)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__102)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__103)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__104)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__3)
 # Loading altera_lnsim_ver.generic_m10k(fast__3)
 # Loading altera_lnsim_ver.common_28nm_ram_block(fast__3)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__105)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__4)
 # Loading altera_lnsim_ver.generic_m10k(fast__4)
 # Loading altera_lnsim_ver.common_28nm_ram_block(fast__4)
 # Loading altera_lnsim_ver.common_28nm_ram_register(fast__2)
 # Loading altera_lnsim_ver.common_28nm_ram_register(fast__3)
 # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator(fast__1)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__106)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__107)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__108)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__5)
 # Loading altera_lnsim_ver.generic_m10k(fast__5)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__109)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__110)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__111)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__112)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__113)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__114)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__115)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__116)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__117)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__118)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__119)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__120)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__121)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__122)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__123)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__124)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__125)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__126)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__127)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__128)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__129)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__130)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__131)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__132)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__133)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__134)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__135)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__136)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__137)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__138)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__139)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__140)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__141)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__142)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__143)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__144)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__145)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__146)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__147)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__148)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__149)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__150)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__151)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__152)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__153)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__154)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__155)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__156)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__157)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__158)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__159)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__160)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__161)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__162)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__163)
+# Loading altera_lnsim_ver.common_28nm_ram_block(fast__5)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__6)
 # Loading altera_lnsim_ver.generic_m10k(fast__6)
-# Loading altera_lnsim_ver.common_28nm_ram_block(fast__5)
+# Loading altera_lnsim_ver.common_28nm_ram_block(fast__6)
 # Loading cyclonev_ver.cyclonev_ram_block(fast__7)
 # Loading altera_lnsim_ver.generic_m10k(fast__7)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__164)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__165)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__166)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__167)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__168)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__169)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__170)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__171)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__172)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__173)
-# Loading cyclonev_ver.cyclonev_lcell_comb(fast__174)
+# Loading altera_lnsim_ver.common_28nm_ram_block(fast__7)
+# Loading cyclonev_ver.cyclonev_mac(fast)
+# Loading cyclonev_ver.cyclonev_mac(fast__1)
+# Loading cyclonev_ver.cyclonev_mac(fast__2)
+# Loading cyclonev_ver.cyclonev_mac(fast__3)
+# Loading cyclonev_ver.cyclonev_mac(fast__4)
+# Loading cyclonev_ver.cyclonev_mac(fast__5)
+# Loading cyclonev_ver.cyclonev_ram_block(fast__8)
+# Loading altera_lnsim_ver.generic_m10k(fast__8)
+# Loading cyclonev_ver.cyclonev_mac(fast__6)
+# Loading cyclonev_ver.cyclonev_mac(fast__7)
+# Loading cyclonev_ver.cyclonev_ram_block(fast__9)
+# Loading altera_lnsim_ver.generic_m10k(fast__9)
+# Loading altera_lnsim_ver.common_28nm_ram_block(fast__8)
+# Loading altera_lnsim_ver.common_28nm_ram_register(fast__4)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'sub').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'sub').
+#    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
 # 
 # add wave *
 # view structure
@@ -275,5 +306,5 @@
 #    Time: 205085 ns  Iteration: 7  Instance: /Wrap_tb
 # 1
 # Break in Module Wrap_tb at /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v line 834
-# End time: 15:51:37 on Jan 07,2024, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 0
+# End time: 16:05:45 on Jan 08,2024, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 102

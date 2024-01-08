@@ -1,0 +1,179 @@
+vsim work.Wrap_tb
+# vsim work.Wrap_tb 
+# Start time: 15:38:29 on Jan 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV12/dut_quartus/fifo.v(174): Module 'altsyncram' is not defined.
+#  For instance 'altsyncram_component' at path 'Wrap_tb.dut.ififo1'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 15:38:30 on Jan 08,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of Wrap_tb.v was successful.
+vsim work.Wrap_tb
+# vsim work.Wrap_tb 
+# Start time: 15:39:53 on Jan 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV12/dut_quartus/fifo.v(174): Module 'altsyncram' is not defined.
+#  For instance 'altsyncram_component' at path 'Wrap_tb.dut.ififo1'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 15:39:53 on Jan 08,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim work.Wrap_tb -voptargs=+acc
+# vsim work.Wrap_tb -voptargs="+acc" 
+# Start time: 15:40:16 on Jan 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV12/dut_quartus/fifo.v(174): Module 'altsyncram' is not defined.
+#  For instance 'altsyncram_component' at path 'Wrap_tb.dut.ififo1'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 15:40:17 on Jan 08,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of fifo.v failed with 3 errors.
+# Compile of fifo.v failed with 3 errors.
+# Compile of fifo.v was successful.
+vsim -voptargs=+acc work.Wrap_tb
+# vsim -voptargs="+acc" work.Wrap_tb 
+# Start time: 15:41:25 on Jan 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/haka/Desktop/KyberV12/dut_quartus/fifo.v(175): Module 'altsyncram' is not defined.
+#  For instance 'altsyncram_component' at path 'Wrap_tb.dut.ififo1'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 15:41:26 on Jan 08,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+# Compile of fifo.v was successful.
+# Compile of fifo.v failed with 1 errors.
+# Compile of fifo.v was successful.
+vsim -voptargs=+acc work.Wrap_tb
+# vsim -voptargs="+acc" work.Wrap_tb 
+# Start time: 15:43:14 on Jan 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/haka/Desktop/KyberV12/dut_quartus/wrap.v(177): (vopt-2685) [TFMPC] - Too few port connections for 'ibutterfly1'.  Expected 8, found 7.
+# ** Warning: /home/haka/Desktop/KyberV12/dut_quartus/wrap.v(177): (vopt-2718) [TFMPC] - Missing connection for port 'rst_n'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+# Compile of wrap.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+vsim -voptargs=+acc work.Wrap_tb
+# End time: 15:45:13 on Jan 08,2024, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.Wrap_tb 
+# Start time: 15:45:13 on Jan 08,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+add wave -position insertpoint sim:/Wrap_tb/dut/*
+add wave -position insertpoint sim:/Wrap_tb/dut/ibutterfly1/*
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v(834)
+#    Time: 205075 ns  Iteration: 2  Instance: /Wrap_tb
+# 1
+# Break in Module Wrap_tb at /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v line 834
+# Compile of wrap.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/Wrap_tb/dut/TFadd1_w'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Wrap_tb/dut/tw1_w'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Wrap_tb/dut/DA1out_bu'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Wrap_tb/dut/DB1out_bu'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Wrap_tb/dut/counterx3_w'. 
+quit -sim
+# End time: 16:00:08 on Jan 08,2024, Elapsed time: 0:14:55
+# Errors: 0, Warnings: 1

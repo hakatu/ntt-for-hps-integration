@@ -41,8 +41,8 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 	wire [15:0] cmux,dmux;
 	wire [15:0] sum_reduce;
 	reg [15:0] add_a_temp,add_b_temp,sub_a_temp,sub_b_temp,sum_temp,sub_temp;
-    reg [31:0] mult_vw_temp, mult_uw_temp;
-		reg [15:0] a1,b1;
+   reg [31:0] mult_vw_temp, mult_uw_temp;
+	reg [15:0] a1,b1,w1,w2,w3;
 
  
 
@@ -50,13 +50,15 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 	
 		always @(posedge clk,negedge rst_n) begin
 		   if(!rst_n) begin
-	        mult_vw_temp <= 'd0;
-			a1 <= 'd0;
-			b1 <= 'd0;
+			   w1 <= 'd0;
+	         mult_vw_temp <= 'd0;
+			   a1 <= 'd0;
+			   b1 <= 'd0;
 		   end else begin
-	        mult_vw_temp <= mult_vw;
-			a1 <= a;
-			b1 <= b;
+			   w1 <= w;
+	         mult_vw_temp <= mult_vw;
+			   a1 <= a;
+			   b1 <= b;
 		   end
 		end
 		
@@ -70,11 +72,13 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 		
 	   always @(posedge clk,negedge rst_n) begin
 		   if(!rst_n) begin
+			   w2 <= 'd0;
 	         add_a_temp <= 'd0;
 		      add_b_temp <= 'd0;
 				sub_a_temp <= 'd0;
 				sub_b_temp <= 'd0;
 		   end else begin
+			   w2 <= w1;
 	         add_a_temp <= add_a;
 		      add_b_temp <= add_b;
 				sub_a_temp <= sub_a;
@@ -84,22 +88,22 @@ module butterfly(clk,rst_n,mode,a,b,w,c,d);
 		
 	BKmodADD  iBKmodADD (add_a_temp,add_b_temp,sum);
 	BKmodSUB iBKmodSUB (sub_a_temp,sub_b_temp,sub);
+
 	always @(posedge clk,negedge rst_n) begin
 		if(!rst_n) begin
-	        sum_temp <= 'd0;
+		   w3 <= 'd0;
+	      sum_temp <= 'd0;
 			sub_temp <= 'd0;
 		end else begin
-	       sum_temp <= sum;
+		   w3 <= w2;
+	      sum_temp <= sum;
 		   sub_temp <= sub;
 		end
 	end
-	MULT3 iMULT_1(clk,sub_temp,w,mult_out);		
+	
+	MULT3 iMULT_1(clk,sub_temp,w3,mult_out);		
 	mont_reduce imont_reduce_1 (mult_out,ba_out);
 	barret_reduce ibarret_reduce(sum_temp,sum_reduce);
-
-
-
-	
 	
 	//////////OUTPUT-mux///////////
 	//mode NTT
