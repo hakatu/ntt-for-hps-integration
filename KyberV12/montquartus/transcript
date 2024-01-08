@@ -1,0 +1,82 @@
+vsim work.tb_mont_reduce
+# vsim work.tb_mont_reduce 
+# Start time: 23:52:06 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_mont_reduce(fast)
+quit -sim
+# End time: 23:52:17 on Jan 05,2024, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 1
+# Load canceled
+vsim work.tb_mont_reduce -voptargs=+acc
+# vsim work.tb_mont_reduce -voptargs="+acc" 
+# Start time: 23:52:32 on Jan 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_mont_reduce(fast)
+# Loading work.mont_reduce(fast)
+add wave -position insertpoint sim:/tb_mont_reduce/uut/*
+run -all
+# Time =                    0, Input =           0, Result =      0
+# Time =                10000, Input =        5000, Result =  -6968
+# Time =                20000, Input =       -5000, Result =   6968
+# Time =                30000, Input =  1234567890, Result =  -9054
+# Time =                40000, Input = -1234567890, Result =   9054
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_mont_reduce
+# 1
+# Break in Module tb_mont_reduce at /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v line 32
+# Compile of mont_reduce.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mont_reduce(fast)
+# Loading work.mont_reduce(fast)
+run -all
+# Time =                    0, Input =           0, Result =      0
+# Time =                10000, Input =        5000, Result =  -6968
+# Time =                20000, Input =       -5000, Result =   6968
+# Time =                30000, Input =  1234567890, Result =  -9054
+# Time =                40000, Input = -1234567890, Result =   9054
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_mont_reduce
+# 1
+# Break in Module tb_mont_reduce at /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v line 32
+quit -sim
+# End time: 23:58:32 on Jan 05,2024, Elapsed time: 0:06:00
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_mont_reduce
+# vsim -voptargs="+acc" work.tb_mont_reduce 
+# Start time: 23:58:37 on Jan 05,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_mont_reduce(fast)
+# Loading work.mont_reduce(fast)
+add wave -position insertpoint sim:/tb_mont_reduce/uut/*
+run -all
+# Time =                    0, Input =           0, Result =      0
+# Time =                10000, Input =        5000, Result =  -6968
+# Time =                20000, Input =       -5000, Result =   6968
+# Time =                30000, Input =  1234567890, Result =  -9054
+# Time =                40000, Input = -1234567890, Result =   9054
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_mont_reduce
+# 1
+# Break in Module tb_mont_reduce at /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v line 32
+# Compile of mont_reduce.v was successful.
+vsim -voptargs=+acc work.tb_mont_reduce
+# End time: 00:00:02 on Jan 06,2024, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_mont_reduce 
+# Start time: 00:00:02 on Jan 06,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mont_reduce(fast)
+# Loading work.mont_reduce(fast)
+add wave -position insertpoint sim:/tb_mont_reduce/uut/*
+run -all
+# Time =                    0, Input =           0, Result =      0
+# Time =                10000, Input =        5000, Result =   -566
+# Time =                20000, Input =       -5000, Result =    566
+# Time =                30000, Input =  1234567890, Result =  17683
+# Time =                40000, Input = -1234567890, Result = -17683
+# ** Note: $finish    : /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v(32)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_mont_reduce
+# 1
+# Break in Module tb_mont_reduce at /home/haka/Desktop/KyberV11/rtl/signedmontreduce/tb_mont_reduce.v line 32

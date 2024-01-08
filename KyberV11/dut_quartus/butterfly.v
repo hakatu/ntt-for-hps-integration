@@ -51,8 +51,8 @@ module butterfly(clk,mode,a,b,w,c,d);
 //		mult_a = (mode==2'b00)? w : -w;
 //		mult_b = (mode==2'b00)? b : sub;
 //	end
-	assign sub_a = (mode==2'b00)? a : b;
-	assign sub_b = (mode==2'b00)? ba : a;
+	assign sub_a = a;
+	assign sub_b = (mode==2'b00)? ba : b;
 
 	assign add_a = a;
 	assign add_b = (mode==2'b00)? ba : b;
