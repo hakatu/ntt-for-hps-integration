@@ -77,6 +77,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	control
 
+} {} {}} /home/haka/Desktop/KyberV12/dut_quartus/wrap.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/wrap.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module wrap
+
+Top level modules:
+	wrap
+
 } {} {}} /home/haka/Desktop/KyberV12/dut_quartus/mux_xx2_p.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/dut_quartus/mux_xx2_p.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module mux_xx2_p

@@ -1,0 +1,668 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/haka/Desktop/KyberV12/dut_mds
+T_opt
+!s110 1704731653
+VXC_bfIA_BkhfJ2El=lFGT1
+Z2 04 7 4 work Wrap_tb fast 0
+=1-0242ac110002-659c2404-e1b9c-e0ca
+Z3 !s124 OEM10U77 
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1704732099
+V:AIZYJaV86PoZZGaV4Dj30
+R2
+=1-0242ac110002-659c25c3-74ccd-e1a5
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt1
+R5
+vAddress_Gen
+Z6 !s110 1704731678
+!i10b 1
+!s100 1RVUg:Ycl>OTk`m;7OX:z2
+I`4o@FcPC8WKMRNbbzX1oo2
+Z7 d/home/haka/Desktop/KyberV12/dut_mds_fqmul
+Z8 w1704731439
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Address_Gen.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Address_Gen.v
+!i122 25
+L0 22 103
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1704731677.000000
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/Address_Gen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Address_Gen.v|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@address_@gen
+vbarret_reduce
+R6
+!i10b 1
+!s100 FBd`WZHVcUglIDgQMKAah2
+I[1lZkQ;dL`hD6HInUiH6H0
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barret_reduce.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barret_reduce.v
+!i122 26
+L0 1 28
+R9
+R10
+r1
+!s85 0
+31
+Z12 !s108 1704731678.000000
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/barret_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barret_reduce.v|
+!i113 0
+R11
+R4
+vbarrett
+R6
+!i10b 1
+!s100 1ElWIGSf`6^lUaD[?Toa^3
+I656WIIIILmgd@za^<?<c31
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barrett.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barrett.v
+!i122 27
+L0 57 32
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/barrett.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/barrett.v|
+!i113 0
+R11
+R4
+vBKmodADD
+R6
+!i10b 1
+!s100 k2ADTiAUcOVVnPWSa@<g81
+I3Qm@ocjMC?gJJ0NYLnD_:1
+R7
+R8
+Z13 8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodADD.v
+Z14 F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodADD.v
+!i122 28
+L0 21 84
+R9
+R10
+r1
+!s85 0
+31
+R12
+Z15 !s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodADD.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodADD.v|
+!i113 0
+R11
+R4
+n@b@kmod@a@d@d
+vBKmodSUB
+R6
+!i10b 1
+!s100 7]i[T=fdP;V7<V6Q>U8=H3
+I<G6a[MUbIjDa;:VPPf07[2
+R7
+R8
+Z17 8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodSUB.v
+Z18 F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodSUB.v
+!i122 29
+L0 22 84
+R9
+R10
+r1
+!s85 0
+31
+R12
+Z19 !s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodSUB.v|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BKmodSUB.v|
+!i113 0
+R11
+R4
+n@b@kmod@s@u@b
+vBlackCell
+R6
+!i10b 1
+!s100 66zQKGhGzWS@hYO_LZMAT3
+I<gTMGS]HAzh9;;:2lYgXi3
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BlackCell.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BlackCell.v
+!i122 30
+L0 1 8
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/BlackCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/BlackCell.v|
+!i113 0
+R11
+R4
+n@black@cell
+vbutterfly
+!s110 1704732084
+!i10b 1
+!s100 W:agf_QP_4NlUP4hTgbHC1
+IXIj;5Q7=JWe`9LDU1>5oL2
+R7
+w1704732005
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/butterfly.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/butterfly.v
+!i122 50
+L0 22 105
+R9
+R10
+r1
+!s85 0
+31
+!s108 1704732084.000000
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/butterfly.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/butterfly.v|
+!i113 0
+R11
+R4
+vcontrol
+R6
+!i10b 1
+!s100 ]Ud6EE^Hom[[7O8Y;@KMh0
+Il[V4dPG_F_J<A=@QNYe<C2
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/control.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/control.v
+!i122 32
+L0 23 160
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/control.v|
+!i113 0
+R11
+R4
+vfifo
+R6
+!i10b 1
+!s100 o[71J5@LXgG<oI>JUJWzP0
+IKDf2fA[Hz?o;hJg6Zf4Hz3
+R7
+Z21 w1704731442
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifo.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifo.v
+!i122 33
+L0 26 186
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifo.v|
+!i113 0
+R11
+R4
+vfifoctrl
+R6
+!i10b 1
+!s100 oZRUh0?=liE1AOzje]EHe1
+IM4zKC^cgz@I;A0P2n52i81
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifoctrl.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifoctrl.v
+!i122 34
+L0 1 115
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifoctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/fifoctrl.v|
+!i113 0
+R11
+R4
+vGrayCell
+R6
+!i10b 1
+!s100 ]kMng3GN1UiIMh3fl45^]1
+IAb:zHX3=04^33YPI=kZMj0
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/GrayCell.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/GrayCell.v
+!i122 35
+L0 1 6
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/GrayCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/GrayCell.v|
+!i113 0
+R11
+R4
+n@gray@cell
+vINOUT_GEN1
+Z22 !s110 1704731679
+!i10b 1
+!s100 ilbnae[n9N^?nLPjNK]dI2
+IcP327;BIg90`lXWh48fP?2
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INOUT_GEN1.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INOUT_GEN1.v
+!i122 36
+L0 23 152
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/INOUT_GEN1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INOUT_GEN1.v|
+!i113 0
+R11
+R4
+n@i@n@o@u@t_@g@e@n1
+vINTT_GEN1
+R22
+!i10b 1
+!s100 U@6?H:nd<XHAo26OAOLMZ0
+I:ae;THV;7N3WQU10nkM;42
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INTT_GEN1.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INTT_GEN1.v
+!i122 37
+L0 45 920
+R9
+R10
+r1
+!s85 0
+31
+Z23 !s108 1704731679.000000
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/INTT_GEN1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/INTT_GEN1.v|
+!i113 0
+R11
+R4
+n@i@n@t@t_@g@e@n1
+vmode
+R22
+!i10b 1
+!s100 B:5NFVcG>=gEOPZPae?nn3
+Iz:FSfHg8zN=Z_imBA3cPm2
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mode.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mode.v
+!i122 38
+L0 22 20
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/mode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mode.v|
+!i113 0
+R11
+R4
+vmont_reduce
+R22
+!i10b 1
+!s100 k70E8_bfI7g1dWW9QJKj71
+I0P?6AHNA_4PWhB7EF06MJ0
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mont_reduce.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mont_reduce.v
+!i122 39
+L0 1 24
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/mont_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mont_reduce.v|
+!i113 0
+R11
+R4
+vMULT3
+R22
+!i10b 1
+!s100 9?kz6KjzN9M1;?Gbz`KL12
+ISc@7fIb^b;=R23e0g1@<93
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mult3.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mult3.v
+!i122 40
+L0 14 15
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/mult3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mult3.v|
+!i113 0
+R11
+R4
+n@m@u@l@t3
+vmux_xx2
+R22
+!i10b 1
+!s100 3EVYbl3MY[:GQ5[JS42=>1
+IbX3`j_T@jHk1Vk=I<2fNi1
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2.v
+!i122 41
+L0 22 13
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2.v|
+!i113 0
+R11
+R4
+vmux_xx2_p
+R22
+!i10b 1
+!s100 ?;n7A0j?ig<_Q`fb;>:IZ0
+I`z]U56ghDIkD4k9i?E?3X3
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2_p.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2_p.v
+!i122 42
+L0 22 21
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2_p.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/mux_xx2_p.v|
+!i113 0
+R11
+R4
+vNTT_GEN1
+R22
+!i10b 1
+!s100 =Q<bLUkeBjaKXH3FCY9OB3
+IdP6ahHaLz<:]n2ZPYbQXE3
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/NTT_GEN1.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/NTT_GEN1.v
+!i122 43
+L0 24 920
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/NTT_GEN1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/NTT_GEN1.v|
+!i113 0
+R11
+R4
+n@n@t@t_@g@e@n1
+vpg16SUB
+R6
+!i10b 1
+!s100 2XSUzP]PDIE8mWZ?6bUe81
+IRG=<5l@ff[7S<g=_LEWGO1
+R7
+R8
+R17
+R18
+!i122 29
+Z24 L0 127 72
+R9
+R10
+r1
+!s85 0
+31
+R12
+R19
+R20
+!i113 0
+R11
+R4
+npg16@s@u@b
+vpg16SUM
+R6
+!i10b 1
+!s100 JIDl=a;5:]g??WgJzf^Q<3
+I<A5>V61iS7lREJ]3nab<P3
+R7
+R8
+R13
+R14
+!i122 28
+R24
+R9
+R10
+r1
+!s85 0
+31
+R12
+R15
+R16
+!i113 0
+R11
+R4
+npg16@s@u@m
+vRAM
+R22
+!i10b 1
+!s100 l2Cena0C`WodE]8;ecP8Z3
+IC_TfO<ARHACZ`X=iQie2J2
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAM.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAM.v
+!i122 44
+L0 79 36
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAM.v|
+!i113 0
+R11
+R4
+n@r@a@m
+vRAMFIFO
+R22
+!i10b 1
+!s100 RKhFlRQ`T^`Z`^KXn]52c0
+IV^1D85ARJiS5Pf9YnEYko0
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAMFIFO_bb.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAMFIFO_bb.v
+!i122 46
+L0 34 45
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAMFIFO_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/RAMFIFO_bb.v|
+!i113 0
+R11
+R4
+n@r@a@m@f@i@f@o
+vROMIN1
+Z25 !s110 1704731680
+!i10b 1
+!s100 L:nR^hIHMQU6bmI3fEEI03
+IPRmOf7iAk@=NFA:djnJId1
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/ROMIN1.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/ROMIN1.v
+!i122 47
+L0 22 281
+R9
+R10
+r1
+!s85 0
+31
+R23
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/ROMIN1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/ROMIN1.v|
+!i113 0
+R11
+R4
+n@r@o@m@i@n1
+vwrap
+R25
+!i10b 1
+!s100 bd6XYkO[@j[GVj95O`^o62
+IGXZlIGTo>J>NkA6MYbYM72
+R7
+R21
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/wrap.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/wrap.v
+!i122 48
+L0 22 193
+R9
+R10
+r1
+!s85 0
+31
+Z26 !s108 1704731680.000000
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/wrap.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/wrap.v|
+!i113 0
+R11
+R4
+vWrap_tb
+R25
+!i10b 1
+!s100 DAj?4P]UoZ_K@Iz_:l]9G3
+IgE6Y<LX6XEe][zcAlUkL31
+R7
+R8
+8/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Wrap_tb.v
+F/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Wrap_tb.v
+!i122 49
+L0 43 1481
+R9
+R10
+r1
+!s85 0
+31
+R26
+!s107 /home/haka/Desktop/KyberV12/dut_quartus_fqmul/Wrap_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/dut_quartus_fqmul/Wrap_tb.v|
+!i113 0
+R11
+R4
+n@wrap_tb
+vxor16SUB
+R6
+!i10b 1
+!s100 H37UCPS0U1]D8:K>8fA`]0
+IhHZSg[NahNYTYM;6_g`CQ2
+R7
+R8
+R17
+R18
+!i122 29
+L0 107 18
+R9
+R10
+r1
+!s85 0
+31
+R12
+R19
+R20
+!i113 0
+R11
+R4
+nxor16@s@u@b
+vxor16SUM
+R6
+!i10b 1
+!s100 fR=JiEI^6oCog19RKejcn2
+IZfUjenz7CWHXY>Z>dDLgA3
+R7
+R8
+R13
+R14
+!i122 28
+L0 106 18
+R9
+R10
+r1
+!s85 0
+31
+R12
+R15
+R16
+!i113 0
+R11
+R4
+nxor16@s@u@m

@@ -177,3 +177,87 @@ restart -f
 quit -sim
 # End time: 16:00:08 on Jan 08,2024, Elapsed time: 0:14:55
 # Errors: 0, Warnings: 1
+# Compile of Wrap_tb.v was successful.
+restart -f
+# No Design Loaded!
+vsim -voptargs=+acc work.Wrap_tb
+# vsim -voptargs="+acc" work.Wrap_tb 
+# Start time: 22:38:01 on Jan 08,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+run -all
+# ** Note: $finish    : /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v(1513)
+#    Time: 409155 ns  Iteration: 2  Instance: /Wrap_tb
+# 1
+# Break in Module Wrap_tb at /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v line 1513
+add wave -position insertpoint sim:/Wrap_tb/dut/*
+run -all
+# Break key hit
+# Break at /home/haka/Desktop/KyberV12/dut_quartus/BKmodADD.v line 102
+# Break key hit
+quit -sim
+# End time: 22:38:56 on Jan 08,2024, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 2
+# Compile of Wrap_tb.v failed with 2 errors.
+# Compile of Wrap_tb.v failed with 2 errors.
+# Compile of Wrap_tb.v was successful.
+vsim -voptargs=+acc work.Wrap_tb
+# vsim -voptargs="+acc" work.Wrap_tb 
+# Start time: 22:40:20 on Jan 08,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Wrap_tb(fast)
+# Loading work.wrap(fast)
+# Loading work.INOUT_GEN1(fast)
+# Loading work.INTT_GEN1(fast)
+# Loading work.NTT_GEN1(fast)
+# Loading work.RAM(fast)
+# Loading work.mode(fast)
+# Loading work.Address_Gen(fast)
+# Loading work.control(fast)
+# Loading work.butterfly(fast)
+# Loading work.MULT3(fast)
+# Loading work.mont_reduce(fast)
+# Loading work.BKmodADD(fast)
+# Loading work.pg16SUM(fast)
+# Loading work.GrayCell(fast)
+# Loading work.BlackCell(fast)
+# Loading work.xor16SUM(fast)
+# Loading work.BKmodSUB(fast)
+# Loading work.pg16SUB(fast)
+# Loading work.xor16SUB(fast)
+# Loading work.barret_reduce(fast)
+# Loading work.mux_xx2_p(fast)
+# Loading work.fifo(fast)
+add wave -position insertpoint sim:/Wrap_tb/dut/*
+run -all
+# Finished the NTT test
+# Finished the INTT test
+# ** Note: $finish    : /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v(1518)
+#    Time: 409155 ns  Iteration: 2  Instance: /Wrap_tb
+# 1
+# Break in Module Wrap_tb at /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v line 1518
+quit -sim
+# End time: 23:32:44 on Jan 08,2024, Elapsed time: 0:52:24
+# Errors: 0, Warnings: 4
