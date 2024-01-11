@@ -1,0 +1,332 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  /opt/intelFPGA/22.1std/quartus/linux64/
+Quartus sim root      :  /opt/intelFPGA/22.1std/quartus/eda/sim_lib
+Simulation Tool       :  questa intel fpga
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  wrap.vo
+Sim SDF file          :  wrap__verilog.sdo
+Sim dir               :  simulation/questa
+
+=======================================================
+
+Info: Starting NativeLink simulation with Questa Intel FPGA software
+Sourced NativeLink script /opt/intelFPGA/22.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File wrap_run_msim_gate_verilog.do already exists - backing up current file as wrap_run_msim_gate_verilog.do.bak11
+Probing transcript
+Questa Intel FPGA Info: # //  Questa Intel Starter FPGA Edition-64
+Questa Intel FPGA Info: # //  Version 2021.2 linux_x86_64 Apr 14 2021
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # //  Copyright 1991-2021 Mentor Graphics Corporation
+Questa Intel FPGA Info: # //  All Rights Reserved.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # //  QuestaSim and its associated documentation contain trade
+Questa Intel FPGA Info: # //  secrets and commercial or financial information that are the property of
+Questa Intel FPGA Info: # //  Mentor Graphics Corporation and are privileged, confidential,
+Questa Intel FPGA Info: # //  and exempt from disclosure under the Freedom of Information Act,
+Questa Intel FPGA Info: # //  5 U.S.C. Section 552. Furthermore, this information
+Questa Intel FPGA Info: # //  is prohibited from disclosure under the Trade Secrets Act,
+Questa Intel FPGA Info: # //  18 U.S.C. Section 1905.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # do wrap_run_msim_gate_verilog.do
+Questa Intel FPGA Info: # if {[file exists gate_work]} {
+Questa Intel FPGA Info: # 	vdel -lib gate_work -all
+Questa Intel FPGA Info: # }
+Questa Intel FPGA Warning: # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is haka@vmd20.
+Questa Intel FPGA Info: # vlib gate_work
+Questa Intel FPGA Warning: # ** Warning: (vlib-34) Library already exists at "gate_work".
+Questa Intel FPGA Info: # Errors: 0, Warnings: 1
+Questa Intel FPGA Info: # vmap work gate_work
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+Questa Intel FPGA Info: # vmap work gate_work 
+Questa Intel FPGA Info: # Copying /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+Questa Intel FPGA Info: # Modifying modelsim.ini
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vlog -vlog01compat -work work +incdir+. {wrap.vo}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+Questa Intel FPGA Info: # Start time: 16:03:12 on Jan 08,2024
+Questa Intel FPGA Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." wrap.vo 
+Questa Intel FPGA Info: # -- Compiling module wrap
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # Top level modules:
+Questa Intel FPGA Info: # 	wrap
+Questa Intel FPGA Info: # End time: 16:03:13 on Jan 08,2024, Elapsed time: 0:00:01
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vlog -vlog01compat -work work +incdir+/home/haka/Desktop/KyberV12/dut_quartus {/home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+Questa Intel FPGA Info: # Start time: 16:03:13 on Jan 08,2024
+Questa Intel FPGA Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/haka/Desktop/KyberV12/dut_quartus" /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v 
+Questa Intel FPGA Info: # -- Compiling module Wrap_tb
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # Top level modules:
+Questa Intel FPGA Info: # 	Wrap_tb
+Questa Intel FPGA Info: # End time: 16:03:13 on Jan 08,2024, Elapsed time: 0:00:00
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  Wrap_tb
+Questa Intel FPGA Info: # vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" Wrap_tb 
+Questa Intel FPGA Info: # Start time: 16:03:13 on Jan 08,2024
+Questa Intel FPGA Info: # ** Note: (vsim-3812) Design is being optimized...
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Warning: # ** Warning: $MODEL_TECH/../intel/verilog/src/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+Questa Intel FPGA Info: # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=16.
+Questa Intel FPGA Info: # Loading work.Wrap_tb(fast)
+Questa Intel FPGA Info: # Loading work.wrap(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_io_obuf(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_io_ibuf(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_clkena(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_io_ibuf(fast__1)
+Questa Intel FPGA Info: # Loading altera_ver.dffeas(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_lcell_comb(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast)
+Questa Intel FPGA Info: # Loading sv_std.std
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.altera_lnsim_functions(fast)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_register(fast)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_register(fast__1)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__1)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__1)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__1)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__2)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__2)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__2)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__3)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__3)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__3)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__4)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__4)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__4)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_register(fast__2)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_register(fast__3)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator(fast__1)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__5)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__5)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__5)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__6)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__6)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__6)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__7)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__7)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__7)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__1)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__2)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__3)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__4)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__5)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__8)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__8)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__6)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_mac(fast__7)
+Questa Intel FPGA Info: # Loading cyclonev_ver.cyclonev_ram_block(fast__9)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.generic_m10k(fast__9)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_block(fast__8)
+Questa Intel FPGA Info: # Loading altera_lnsim_ver.common_28nm_ram_register(fast__4)
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_0|Mult0~mac  File: wrap.vo Line: 16676
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult0~mult_llmac  File: wrap.vo Line: 16797
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_0|Mult1~8  File: wrap.vo Line: 16876
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|iMULT_1|Mult0~mac  File: wrap.vo Line: 19592
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4328).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4329).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult0~mult_llmac  File: wrap.vo Line: 19674
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'sub').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|imont_reduce_1|Mult1~mac  File: wrap.vo Line: 19753
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'bx').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult0~mac  File: wrap.vo Line: 24000
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4326).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4330).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (19) does not match connection size (27) for port 'scanin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4332).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /opt/intelFPGA/22.1std/questa_fse/linux_x86_64/../intel/verilog/src/cyclonev_atoms.v(4333).
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Warning: # ** Warning: (vsim-3016) Port type is incompatible with connection (port 'sub').
+Questa Intel FPGA Info: #    Time: 0 ps  Iteration: 0  Instance: /Wrap_tb/dut/\ibutterfly1|ibarret_reduce|Mult1~mac  File: wrap.vo Line: 24083
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # add wave *
+Questa Intel FPGA Info: # view structure
+Questa Intel FPGA Info: # .main_pane.structure.interior.cs.body.struct
+Questa Intel FPGA Info: # view signals
+Questa Intel FPGA Info: # .main_pane.objects.interior.cs.body.tree
+Questa Intel FPGA Info: # run -all
+Questa Intel FPGA Info: # ** Note: $finish    : /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v(834)
+Questa Intel FPGA Info: #    Time: 205085 ns  Iteration: 7  Instance: /Wrap_tb
+Questa Intel FPGA Info: # 1
+Questa Intel FPGA Info: # Break in Module Wrap_tb at /home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v line 834
+Questa Intel FPGA Info: # End time: 16:05:45 on Jan 08,2024, Elapsed time: 0:02:32
+Questa Intel FPGA Info: # Errors: 0, Warnings: 102
+Info: NativeLink simulation flow was successful

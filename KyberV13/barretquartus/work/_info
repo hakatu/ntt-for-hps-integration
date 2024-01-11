@@ -1,0 +1,83 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/haka/Desktop/Kyber_QuartusV8/ButterflyTestV8
+T_opt
+!s110 1704473304
+VnJLPgH;<8HeCdoi=nP62<2
+04 16 4 work tb_barret_reduce fast 0
+=4-0242ac110002-659832d8-997-23e686
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vbarret_reduce
+!s110 1704473271
+!i10b 1
+!s100 FBd`WZHVcUglIDgQMKAah2
+IZRBgj3eg=m9>ASZV<Y4z[1
+Z2 d/home/haka/Desktop/KyberV11/barretquartus
+w1704473252
+8/home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v
+F/home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v
+!i122 37
+L0 1 28
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1704473271.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/signedbarret/barret_reduce.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb_barret_reduce
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1704473300
+!i10b 1
+!s100 e5=:Nkf^;:`mC5<Cg70L>1
+IEDnlIlZajG=jAkSi^>A1g1
+S1
+R2
+w1704473294
+8/home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv
+F/home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv
+!i122 38
+L0 3 38
+R3
+R4
+r1
+!s85 0
+31
+!s108 1704473300.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/haka/Desktop/KyberV11/rtl/signedbarret/tb_barret_reduce.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

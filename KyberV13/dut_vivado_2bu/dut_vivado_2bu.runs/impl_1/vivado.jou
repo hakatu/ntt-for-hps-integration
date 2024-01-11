@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan 10 14:03:22 2024
+# Process ID: 732287
+# Current directory: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/impl_1
+# Command line: vivado -log wrap.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wrap.tcl -notrace
+# Log file: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/impl_1/wrap.vdi
+# Journal file: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/impl_1/vivado.jou
+# Running On: vmd20, OS: Linux, CPU Frequency: 3300.000 MHz, CPU Physical cores: 14, Host memory: 135056 MB
+#-----------------------------------------------------------
+source wrap.tcl -notrace

@@ -1,0 +1,433 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/haka/Desktop/KyberV11/montquartus
+T_opt
+!s110 1704561566
+V2Q=nVC_P[Xc0zFd?@:h[50
+Z2 04 12 4 work tb_butterfly fast 0
+=6-0242ac110002-65998b9d-f3182-250567
+!s124 OEM10U65 
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1704620800
+VLbEWAa:hfi9Y5:T3jiU=T1
+R2
+=1-0242ac110002-659a72ff-e12c6-4833
+!s124 OEM10U67 
+R3
+R4
+n@_opt1
+R5
+vbarret_reduce
+!s110 1704620788
+!i10b 1
+!s100 FBd`WZHVcUglIDgQMKAah2
+IlPSdUQ][BI7790fjX?Zm=1
+Z6 d/home/haka/Desktop/KyberV12/buquartus
+Z7 w1704616420
+8/home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v
+!i122 107
+L0 1 28
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z10 !s108 1704620788.000000
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vBKmodADD
+Z12 !s110 1704620789
+!i10b 1
+!s100 k2ADTiAUcOVVnPWSa@<g81
+I4f2W[@ko?Ti[cFMB`IX<C1
+R6
+R7
+Z13 8/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v
+Z14 F/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v
+!i122 108
+L0 21 84
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z15 !s107 /home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v|
+!i113 0
+R11
+R4
+n@b@kmod@a@d@d
+vBKmodSUB
+R12
+!i10b 1
+!s100 7]i[T=fdP;V7<V6Q>U8=H3
+ID^=2bAU3Rj>Z1o9^dV:FI1
+R6
+R7
+Z17 8/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v
+Z18 F/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v
+!i122 109
+L0 22 84
+R8
+R9
+r1
+!s85 0
+31
+Z19 !s108 1704620789.000000
+Z20 !s107 /home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v|
+!i113 0
+R11
+R4
+n@b@kmod@s@u@b
+vBlackCell
+R12
+!i10b 1
+!s100 66zQKGhGzWS@hYO_LZMAT3
+IgKl98b;__:Z_`_NT3hL:l2
+R6
+R7
+8/home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v
+!i122 110
+L0 1 8
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v|
+!i113 0
+R11
+R4
+n@black@cell
+vbutterfly
+R12
+!i10b 1
+!s100 amZJAIj326anEP<_mD:9=1
+I4;HEG<[4<0mNLOdVQ1kZX3
+R6
+w1704620771
+8/home/haka/Desktop/KyberV12/rtl/butterfly/butterfly.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/butterfly.v
+!i122 111
+L0 22 101
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/butterfly.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/butterfly.v|
+!i113 0
+R11
+R4
+vGrayCell
+R12
+!i10b 1
+!s100 ]kMng3GN1UiIMh3fl45^]1
+I?1MTSHFheO>YBRS0W1=WQ0
+R6
+R7
+8/home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v
+!i122 112
+L0 1 6
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v|
+!i113 0
+R11
+R4
+n@gray@cell
+vmont_reduce
+R12
+!i10b 1
+!s100 k70E8_bfI7g1dWW9QJKj71
+ILR80`QdhG]<IiCHBFTzH?3
+R6
+R7
+8/home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v
+!i122 113
+L0 1 24
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v|
+!i113 0
+R11
+R4
+vMULT3
+!s110 1704560626
+!i10b 1
+!s100 UTHCnh3[l@kF@E2_3zSmD2
+IgL@F?Bbdg[mbVglmHT8Kj3
+Z22 d/home/haka/Desktop/KyberV11/buquartus
+w1704560609
+8/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v
+!i122 52
+Z23 L0 34 14
+R8
+R9
+r1
+!s85 0
+31
+!s108 1704560625.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/MULT3_bb.v|
+!i113 0
+R11
+R4
+n@m@u@l@t3
+vMULT6
+!s110 1704517244
+!i10b 1
+!s100 :MlG9Z`H0jFUKXJQZNSn91
+Io@U9M1_H=6D`d57?WiVQI2
+R22
+w1704516986
+8/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v
+F/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v
+!i122 41
+R23
+R8
+R9
+r1
+!s85 0
+31
+!s108 1704517244.000000
+!s107 /home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV11/rtl/butterfly/MULT6_bb.v|
+!i113 0
+R11
+R4
+n@m@u@l@t6
+vMULTP
+R12
+!i10b 1
+!s100 zjLommAZaaHWfNi@9DkV;0
+IR6NoQHZDIcMT`Wd36j?RK2
+R6
+w1704617375
+8/home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v
+!i122 114
+R23
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v|
+!i113 0
+R11
+R4
+n@m@u@l@t@p
+vmux_xx2
+R12
+!i10b 1
+!s100 3EVYbl3MY[:GQ5[JS42=>1
+ITmaDgij1^O_]U>BWY17203
+R6
+R7
+8/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v
+!i122 115
+L0 22 13
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v|
+!i113 0
+R11
+R4
+vmux_xx2_p
+R12
+!i10b 1
+!s100 ?;n7A0j?ig<_Q`fb;>:IZ0
+I`>L]IcY>k2:]Ym9MBJz=^2
+R6
+w1704617445
+8/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v
+!i122 116
+L0 22 21
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v|
+!i113 0
+R11
+R4
+vpg16SUB
+R12
+!i10b 1
+!s100 2XSUzP]PDIE8mWZ?6bUe81
+IB^Ok;1nUAJU?0LWcCM]eV1
+R6
+R7
+R17
+R18
+!i122 109
+Z24 L0 127 72
+R8
+R9
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R11
+R4
+npg16@s@u@b
+vpg16SUM
+R12
+!i10b 1
+!s100 JIDl=a;5:]g??WgJzf^Q<3
+IMW?6hz]hb09[eU^AcBYE03
+R6
+R7
+R13
+R14
+!i122 108
+R24
+R8
+R9
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 0
+R11
+R4
+npg16@s@u@m
+vtb_butterfly
+R12
+!i10b 1
+!s100 61=[??ISk@D^ok@8UZ7T41
+I8HUEFYYMFH4YF5NQ]CzNh2
+R6
+R7
+8/home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v
+F/home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v
+!i122 117
+L0 3 88
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 /home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v|
+!i113 0
+R11
+R4
+vxor16SUB
+R12
+!i10b 1
+!s100 H37UCPS0U1]D8:K>8fA`]0
+IcXV@J^WNeHAVnW9Z8d1ba2
+R6
+R7
+R17
+R18
+!i122 109
+L0 107 18
+R8
+R9
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R11
+R4
+nxor16@s@u@b
+vxor16SUM
+R12
+!i10b 1
+!s100 fR=JiEI^6oCog19RKejcn2
+I4SKjJkDK1=QN>@9ONaLEc3
+R6
+R7
+R13
+R14
+!i122 108
+L0 106 18
+R8
+R9
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 0
+R11
+R4
+nxor16@s@u@m

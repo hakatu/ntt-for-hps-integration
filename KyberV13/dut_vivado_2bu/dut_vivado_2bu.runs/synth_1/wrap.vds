@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan 10 14:02:23 2024
+# Process ID: 731996
+# Current directory: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/synth_1
+# Command line: vivado -log wrap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrap.tcl
+# Log file: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/synth_1/wrap.vds
+# Journal file: /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/synth_1/vivado.jou
+# Running On: vmd20, OS: Linux, CPU Frequency: 3300.000 MHz, CPU Physical cores: 13, Host memory: 135056 MB
+#-----------------------------------------------------------
+source wrap.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1335.250 ; gain = 0.023 ; free physical = 46216 ; free virtual = 56166
+Command: read_checkpoint -auto_incremental -incremental /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.srcs/utils_1/imports/synth_1/wrap.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.srcs/utils_1/imports/synth_1/wrap.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrap -part xc7a200tffv1156-3 -flatten_hierarchy full -gated_clock_conversion auto -directive PerformanceOptimized -retiming -incremental_mode aggressive
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tffv1156-3
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 732065
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2034.809 ; gain = 377.801 ; free physical = 45261 ; free virtual = 55211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrap' [/home/haka/Desktop/KyberV13/dut_vivado/wrap.v:22]
+INFO: [Synth 8-6157] synthesizing module 'INOUT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/INOUT_GEN1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'INOUT_GEN1' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/INOUT_GEN1.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'address1' does not match port width (6) of module 'INOUT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/wrap.v:88]
+INFO: [Synth 8-6157] synthesizing module 'INTT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/INTT_GEN1.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'INTT_GEN1' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/INTT_GEN1.v:45]
+WARNING: [Synth 8-689] width (10) of port connection 'address1' does not match port width (9) of module 'INTT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/wrap.v:94]
+INFO: [Synth 8-6157] synthesizing module 'NTT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/NTT_GEN1.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NTT_GEN1' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/NTT_GEN1.v:24]
+WARNING: [Synth 8-689] width (10) of port connection 'address1' does not match port width (9) of module 'NTT_GEN1' [/home/haka/Desktop/KyberV13/dut_vivado/wrap.v:100]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/haka/Desktop/KyberV13/dut_vivado/RAM.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/RAM.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mode' [/home/haka/Desktop/KyberV13/dut_vivado/mode.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mode' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/mode.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Address_Gen' [/home/haka/Desktop/KyberV13/dut_vivado/Address_Gen.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/haka/Desktop/KyberV13/dut_vivado/Address_Gen.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'Address_Gen' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/Address_Gen.v:22]
+INFO: [Synth 8-6157] synthesizing module 'control' [/home/haka/Desktop/KyberV13/dut_vivado/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'butterfly' [/home/haka/Desktop/KyberV13/dut_vivado/butterfly.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MULT3' [/home/haka/Desktop/KyberV13/dut_vivado/mult3.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MULT3' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/mult3.v:14]
+INFO: [Synth 8-6157] synthesizing module 'mont_reduce' [/home/haka/Desktop/KyberV13/dut_vivado/mont_reduce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mont_reduce' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/mont_reduce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BKmodADD' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:21]
+INFO: [Synth 8-6157] synthesizing module 'pg16SUM' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'pg16SUM' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:127]
+INFO: [Synth 8-6157] synthesizing module 'GrayCell' [/home/haka/Desktop/KyberV13/dut_vivado/GrayCell.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GrayCell' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/GrayCell.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlackCell' [/home/haka/Desktop/KyberV13/dut_vivado/BlackCell.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BlackCell' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BlackCell.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xor16SUM' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'xor16SUM' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'BKmodADD' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodADD.v:21]
+INFO: [Synth 8-6157] synthesizing module 'BKmodSUB' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'pg16SUB' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'pg16SUB' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:127]
+INFO: [Synth 8-6157] synthesizing module 'xor16SUB' [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'xor16SUB' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'BKmodSUB' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/BKmodSUB.v:22]
+INFO: [Synth 8-6157] synthesizing module 'barret_reduce' [/home/haka/Desktop/KyberV13/dut_vivado/barret_reduce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'barret_reduce' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/barret_reduce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_xx2_p' [/home/haka/Desktop/KyberV13/dut_vivado/mux_xx2_p.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mux_xx2_p' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/mux_xx2_p.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/butterfly.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'wrap' (0#1) [/home/haka/Desktop/KyberV13/dut_vivado/wrap.v:22]
+WARNING: [Synth 8-7129] Port a[31] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module mont_reduce is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module mont_reduce is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2107.746 ; gain = 450.738 ; free physical = 45165 ; free virtual = 55116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2125.559 ; gain = 468.551 ; free physical = 45165 ; free virtual = 55116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2125.559 ; gain = 468.551 ; free physical = 45165 ; free virtual = 55116
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2125.559 ; gain = 0.000 ; free physical = 45165 ; free virtual = 55116
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.srcs/constrs_1/new/dut_xdc.xdc]
+Finished Parsing XDC File [/home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.srcs/constrs_1/new/dut_xdc.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2270.309 ; gain = 0.000 ; free physical = 45156 ; free virtual = 55107
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2270.309 ; gain = 0.000 ; free physical = 45156 ; free virtual = 55107
+INFO: [Designutils 20-5008] Incremental synthesis strategy aggressive
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45156 ; free virtual = 55107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffv1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45156 ; free virtual = 55107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45156 ; free virtual = 55107
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "RAM:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45154 ; free virtual = 55106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 128   
++---Registers : 
+	               32 Bit    Registers := 10    
+	               27 Bit    Registers := 2     
+	               16 Bit    Registers := 36    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               4K Bit	(128 X 32 bit)          RAMs := 2     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    4 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 25    
+	   3 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP ibutterfly1/mult_vw_temp_reg, operation Mode is: (A*B)'.
+DSP Report: register ibutterfly1/mult_vw_temp_reg is absorbed into DSP ibutterfly1/mult_vw_temp_reg.
+DSP Report: operator ibutterfly1/iMULT_0/result is absorbed into DSP ibutterfly1/mult_vw_temp_reg.
+DSP Report: Generating DSP ibutterfly1/imont_reduce_0/t_reg, operation Mode is: (A*(B:0x3f301))'.
+DSP Report: register ibutterfly1/imont_reduce_0/t_reg is absorbed into DSP ibutterfly1/imont_reduce_0/t_reg.
+DSP Report: operator ibutterfly1/imont_reduce_0/t0 is absorbed into DSP ibutterfly1/imont_reduce_0/t_reg.
+DSP Report: Generating DSP ibutterfly1/imont_reduce_0/t2_reg, operation Mode is: C'-A*(B:0xd01).
+DSP Report: register ibutterfly1/imont_reduce_0/a1_reg is absorbed into DSP ibutterfly1/imont_reduce_0/t2_reg.
+DSP Report: register ibutterfly1/imont_reduce_0/t2_reg is absorbed into DSP ibutterfly1/imont_reduce_0/t2_reg.
+DSP Report: operator ibutterfly1/imont_reduce_0/t20 is absorbed into DSP ibutterfly1/imont_reduce_0/t2_reg.
+DSP Report: operator ibutterfly1/imont_reduce_0/t21 is absorbed into DSP ibutterfly1/imont_reduce_0/t2_reg.
+DSP Report: Generating DSP ibutterfly2/mult_vw_temp_reg, operation Mode is: (A*B)'.
+DSP Report: register ibutterfly2/mult_vw_temp_reg is absorbed into DSP ibutterfly2/mult_vw_temp_reg.
+DSP Report: operator ibutterfly2/iMULT_0/result is absorbed into DSP ibutterfly2/mult_vw_temp_reg.
+DSP Report: Generating DSP ibutterfly2/imont_reduce_0/t_reg, operation Mode is: (A*(B:0x3f301))'.
+DSP Report: register ibutterfly2/imont_reduce_0/t_reg is absorbed into DSP ibutterfly2/imont_reduce_0/t_reg.
+DSP Report: operator ibutterfly2/imont_reduce_0/t0 is absorbed into DSP ibutterfly2/imont_reduce_0/t_reg.
+DSP Report: Generating DSP ibutterfly2/imont_reduce_0/t2_reg, operation Mode is: C'-A*(B:0xd01).
+DSP Report: register ibutterfly2/imont_reduce_0/a1_reg is absorbed into DSP ibutterfly2/imont_reduce_0/t2_reg.
+DSP Report: register ibutterfly2/imont_reduce_0/t2_reg is absorbed into DSP ibutterfly2/imont_reduce_0/t2_reg.
+DSP Report: operator ibutterfly2/imont_reduce_0/t20 is absorbed into DSP ibutterfly2/imont_reduce_0/t2_reg.
+DSP Report: operator ibutterfly2/imont_reduce_0/t21 is absorbed into DSP ibutterfly2/imont_reduce_0/t2_reg.
+DSP Report: Generating DSP ibutterfly1/ibarret_reduce/t, operation Mode is: (C:0x2000000)+(A:0x4ebf)*B''.
+DSP Report: register ibutterfly1/sum_temp_reg is absorbed into DSP ibutterfly1/ibarret_reduce/t.
+DSP Report: register ibutterfly1/sum_temp1_reg is absorbed into DSP ibutterfly1/ibarret_reduce/t.
+DSP Report: operator ibutterfly1/ibarret_reduce/t is absorbed into DSP ibutterfly1/ibarret_reduce/t.
+DSP Report: operator ibutterfly1/ibarret_reduce/t0 is absorbed into DSP ibutterfly1/ibarret_reduce/t.
+DSP Report: Generating DSP ibutterfly1/ibarret_reduce/result, operation Mode is: C'-(A*(B:0xd01))'.
+DSP Report: register ibutterfly1/ibarret_reduce/a1_reg is absorbed into DSP ibutterfly1/ibarret_reduce/result.
+DSP Report: register ibutterfly1/ibarret_reduce/t3_reg is absorbed into DSP ibutterfly1/ibarret_reduce/result.
+DSP Report: operator ibutterfly1/ibarret_reduce/t30 is absorbed into DSP ibutterfly1/ibarret_reduce/result.
+DSP Report: operator ibutterfly1/ibarret_reduce/result is absorbed into DSP ibutterfly1/ibarret_reduce/result.
+DSP Report: Generating DSP ibutterfly2/ibarret_reduce/t, operation Mode is: (C:0x2000000)+(A:0x4ebf)*B''.
+DSP Report: register ibutterfly2/sum_temp_reg is absorbed into DSP ibutterfly2/ibarret_reduce/t.
+DSP Report: register ibutterfly2/sum_temp1_reg is absorbed into DSP ibutterfly2/ibarret_reduce/t.
+DSP Report: operator ibutterfly2/ibarret_reduce/t is absorbed into DSP ibutterfly2/ibarret_reduce/t.
+DSP Report: operator ibutterfly2/ibarret_reduce/t0 is absorbed into DSP ibutterfly2/ibarret_reduce/t.
+DSP Report: Generating DSP ibutterfly2/ibarret_reduce/result, operation Mode is: C'-(A*(B:0xd01))'.
+DSP Report: register ibutterfly2/ibarret_reduce/a1_reg is absorbed into DSP ibutterfly2/ibarret_reduce/result.
+DSP Report: register ibutterfly2/ibarret_reduce/t3_reg is absorbed into DSP ibutterfly2/ibarret_reduce/result.
+DSP Report: operator ibutterfly2/ibarret_reduce/t30 is absorbed into DSP ibutterfly2/ibarret_reduce/result.
+DSP Report: operator ibutterfly2/ibarret_reduce/result is absorbed into DSP ibutterfly2/ibarret_reduce/result.
+DSP Report: Generating DSP ibutterfly1/mult_out1_reg, operation Mode is: (A2*B'')'.
+DSP Report: register ibutterfly1/w2_reg is absorbed into DSP ibutterfly1/mult_out1_reg.
+DSP Report: register ibutterfly1/w3_reg is absorbed into DSP ibutterfly1/mult_out1_reg.
+DSP Report: register ibutterfly1/sub_temp_reg is absorbed into DSP ibutterfly1/mult_out1_reg.
+DSP Report: register ibutterfly1/mult_out1_reg is absorbed into DSP ibutterfly1/mult_out1_reg.
+DSP Report: operator ibutterfly1/iMULT_1/result is absorbed into DSP ibutterfly1/mult_out1_reg.
+DSP Report: Generating DSP ibutterfly1/imont_reduce_1/t_reg, operation Mode is: (A*(B:0x3f301))'.
+DSP Report: register ibutterfly1/imont_reduce_1/t_reg is absorbed into DSP ibutterfly1/imont_reduce_1/t_reg.
+DSP Report: operator ibutterfly1/imont_reduce_1/t0 is absorbed into DSP ibutterfly1/imont_reduce_1/t_reg.
+DSP Report: Generating DSP ibutterfly1/imont_reduce_1/t2_reg, operation Mode is: C'-A*(B:0xd01).
+DSP Report: register ibutterfly1/imont_reduce_1/a1_reg is absorbed into DSP ibutterfly1/imont_reduce_1/t2_reg.
+DSP Report: register ibutterfly1/imont_reduce_1/t2_reg is absorbed into DSP ibutterfly1/imont_reduce_1/t2_reg.
+DSP Report: operator ibutterfly1/imont_reduce_1/t20 is absorbed into DSP ibutterfly1/imont_reduce_1/t2_reg.
+DSP Report: operator ibutterfly1/imont_reduce_1/t21 is absorbed into DSP ibutterfly1/imont_reduce_1/t2_reg.
+DSP Report: Generating DSP ibutterfly2/mult_out1_reg, operation Mode is: (A2*BCIN2)'.
+DSP Report: register ibutterfly2/sub_temp_reg is absorbed into DSP ibutterfly2/mult_out1_reg.
+DSP Report: register ibutterfly1/w3_reg is absorbed into DSP ibutterfly2/mult_out1_reg.
+DSP Report: register ibutterfly2/mult_out1_reg is absorbed into DSP ibutterfly2/mult_out1_reg.
+DSP Report: operator ibutterfly2/iMULT_1/result is absorbed into DSP ibutterfly2/mult_out1_reg.
+DSP Report: Generating DSP ibutterfly2/imont_reduce_1/t_reg, operation Mode is: (A*(B:0x3f301))'.
+DSP Report: register ibutterfly2/imont_reduce_1/t_reg is absorbed into DSP ibutterfly2/imont_reduce_1/t_reg.
+DSP Report: operator ibutterfly2/imont_reduce_1/t0 is absorbed into DSP ibutterfly2/imont_reduce_1/t_reg.
+DSP Report: Generating DSP ibutterfly2/imont_reduce_1/t2_reg, operation Mode is: C'-A*(B:0xd01).
+DSP Report: register ibutterfly2/imont_reduce_1/a1_reg is absorbed into DSP ibutterfly2/imont_reduce_1/t2_reg.
+DSP Report: register ibutterfly2/imont_reduce_1/t2_reg is absorbed into DSP ibutterfly2/imont_reduce_1/t2_reg.
+DSP Report: operator ibutterfly2/imont_reduce_1/t20 is absorbed into DSP ibutterfly2/imont_reduce_1/t2_reg.
+DSP Report: operator ibutterfly2/imont_reduce_1/t21 is absorbed into DSP ibutterfly2/imont_reduce_1/t2_reg.
+INFO: [Synth 8-3971] The signal "wrap/iRAM2/mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "wrap/iRAM1/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45127 ; free virtual = 55083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|INOUT_GEN1  | mem_ROMWRAP      | 64x8          | LUT            | 
+|wrap        | iINTT_GEN1/a_reg | 512x27        | Block RAM      | 
+|wrap        | iNTT_GEN1/a_reg  | 512x27        | Block RAM      | 
+|wrap        | p_0_out          | 64x8          | LUT            | 
++------------+------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wrap        | iRAM2/mem_reg | 128 x 32(NO_CHANGE)    | W | R | 128 x 32(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 
+|wrap        | iRAM1/mem_reg | 128 x 32(NO_CHANGE)    | W | R | 128 x 32(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping                  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|wrap          | (A*B)'                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*(B:0x3f301))'             | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | C'-A*(B:0xd01)               | 16     | 13     | 16     | -      | 28     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|wrap          | (A*B)'                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*(B:0x3f301))'             | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | C'-A*(B:0xd01)               | 16     | 13     | 16     | -      | 28     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|wrap          | (C:0x2000000)+(A:0x4ebf)*B'' | 16     | 16     | 27     | -      | 31     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|barret_reduce | C'-(A*(B:0xd01))'            | 16     | 13     | 16     | -      | 16     | 0    | 0    | 1    | -    | -     | 1    | 0    | 
+|wrap          | (C:0x2000000)+(A:0x4ebf)*B'' | 16     | 16     | 27     | -      | 31     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|barret_reduce | C'-(A*(B:0xd01))'            | 16     | 13     | 16     | -      | 16     | 0    | 0    | 1    | -    | -     | 1    | 0    | 
+|wrap          | (A2*B'')'                    | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*(B:0x3f301))'             | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | C'-A*(B:0xd01)               | 16     | 13     | 16     | -      | 28     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|wrap          | (A2*BCIN2)'                  | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*(B:0x3f301))'             | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | C'-A*(B:0xd01)               | 16     | 13     | 16     | -      | 28     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
++--------------+------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45124 ; free virtual = 55081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45119 ; free virtual = 55076
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wrap        | iRAM2/mem_reg | 128 x 32(NO_CHANGE)    | W | R | 128 x 32(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 
+|wrap        | iRAM1/mem_reg | 128 x 32(NO_CHANGE)    | W | R | 128 x 32(NO_CHANGE)    | W | R | Port A and B     | 0      | 1      | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `wrap`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `wrap' done
+
+
+INFO: [Synth 8-7052] The timing for the instance iRAM2/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iRAM2/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iRAM1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iRAM1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iINTT_GEN1/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iINTT_GEN1/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iNTT_GEN1/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance iNTT_GEN1/a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45101 ; free virtual = 55058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Gated Clock Conversion
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: auto
+Starting Gated Clock analysis for module 'wrap'
+[INFO] Found 0 combinational gated clocks in this module ('wrap')
+End Gated Clock analysis for module 'wrap'
+-----------------------------------------------
+
+Report Gated Clocks: 
++-+---------------------+-----------+------------+---------+--------+--------+------+
+| |Gated Clock net name |Clock Name |Gating Type |#FF/SRLs |#RAMs_A |#RAMs_B |#DSPs |
++-+---------------------+-----------+------------+---------+--------+--------+------+
++-+---------------------+-----------+------------+---------+--------+--------+------+
+---------------------------------------------------------------------------------
+End Gated Clock Conversion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45092 ; free virtual = 55049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45092 ; free virtual = 55049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45093 ; free virtual = 55049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|wrap          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*B)'      | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (C'-(A*B))' | 30     | 12     | 48     | -      | 28     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|wrap          | (A*B)'      | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mont_reduce   | (A*B)'      | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (C'-(A*B))' | 30     | 12     | 48     | -      | 28     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|wrap          | C+A''*B     | 30     | 15     | 26     | -      | 31     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|barret_reduce | C'-((A*B)') | 30     | 12     | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|wrap          | C+A''*B     | 30     | 15     | 26     | -      | 31     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|barret_reduce | C'-((A*B)') | 30     | 12     | 48     | -      | 16     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|wrap          | (A'*B'')'   | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (A*B)'      | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (C'-(A*B))' | 30     | 12     | 48     | -      | 28     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|wrap          | (A'*B')'    | 30     | 0      | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (A*B)'      | 30     | 18     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mont_reduce   | (C'-(A*B))' | 30     | 12     | 48     | -      | 28     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    24|
+|3     |DSP48E1  |    16|
+|9     |LUT1     |     4|
+|10    |LUT2     |    97|
+|11    |LUT3     |   108|
+|12    |LUT4     |   187|
+|13    |LUT5     |   144|
+|14    |LUT6     |    58|
+|15    |RAMB18E1 |     2|
+|17    |RAMB36E1 |     2|
+|18    |FDCE     |    92|
+|19    |FDRE     |   451|
+|20    |IBUF     |    83|
+|21    |OBUF     |    68|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45093 ; free virtual = 55049
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2270.309 ; gain = 468.551 ; free physical = 45093 ; free virtual = 55050
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2270.309 ; gain = 613.301 ; free physical = 45093 ; free virtual = 55050
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2270.309 ; gain = 0.000 ; free physical = 45364 ; free virtual = 55321
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'wrap' is not ideal for floorplanning, since the cellview 'wrap' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2270.309 ; gain = 0.000 ; free physical = 45365 ; free virtual = 55322
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 624bba86
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 2270.309 ; gain = 935.059 ; free physical = 45366 ; free virtual = 55323
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1743.735; main = 1453.122; forked = 344.223
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3235.348; main = 2270.312; forked = 965.035
+INFO: [Common 17-1381] The checkpoint '/home/haka/Desktop/KyberV13/dut_vivado_2bu/dut_vivado_2bu.runs/synth_1/wrap.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrap_utilization_synth.rpt -pb wrap_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 14:03:20 2024...

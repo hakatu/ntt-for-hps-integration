@@ -1,6 +1,6 @@
 Flow report for wrap
-Mon Jan  8 16:03:01 2024
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Thu Jan 11 16:08:31 2024
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -38,29 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+---------------------------------+----------------------------------------------------+
-; Flow Status                     ; Successful - Mon Jan  8 16:03:01 2024              ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
-; Revision Name                   ; wrap                                               ;
-; Top-level Entity Name           ; wrap                                               ;
-; Family                          ; Cyclone V                                          ;
-; Device                          ; 5CSXFC6D6F31C6                                     ;
-; Timing Models                   ; Final                                              ;
-; Logic utilization (in ALMs)     ; 350 / 41,910 ( < 1 % )                             ;
-; Total registers                 ; 569                                                ;
-; Total pins                      ; 177 / 499 ( 35 % )                                 ;
-; Total virtual pins              ; 0                                                  ;
-; Total block memory bits         ; 73,728 / 5,662,720 ( 1 % )                         ;
-; Total DSP Blocks                ; 8 / 112 ( 7 % )                                    ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                      ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                      ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                      ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                      ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                                     ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                      ;
-+---------------------------------+----------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Jan 11 16:08:31 2024       ;
+; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Revision Name                   ; wrap                                        ;
+; Top-level Entity Name           ; wrap                                        ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C6                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 350 / 41,910 ( < 1 % )                      ;
+; Total registers                 ; 569                                         ;
+; Total pins                      ; 177 / 499 ( 35 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 73,728 / 5,662,720 ( 1 % )                  ;
+; Total DSP Blocks                ; 8 / 112 ( 7 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/08/2024 16:00:48 ;
+; Start date & time ; 01/11/2024 16:06:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; wrap                ;
 +-------------------+---------------------+
@@ -81,20 +81,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP               ; On                                     ; Off           ; --          ; --                                ;
 ; ALM_REGISTER_PACKING_EFFORT                       ; Low                                    ; Medium        ; --          ; --                                ;
-; COMPILER_SIGNATURE_ID                             ; 2485377892354.170470444852627          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                             ; 81811172631363.170496397007473         ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME                          ; NA                                     ; --            ; --          ; wrap_tb_full                      ;
 ; EDA_DESIGN_INSTANCE_NAME                          ; NA                                     ; --            ; --          ; Wrap_tb                           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST                   ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST                   ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST                   ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST                   ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; Wrap_tb                                ; --            ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; wrap_tb_full                           ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_RUN_TOOL_AUTOMATICALLY                        ; On                                     ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                               ; Questa Intel FPGA (Verilog)            ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS                      ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                               ; wrap_tb_full.v                         ; --            ; --          ; wrap_tb_full                      ;
 ; EDA_TEST_BENCH_FILE                               ; Wrap_tb.v                              ; --            ; --          ; Wrap_tb                           ;
+; EDA_TEST_BENCH_MODULE_NAME                        ; wrap_tb_full                           ; --            ; --          ; wrap_tb_full                      ;
 ; EDA_TEST_BENCH_MODULE_NAME                        ; Wrap_tb                                ; --            ; --          ; Wrap_tb                           ;
 ; EDA_TEST_BENCH_NAME                               ; Wrap_tb                                ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                               ; wrap_tb_full                           ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                                    ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; FITTER_EFFORT                                     ; Standard Fit                           ; Auto Fit      ; --          ; --                                ;
 ; MAX_CORE_JUNCTION_TEMP                            ; 85                                     ; --            ; --          ; --                                ;
@@ -126,26 +130,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 563 MB              ; 00:00:27                           ;
-; Fitter               ; 00:01:37     ; 1.2                     ; 2739 MB             ; 00:06:19                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 538 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 2.2                     ; 1010 MB             ; 00:00:13                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 703 MB              ; 00:00:02                           ;
-; Total                ; 00:02:06     ; --                      ; --                  ; 00:07:09                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 826 MB              ; 00:00:28                           ;
+; Fitter               ; 00:01:40     ; 1.2                     ; 3063 MB             ; 00:05:56                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 739 MB              ; 00:00:08                           ;
+; Timing Analyzer      ; 00:00:10     ; 2.0                     ; 1259 MB             ; 00:00:13                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 917 MB              ; 00:00:01                           ;
+; Total                ; 00:02:12     ; --                      ; --                  ; 00:06:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
 +------------------------------------------------------------------------------------------+
 ; Flow OS Summary                                                                          ;
-+----------------------+------------------+------------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name          ; OS Version ; Processor type ;
-+----------------------+------------------+------------------+------------+----------------+
-; Analysis & Synthesis ; vmd20            ; Debian GNU/Linux ; 10         ; x86_64         ;
-; Fitter               ; vmd20            ; Debian GNU/Linux ; 10         ; x86_64         ;
-; Assembler            ; vmd20            ; Debian GNU/Linux ; 10         ; x86_64         ;
-; Timing Analyzer      ; vmd20            ; Debian GNU/Linux ; 10         ; x86_64         ;
-; EDA Netlist Writer   ; vmd20            ; Debian GNU/Linux ; 10         ; x86_64         ;
-+----------------------+------------------+------------------+------------+----------------+
++----------------------+----------------------+-------------+-------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name     ; OS Version  ; Processor type ;
++----------------------+----------------------+-------------+-------------+----------------+
+; Analysis & Synthesis ; rambutan.doelab.site ; Rocky Linux ; Rocky Linux ; x86_64         ;
+; Fitter               ; rambutan.doelab.site ; Rocky Linux ; Rocky Linux ; x86_64         ;
+; Assembler            ; rambutan.doelab.site ; Rocky Linux ; Rocky Linux ; x86_64         ;
+; Timing Analyzer      ; rambutan.doelab.site ; Rocky Linux ; Rocky Linux ; x86_64         ;
+; EDA Netlist Writer   ; rambutan.doelab.site ; Rocky Linux ; Rocky Linux ; x86_64         ;
++----------------------+----------------------+-------------+-------------+----------------+
 
 
 ------------

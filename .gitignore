@@ -2,3 +2,6 @@
 KyberV12/dut_quartus_2/core
 KyberV12/dut_quartus/core
 KyberV12/dut_quartus_fqmul/core
+KyberV13/dut_quartus/core
+KyberV13/dut_quartus_fqmul/core
+KyberV13/dut_vivado/core

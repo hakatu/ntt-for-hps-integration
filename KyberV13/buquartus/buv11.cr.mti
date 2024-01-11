@@ -1,0 +1,75 @@
+/home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/BKmodADD.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BKmodADD
+-- Compiling module xor16SUM
+-- Compiling module pg16SUM
+
+Top level modules:
+	BKmodADD
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/MULTP.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module MULTP
+
+Top level modules:
+	MULTP
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2_p.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mux_xx2_p
+
+Top level modules:
+	mux_xx2_p
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/tb_butterfly.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module tb_butterfly
+
+Top level modules:
+	tb_butterfly
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/barret_reduce.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module barret_reduce
+
+Top level modules:
+	barret_reduce
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/BKmodSUB.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BKmodSUB
+-- Compiling module xor16SUB
+-- Compiling module pg16SUB
+
+Top level modules:
+	BKmodSUB
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/GrayCell.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module GrayCell
+
+Top level modules:
+	GrayCell
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/mux_xx2.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mux_xx2
+
+Top level modules:
+	mux_xx2
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/BlackCell.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module BlackCell
+
+Top level modules:
+	BlackCell
+
+} {} {}} /home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v {1 {vlog -work work -vopt -stats=none /home/haka/Desktop/KyberV12/rtl/butterfly/mont_reduce.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mont_reduce
+
+Top level modules:
+	mont_reduce
+
+} {} {}}

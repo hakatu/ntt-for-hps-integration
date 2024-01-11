@@ -1,6 +1,6 @@
 EDA Netlist Writer report for wrap
-Mon Jan  8 16:03:01 2024
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Thu Jan 11 16:08:31 2024
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jan  8 16:03:01 2024 ;
+; EDA Netlist Writer Status ; Successful - Thu Jan 11 16:08:31 2024 ;
 ; Revision Name             ; wrap                                  ;
 ; Top-level Entity Name     ; wrap                                  ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------+
-; Simulation Generated Files                                        ;
-+-------------------------------------------------------------------+
-; Generated Files                                                   ;
-+-------------------------------------------------------------------+
-; /home/haka/Desktop/KyberV12/dut_quartus/simulation/questa/wrap.vo ;
-+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Simulation Generated Files                                                  ;
++-----------------------------------------------------------------------------+
+; Generated Files                                                             ;
++-----------------------------------------------------------------------------+
+; /kiwi/home/nghtoan/Desktop/KyberV12/dut_quartus/simulation/modelsim/wrap.vo ;
++-----------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,18 +80,18 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
-    Info: Processing started: Mon Jan  8 16:03:00 2024
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Thu Jan 11 16:08:30 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off wrap -c wrap
 Warning (125092): Tcl Script File MULT3.qip not found
     Info (125063): set_global_assignment -name QIP_FILE MULT3.qip
 Warning (125092): Tcl Script File MULT6.qip not found
     Info (125063): set_global_assignment -name QIP_FILE MULT6.qip
-Info (204019): Generated file wrap.vo in folder "/home/haka/Desktop/KyberV12/dut_quartus/simulation/questa/" for EDA simulation tool
+Info (204019): Generated file wrap.vo in folder "/kiwi/home/nghtoan/Desktop/KyberV12/dut_quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 703 megabytes
-    Info: Processing ended: Mon Jan  8 16:03:01 2024
+    Info: Peak virtual memory: 917 megabytes
+    Info: Processing ended: Thu Jan 11 16:08:31 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

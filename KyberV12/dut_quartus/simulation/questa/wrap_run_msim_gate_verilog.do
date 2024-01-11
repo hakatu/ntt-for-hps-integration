@@ -7,9 +7,9 @@ vmap work gate_work
 
 vlog -vlog01compat -work work +incdir+. {wrap.vo}
 
-vlog -vlog01compat -work work +incdir+/home/haka/Desktop/KyberV12/dut_quartus {/home/haka/Desktop/KyberV12/dut_quartus/Wrap_tb.v}
+vlog -vlog01compat -work work +incdir+/home/haka/Desktop/KyberV12/dut_quartus {/home/haka/Desktop/KyberV12/dut_quartus/wrap_tb_full.v}
 
-vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  Wrap_tb
+vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  wrap_tb_full
 
 add wave *
 view structure

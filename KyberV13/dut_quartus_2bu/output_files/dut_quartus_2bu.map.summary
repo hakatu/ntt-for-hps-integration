@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Jan 11 17:26:55 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Revision Name : dut_quartus_2bu
+Top-level Entity Name : wrap
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 909
+Total pins : 151
+Total virtual pins : 0
+Total block memory bits : 35,072
+Total DSP Blocks : 16
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
